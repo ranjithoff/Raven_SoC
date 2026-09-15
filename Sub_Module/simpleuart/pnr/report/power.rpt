@@ -1,0 +1,65 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : simpleuart
+Version: T-2022.03-SP4
+Date   : Thu Nov 27 01:28:28 2025
+****************************************
+Information: Activity for scenario simpleuart was cached, no propagation required. (POW-005)
+Mode: default
+Corner: default
+Scenario: simpleuart
+Voltage: 0.72
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clk_gate_cfg_divider_reg/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.032825 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clk_gate_cfg_divider_reg_0/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.032825 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clk_gate_cfg_divider_reg_1/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.032825 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clk_gate_cfg_divider_reg_2/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.032883 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clk_gate_recv_pattern_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell clk_gate_recv_pattern_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clk_gate_recv_state_reg/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.032825 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clk_gate_recv_buf_data_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell clk_gate_recv_buf_data_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clk_gate_send_pattern_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Fall toggles on pin recv_state_reg[3]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin recv_pattern_reg[4]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin recv_buf_data_reg[5]/QN are impossible given input states; converted to rise toggles. (POW-069)
+
+  Cell Internal Power    = 9.82e+06 pW ( 55.8%)
+  Net Switching Power    = 7.79e+06 pW ( 44.2%)
+Total Dynamic Power      = 1.76e+07 pW (100.0%)
+
+Cell Leakage Power       = 1.99e+06 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             8.68e+06               4.74e+06               1.08e+05               1.35e+07    ( 69.0%)        i
+register                  7.48e+05               7.58e+05               8.76e+05               2.38e+06    ( 12.1%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             3.94e+05               2.30e+06               1.01e+06               3.71e+06    ( 18.9%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     9.82e+06 pW            7.79e+06 pW            1.99e+06 pW            1.96e+07 pW
+1
