@@ -1,0 +1,69 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03-SP4
+Date:        Thu Nov 20 09:03:38 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     47
+    Unconnected ports (LINT-28)                                    24
+    Shorted outputs (LINT-31)                                      23
+
+Nets                                                                4
+    Unloaded nets (LINT-2)                                          4
+--------------------------------------------------------------------------------
+
+Warning: In design 'simpleuart', net 'net63' driven by pin 'C748/Z' has no loads. (LINT-2)
+Warning: In design 'simpleuart', net 'net62' driven by pin 'C717/Z' has no loads. (LINT-2)
+Warning: In design 'simpleuart', net 'net61' driven by pin 'C711/Z' has no loads. (LINT-2)
+Warning: In design 'simpleuart', net 'net60' driven by pin 'C708/Z' has no loads. (LINT-2)
+Warning: In design 'simpleuart', port 'reg_dat_di[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', port 'reg_dat_di[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[8]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[9]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[10]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[11]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[12]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[13]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[14]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[15]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[16]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[17]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[18]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[19]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[20]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[21]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[22]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[23]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[24]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[25]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[26]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[27]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[28]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[29]'. (LINT-31)
+Warning: In design 'simpleuart', output port 'reg_dat_do[31]' is connected directly to output port 'reg_dat_do[30]'. (LINT-31)
+1

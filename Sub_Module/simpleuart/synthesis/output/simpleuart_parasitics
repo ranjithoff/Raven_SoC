@@ -1,0 +1,8821 @@
+*SPEF "IEEE 1481-1999"
+*DESIGN "simpleuart"
+*DATE "Thu Nov 20 09:10:59 2025"
+*VENDOR "SYNOPSYS INC"
+*PROGRAM "Synopsys Design Compiler (R) NXT cmos"
+*VERSION "T-2022.03-SP4"
+*DESIGN_FLOW "SYNTHESIS"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1.0 NS
+*C_UNIT 0.0010 PF
+*R_UNIT 1000.0 KOHM
+*L_UNIT 1.0 HENRY
+
+*PORTS
+
+clk I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+resetn I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+ser_tx O *L 4.000e-03 *S 1.447e-03 1.675e-03 
+ser_rx I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_we\[3\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_we\[2\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_we\[1\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_we\[0\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[31\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[30\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[29\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[28\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[27\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[26\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[25\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[24\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[23\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[22\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[21\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[20\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[19\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[18\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[17\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[16\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[15\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[14\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[13\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[12\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[11\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[10\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[9\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[8\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[7\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[6\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[5\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[4\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[3\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[2\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[1\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_di\[0\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_div_do\[31\] O *L 4.000e-03 *S 1.178e-02 1.102e-02 
+reg_div_do\[30\] O *L 4.000e-03 *S 1.409e-02 6.242e-03 
+reg_div_do\[29\] O *L 4.000e-03 *S 9.816e-03 4.948e-03 
+reg_div_do\[28\] O *L 4.000e-03 *S 6.160e-03 3.841e-03 
+reg_div_do\[27\] O *L 4.000e-03 *S 7.990e-03 7.974e-03 
+reg_div_do\[26\] O *L 4.000e-03 *S 1.200e-02 5.610e-03 
+reg_div_do\[25\] O *L 4.000e-03 *S 2.302e-02 8.944e-03 
+reg_div_do\[24\] O *L 4.000e-03 *S 2.367e-02 1.006e-02 
+reg_div_do\[23\] O *L 4.000e-03 *S 2.365e-02 9.987e-03 
+reg_div_do\[22\] O *L 4.000e-03 *S 1.781e-02 7.369e-03 
+reg_div_do\[21\] O *L 4.000e-03 *S 2.381e-02 1.050e-02 
+reg_div_do\[20\] O *L 4.000e-03 *S 5.670e-03 3.693e-03 
+reg_div_do\[19\] O *L 4.000e-03 *S 8.332e-03 4.499e-03 
+reg_div_do\[18\] O *L 4.000e-03 *S 1.446e-02 6.353e-03 
+reg_div_do\[17\] O *L 4.000e-03 *S 1.942e-02 7.856e-03 
+reg_div_do\[16\] O *L 4.000e-03 *S 1.321e-02 5.976e-03 
+reg_div_do\[15\] O *L 4.000e-03 *S 7.590e-03 7.582e-03 
+reg_div_do\[14\] O *L 4.000e-03 *S 2.425e-02 1.190e-02 
+reg_div_do\[13\] O *L 4.000e-03 *S 2.179e-02 8.573e-03 
+reg_div_do\[12\] O *L 4.000e-03 *S 2.357e-02 9.732e-03 
+reg_div_do\[11\] O *L 4.000e-03 *S 7.214e-03 7.213e-03 
+reg_div_do\[10\] O *L 4.000e-03 *S 2.404e-02 1.122e-02 
+reg_div_do\[9\] O *L 4.000e-03 *S 2.425e-02 1.189e-02 
+reg_div_do\[8\] O *L 4.000e-03 *S 2.157e-02 8.507e-03 
+reg_div_do\[7\] O *L 4.000e-03 *S 8.170e-03 8.151e-03 
+reg_div_do\[6\] O *L 4.000e-03 *S 8.849e-03 8.816e-03 
+reg_div_do\[5\] O *L 4.000e-03 *S 6.991e-03 6.995e-03 
+reg_div_do\[4\] O *L 4.000e-03 *S 1.152e-02 1.084e-02 
+reg_div_do\[3\] O *L 4.000e-03 *S 7.396e-03 7.392e-03 
+reg_div_do\[2\] O *L 4.000e-03 *S 9.237e-03 9.195e-03 
+reg_div_do\[1\] O *L 4.000e-03 *S 1.795e-02 7.409e-03 
+reg_div_do\[0\] O *L 4.000e-03 *S 1.786e-02 7.384e-03 
+reg_dat_we I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_re I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[31\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[30\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[29\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[28\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[27\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[26\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[25\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[24\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[23\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[22\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[21\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[20\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[19\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[18\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[17\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[16\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[15\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[14\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[13\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[12\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[11\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[10\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[9\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[8\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[7\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[6\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[5\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[4\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[3\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[2\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[1\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_di\[0\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reg_dat_do\[31\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[30\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[29\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[28\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[27\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[26\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[25\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[24\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[23\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[22\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[21\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[20\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[19\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[18\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[17\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[16\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[15\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[14\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[13\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[12\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[11\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[10\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[9\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[8\] O *L 4.000e-03 *S 6.118e-02 6.203e-02 
+reg_dat_do\[7\] O *L 4.000e-03 *S 3.264e-03 3.814e-03 
+reg_dat_do\[6\] O *L 4.000e-03 *S 2.382e-03 2.804e-03 
+reg_dat_do\[5\] O *L 4.000e-03 *S 1.118e-03 1.316e-03 
+reg_dat_do\[4\] O *L 4.000e-03 *S 1.363e-03 1.604e-03 
+reg_dat_do\[3\] O *L 4.000e-03 *S 4.263e-03 4.895e-03 
+reg_dat_do\[2\] O *L 4.000e-03 *S 3.694e-03 4.280e-03 
+reg_dat_do\[1\] O *L 4.000e-03 *S 7.263e-04 8.550e-04 
+reg_dat_do\[0\] O *L 4.000e-03 *S 8.394e-04 9.881e-04 
+reg_dat_wait O *L 4.000e-03 *S 5.649e-04 5.965e-04 
+
+*R_NET clk 1.550e+01
+*DRIVER clk
+*CELL NULL
+*C2_R1_C1 7.749e+00 1.059e-04 7.749e+00 
+*LOADS
+*RC clk_gate_cfg_divider_reg_0/latch:CK 4.423e-04
+*RC clk_gate_cfg_divider_reg_1/latch:CK 2.780e-04
+*RC clk_gate_cfg_divider_reg_2/latch:CK 3.904e-04
+*RC clk_gate_recv_pattern_reg/latch:CK 2.526e-05
+*RC clk_gate_recv_state_reg/latch:CK 4.197e-04
+*RC clk_gate_recv_buf_data_reg/latch:CK 2.147e-04
+*RC clk_gate_send_pattern_reg/latch:CK 4.253e-04
+*RC recv_divcnt_reg\[1\]:CK 3.219e-04
+*RC send_divcnt_reg\[8\]:CK 5.339e-05
+*RC recv_divcnt_reg\[0\]:CK 2.967e-04
+*RC send_divcnt_reg\[0\]:CK 1.864e-04
+*RC send_divcnt_reg\[1\]:CK 1.753e-04
+*RC send_divcnt_reg\[15\]:CK 4.857e-05
+*RC recv_divcnt_reg\[2\]:CK 2.247e-04
+*RC send_divcnt_reg\[2\]:CK 1.657e-04
+*RC send_divcnt_reg\[9\]:CK 1.093e-04
+*RC send_dummy_reg:CK 4.043e-04
+*RC self_gate_recv_divcnt_reg_2:CK 1.404e-04
+*RC self_gate_recv_divcnt_reg_1:CK 2.045e-04
+*RC self_gate_recv_buf_valid_reg_0:CK 2.690e-04
+*RC self_gate_send_divcnt_reg_3:CK 2.672e-04
+*RC self_gate_send_divcnt_reg_2:CK 2.993e-04
+*RC self_gate_send_divcnt_reg_1:CK 2.087e-04
+*RC self_gate_send_divcnt_reg_0:CK 4.028e-04
+*RC clk_gate_cfg_divider_reg/latch:CK 2.906e-04
+*END
+
+*R_NET resetn 6.648e+00
+*DRIVER resetn
+*CELL NULL
+*C2_R1_C1 3.324e+00 7.209e-05 3.324e+00 
+*LOADS
+*RC U851:A1 5.428e-05
+*RC U856:A1 6.080e-05
+*RC U859:A1 1.050e-04
+*RC U855:A1 1.569e-04
+*RC U206:B 5.447e-05
+*RC U345:B 6.812e-05
+*RC U351:B 5.971e-05
+*RC U853:A1 1.528e-04
+*RC U854:A1 1.435e-04
+*RC U852:A1 1.465e-04
+*RC U858:A1 3.687e-05
+*RC U204:A 5.117e-05
+*RC U899:A 2.464e-05
+*RC U901:A 3.705e-06
+*END
+
+*R_NET ser_tx 2.533e-01
+*DRIVER send_pattern_reg\[0\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 1.266e-01 6.570e-06 1.266e-01 
+*LOADS
+*RC ser_tx 5.721e-07
+*END
+
+*R_NET ser_rx 1.094e+00
+*DRIVER ser_rx
+*CELL NULL
+*C2_R1_C1 5.468e-01 1.825e-05 5.468e-01 
+*LOADS
+*RC U843:B1 8.222e-06
+*RC U859:A2 9.337e-07
+*END
+
+*R_NET reg_div_we\[3\] 1.363e+00
+*DRIVER reg_div_we\[3\]
+*CELL NULL
+*C2_R1_C1 6.817e-01 2.525e-05 6.817e-01 
+*LOADS
+*RC U228:A4 1.251e-05
+*RC U832:A1 1.023e-05
+*END
+
+*R_NET reg_div_we\[2\] 1.067e+00
+*DRIVER reg_div_we\[2\]
+*CELL NULL
+*C2_R1_C1 5.334e-01 1.634e-05 5.334e-01 
+*LOADS
+*RC U228:A3 8.469e-06
+*RC U831:A1 5.487e-06
+*END
+
+*R_NET reg_div_we\[1\] 1.473e+00
+*DRIVER reg_div_we\[1\]
+*CELL NULL
+*C2_R1_C1 7.363e-01 2.593e-05 7.363e-01 
+*LOADS
+*RC U232:A2 1.613e-05
+*RC U833:A1 1.011e-05
+*END
+
+*R_NET reg_div_we\[0\] 1.370e+00
+*DRIVER reg_div_we\[0\]
+*CELL NULL
+*C2_R1_C1 6.848e-01 2.202e-05 6.848e-01 
+*LOADS
+*RC U228:A2 1.389e-05
+*RC U834:A1 8.174e-06
+*END
+
+*R_NET reg_div_di\[31\] 6.041e-01
+*DRIVER reg_div_di\[31\]
+*CELL NULL
+*C2_R1_C1 3.021e-01 8.053e-06 3.021e-01 
+*LOADS
+*RC U891:A2 3.363e-06
+*END
+
+*R_NET reg_div_di\[30\] 4.706e-01
+*DRIVER reg_div_di\[30\]
+*CELL NULL
+*C2_R1_C1 2.353e-01 4.103e-06 2.353e-01 
+*LOADS
+*RC U890:A2 1.531e-06
+*END
+
+*R_NET reg_div_di\[29\] 4.627e-01
+*DRIVER reg_div_di\[29\]
+*CELL NULL
+*C2_R1_C1 2.313e-01 3.962e-06 2.313e-01 
+*LOADS
+*RC U889:A2 1.468e-06
+*END
+
+*R_NET reg_div_di\[28\] 5.468e-01
+*DRIVER reg_div_di\[28\]
+*CELL NULL
+*C2_R1_C1 2.734e-01 6.200e-06 2.734e-01 
+*LOADS
+*RC U888:A2 2.471e-06
+*END
+
+*R_NET reg_div_di\[27\] 5.669e-01
+*DRIVER reg_div_di\[27\]
+*CELL NULL
+*C2_R1_C1 2.834e-01 6.462e-06 2.834e-01 
+*LOADS
+*RC U887:A2 2.619e-06
+*END
+
+*R_NET reg_div_di\[26\] 5.634e-01
+*DRIVER reg_div_di\[26\]
+*CELL NULL
+*C2_R1_C1 2.817e-01 6.521e-06 2.817e-01 
+*LOADS
+*RC U886:A2 2.635e-06
+*END
+
+*R_NET reg_div_di\[25\] 5.186e-01
+*DRIVER reg_div_di\[25\]
+*CELL NULL
+*C2_R1_C1 2.593e-01 5.216e-06 2.593e-01 
+*LOADS
+*RC U885:A2 2.030e-06
+*END
+
+*R_NET reg_div_di\[24\] 6.675e-01
+*DRIVER reg_div_di\[24\]
+*CELL NULL
+*C2_R1_C1 3.338e-01 9.082e-06 3.338e-01 
+*LOADS
+*RC U884:A2 3.985e-06
+*END
+
+*R_NET reg_div_di\[23\] 6.313e-01
+*DRIVER reg_div_di\[23\]
+*CELL NULL
+*C2_R1_C1 3.156e-01 8.707e-06 3.156e-01 
+*LOADS
+*RC U883:A2 3.715e-06
+*END
+
+*R_NET reg_div_di\[22\] 5.054e-01
+*DRIVER reg_div_di\[22\]
+*CELL NULL
+*C2_R1_C1 2.527e-01 5.758e-06 2.527e-01 
+*LOADS
+*RC U882:A2 2.215e-06
+*END
+
+*R_NET reg_div_di\[21\] 4.928e-01
+*DRIVER reg_div_di\[21\]
+*CELL NULL
+*C2_R1_C1 2.464e-01 4.753e-06 2.464e-01 
+*LOADS
+*RC U881:A2 1.809e-06
+*END
+
+*R_NET reg_div_di\[20\] 6.635e-01
+*DRIVER reg_div_di\[20\]
+*CELL NULL
+*C2_R1_C1 3.318e-01 9.737e-06 3.318e-01 
+*LOADS
+*RC U880:A2 4.260e-06
+*END
+
+*R_NET reg_div_di\[19\] 4.957e-01
+*DRIVER reg_div_di\[19\]
+*CELL NULL
+*C2_R1_C1 2.478e-01 5.118e-06 2.478e-01 
+*LOADS
+*RC U879:A2 1.953e-06
+*END
+
+*R_NET reg_div_di\[18\] 6.616e-01
+*DRIVER reg_div_di\[18\]
+*CELL NULL
+*C2_R1_C1 3.308e-01 1.125e-05 3.308e-01 
+*LOADS
+*RC U878:A2 4.912e-06
+*END
+
+*R_NET reg_div_di\[17\] 4.425e-01
+*DRIVER reg_div_di\[17\]
+*CELL NULL
+*C2_R1_C1 2.212e-01 3.434e-06 2.212e-01 
+*LOADS
+*RC U877:A2 1.249e-06
+*END
+
+*R_NET reg_div_di\[16\] 3.909e-01
+*DRIVER reg_div_di\[16\]
+*CELL NULL
+*C2_R1_C1 1.955e-01 2.025e-06 1.955e-01 
+*LOADS
+*RC U876:A2 7.017e-07
+*END
+
+*R_NET reg_div_di\[15\] 4.013e-01
+*DRIVER reg_div_di\[15\]
+*CELL NULL
+*C2_R1_C1 2.007e-01 2.235e-06 2.007e-01 
+*LOADS
+*RC U875:A2 7.823e-07
+*END
+
+*R_NET reg_div_di\[14\] 7.309e-01
+*DRIVER reg_div_di\[14\]
+*CELL NULL
+*C2_R1_C1 3.654e-01 1.317e-05 3.654e-01 
+*LOADS
+*RC U874:A2 6.057e-06
+*END
+
+*R_NET reg_div_di\[13\] 3.979e-01
+*DRIVER reg_div_di\[13\]
+*CELL NULL
+*C2_R1_C1 1.990e-01 2.284e-06 1.990e-01 
+*LOADS
+*RC U873:A2 7.969e-07
+*END
+
+*R_NET reg_div_di\[12\] 8.252e-01
+*DRIVER reg_div_di\[12\]
+*CELL NULL
+*C2_R1_C1 4.126e-01 1.318e-05 4.126e-01 
+*LOADS
+*RC U872:A2 6.477e-06
+*END
+
+*R_NET reg_div_di\[11\] 4.705e-01
+*DRIVER reg_div_di\[11\]
+*CELL NULL
+*C2_R1_C1 2.352e-01 4.237e-06 2.352e-01 
+*LOADS
+*RC U871:A2 1.581e-06
+*END
+
+*R_NET reg_div_di\[10\] 4.405e-01
+*DRIVER reg_div_di\[10\]
+*CELL NULL
+*C2_R1_C1 2.203e-01 3.455e-06 2.203e-01 
+*LOADS
+*RC U870:A2 1.255e-06
+*END
+
+*R_NET reg_div_di\[9\] 4.212e-01
+*DRIVER reg_div_di\[9\]
+*CELL NULL
+*C2_R1_C1 2.106e-01 2.885e-06 2.106e-01 
+*LOADS
+*RC U869:A2 1.029e-06
+*END
+
+*R_NET reg_div_di\[8\] 5.102e-01
+*DRIVER reg_div_di\[8\]
+*CELL NULL
+*C2_R1_C1 2.551e-01 5.126e-06 2.551e-01 
+*LOADS
+*RC U868:A2 1.981e-06
+*END
+
+*R_NET reg_div_di\[7\] 5.434e-01
+*DRIVER reg_div_di\[7\]
+*CELL NULL
+*C2_R1_C1 2.717e-01 7.005e-06 2.717e-01 
+*LOADS
+*RC U867:A2 2.784e-06
+*END
+
+*R_NET reg_div_di\[6\] 7.979e-01
+*DRIVER reg_div_di\[6\]
+*CELL NULL
+*C2_R1_C1 3.989e-01 1.268e-05 3.989e-01 
+*LOADS
+*RC U866:A2 6.113e-06
+*END
+
+*R_NET reg_div_di\[5\] 4.701e-01
+*DRIVER reg_div_di\[5\]
+*CELL NULL
+*C2_R1_C1 2.351e-01 4.879e-06 2.351e-01 
+*LOADS
+*RC U865:A2 1.820e-06
+*END
+
+*R_NET reg_div_di\[4\] 5.967e-01
+*DRIVER reg_div_di\[4\]
+*CELL NULL
+*C2_R1_C1 2.983e-01 8.256e-06 2.983e-01 
+*LOADS
+*RC U864:A2 3.428e-06
+*END
+
+*R_NET reg_div_di\[3\] 4.207e-01
+*DRIVER reg_div_di\[3\]
+*CELL NULL
+*C2_R1_C1 2.103e-01 3.275e-06 2.103e-01 
+*LOADS
+*RC U863:A2 1.168e-06
+*END
+
+*R_NET reg_div_di\[2\] 7.534e-01
+*DRIVER reg_div_di\[2\]
+*CELL NULL
+*C2_R1_C1 3.767e-01 1.122e-05 3.767e-01 
+*LOADS
+*RC U862:A2 5.247e-06
+*END
+
+*R_NET reg_div_di\[1\] 1.054e+00
+*DRIVER reg_div_di\[1\]
+*CELL NULL
+*C2_R1_C1 5.271e-01 2.039e-05 5.271e-01 
+*LOADS
+*RC U861:A2 1.158e-05
+*END
+
+*R_NET reg_div_di\[0\] 6.407e-01
+*DRIVER reg_div_di\[0\]
+*CELL NULL
+*C2_R1_C1 3.204e-01 1.116e-05 3.204e-01 
+*LOADS
+*RC U830:A1 4.157e-06
+*END
+
+*R_NET reg_div_do\[31\] 3.643e+00
+*DRIVER cfg_divider_reg\[31\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.822e+00 8.353e-05 1.822e+00 
+*LOADS
+*RC U346:A 7.767e-05
+*RC gt_x_34\/U121:A 4.382e-05
+*RC gt_x_5\/U119:A 7.102e-05
+*RC reg_div_do\[31\] 6.843e-05
+*END
+
+*R_NET reg_div_do\[30\] 1.101e+00
+*DRIVER cfg_divider_reg\[30\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 5.504e-01 2.286e-05 5.504e-01 
+*LOADS
+*RC U344:A 8.652e-06
+*RC gt_x_26\/U122:A 2.855e-06
+*RC reg_div_do\[30\] 1.012e-06
+*END
+
+*R_NET reg_div_do\[29\] 8.630e-01
+*DRIVER cfg_divider_reg\[29\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 4.315e-01 2.097e-05 4.315e-01 
+*LOADS
+*RC U332:A 7.614e-06
+*RC reg_div_do\[29\] 5.650e-07
+*END
+
+*R_NET reg_div_do\[28\] 6.596e-01
+*DRIVER cfg_divider_reg\[28\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 3.298e-01 1.568e-05 3.298e-01 
+*LOADS
+*RC U309:A 3.779e-06
+*RC reg_div_do\[28\] 9.944e-07
+*END
+
+*R_NET reg_div_do\[27\] 2.515e+00
+*DRIVER cfg_divider_reg\[27\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.258e+00 6.267e-05 1.258e+00 
+*LOADS
+*RC U307:A 4.124e-05
+*RC gt_x_26\/U125:A 4.306e-05
+*RC reg_div_do\[27\] 3.598e-05
+*END
+
+*R_NET reg_div_do\[26\] 9.847e-01
+*DRIVER cfg_divider_reg\[26\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 4.923e-01 2.615e-05 4.923e-01 
+*LOADS
+*RC U306:A 1.071e-05
+*RC reg_div_do\[26\] 6.118e-07
+*END
+
+*R_NET reg_div_do\[25\] 1.597e+00
+*DRIVER cfg_divider_reg\[25\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 7.986e-01 4.529e-05 7.986e-01 
+*LOADS
+*RC U304:A 2.308e-05
+*RC reg_div_do\[25\] 1.815e-05
+*END
+
+*R_NET reg_div_do\[24\] 1.807e+00
+*DRIVER cfg_divider_reg\[24\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 9.034e-01 4.225e-05 9.034e-01 
+*LOADS
+*RC U500:A2 2.620e-05
+*RC U298:A 2.249e-05
+*RC reg_div_do\[24\] 1.717e-05
+*END
+
+*R_NET reg_div_do\[23\] 1.791e+00
+*DRIVER cfg_divider_reg\[23\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 8.954e-01 4.218e-05 8.954e-01 
+*LOADS
+*RC U254:A1 2.944e-05
+*RC U295:A 2.521e-05
+*RC reg_div_do\[23\] 1.442e-05
+*END
+
+*R_NET reg_div_do\[22\] 1.308e+00
+*DRIVER cfg_divider_reg\[22\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 6.539e-01 3.584e-05 6.539e-01 
+*LOADS
+*RC U291:A 1.586e-05
+*RC reg_div_do\[22\] 8.557e-06
+*END
+
+*R_NET reg_div_do\[21\] 1.881e+00
+*DRIVER cfg_divider_reg\[21\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 9.407e-01 5.467e-05 9.407e-01 
+*LOADS
+*RC U286:A 3.277e-05
+*RC reg_div_do\[21\] 2.683e-05
+*END
+
+*R_NET reg_div_do\[20\] 6.323e-01
+*DRIVER cfg_divider_reg\[20\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 3.162e-01 1.303e-05 3.162e-01 
+*LOADS
+*RC U285:A 3.488e-06
+*RC reg_div_do\[20\] 4.774e-07
+*END
+
+*R_NET reg_div_do\[19\] 7.804e-01
+*DRIVER cfg_divider_reg\[19\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 3.902e-01 1.930e-05 3.902e-01 
+*LOADS
+*RC U282:A 5.754e-06
+*RC reg_div_do\[19\] 3.186e-06
+*END
+
+*R_NET reg_div_do\[18\] 1.121e+00
+*DRIVER cfg_divider_reg\[18\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 5.606e-01 3.087e-05 5.606e-01 
+*LOADS
+*RC U281:A 1.453e-05
+*RC reg_div_do\[18\] 5.972e-06
+*END
+
+*R_NET reg_div_do\[17\] 1.397e+00
+*DRIVER cfg_divider_reg\[17\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 6.987e-01 4.006e-05 6.987e-01 
+*LOADS
+*RC U280:A 2.260e-05
+*RC reg_div_do\[17\] 1.039e-05
+*END
+
+*R_NET reg_div_do\[16\] 1.052e+00
+*DRIVER cfg_divider_reg\[16\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 5.259e-01 2.790e-05 5.259e-01 
+*LOADS
+*RC U279:A 1.228e-05
+*RC reg_div_do\[16\] 9.890e-07
+*END
+
+*R_NET reg_div_do\[15\] 2.385e+00
+*DRIVER cfg_divider_reg\[15\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.193e+00 6.504e-05 1.193e+00 
+*LOADS
+*RC U275:A 3.955e-05
+*RC reg_div_do\[15\] 3.803e-05
+*END
+
+*R_NET reg_div_do\[14\] 2.136e+00
+*DRIVER cfg_divider_reg\[14\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 1.068e+00 5.626e-05 1.068e+00 
+*LOADS
+*RC U274:A 3.070e-05
+*RC reg_div_do\[14\] 2.575e-05
+*END
+
+*R_NET reg_div_do\[13\] 1.529e+00
+*DRIVER cfg_divider_reg\[13\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 7.645e-01 4.112e-05 7.645e-01 
+*LOADS
+*RC U272:A 2.280e-05
+*RC reg_div_do\[13\] 3.890e-06
+*END
+
+*R_NET reg_div_do\[12\] 1.741e+00
+*DRIVER cfg_divider_reg\[12\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 8.705e-01 4.335e-05 8.705e-01 
+*LOADS
+*RC U271:A 2.787e-05
+*RC reg_div_do\[12\] 7.745e-06
+*END
+
+*R_NET reg_div_do\[11\] 2.263e+00
+*DRIVER cfg_divider_reg\[11\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.131e+00 6.216e-05 1.131e+00 
+*LOADS
+*RC U268:A 3.803e-05
+*RC reg_div_do\[11\] 2.790e-05
+*END
+
+*R_NET reg_div_do\[10\] 2.019e+00
+*DRIVER cfg_divider_reg\[10\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 1.010e+00 4.661e-05 1.010e+00 
+*LOADS
+*RC U267:A 3.309e-05
+*RC U524:B2 3.366e-05
+*RC reg_div_do\[10\] 5.845e-06
+*END
+
+*R_NET reg_div_do\[9\] 2.136e+00
+*DRIVER cfg_divider_reg\[9\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 1.068e+00 5.113e-05 1.068e+00 
+*LOADS
+*RC U266:A 4.102e-05
+*RC U276:B1 3.352e-05
+*RC reg_div_do\[9\] 3.402e-06
+*END
+
+*R_NET reg_div_do\[8\] 1.517e+00
+*DRIVER cfg_divider_reg\[8\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 7.585e-01 4.240e-05 7.585e-01 
+*LOADS
+*RC U263:A 2.407e-05
+*RC reg_div_do\[8\] 1.761e-06
+*END
+
+*R_NET reg_div_do\[7\] 2.580e+00
+*DRIVER cfg_divider_reg\[7\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.290e+00 6.184e-05 1.290e+00 
+*LOADS
+*RC U262:A 4.675e-05
+*RC U548:B2 4.197e-05
+*RC reg_div_do\[7\] 1.178e-05
+*END
+
+*R_NET reg_div_do\[6\] 2.807e+00
+*DRIVER cfg_divider_reg\[6\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.403e+00 5.314e-05 1.403e+00 
+*LOADS
+*RC U419:B2 5.101e-05
+*RC U261:A 1.929e-05
+*RC U299:B2 1.377e-05
+*RC reg_div_do\[6\] 5.543e-06
+*END
+
+*R_NET reg_div_do\[5\] 2.190e+00
+*DRIVER cfg_divider_reg\[5\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.095e+00 6.443e-05 1.095e+00 
+*LOADS
+*RC U257:A 5.346e-05
+*RC reg_div_do\[5\] 1.705e-05
+*END
+
+*R_NET reg_div_do\[4\] 3.579e+00
+*DRIVER cfg_divider_reg\[4\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.789e+00 8.860e-05 1.789e+00 
+*LOADS
+*RC U414:B2 1.172e-04
+*RC U255:A 8.303e-05
+*RC reg_div_do\[4\] 3.744e-05
+*END
+
+*R_NET reg_div_do\[3\] 2.322e+00
+*DRIVER cfg_divider_reg\[3\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.161e+00 6.753e-05 1.161e+00 
+*LOADS
+*RC U252:A 5.625e-05
+*RC reg_div_do\[3\] 2.388e-05
+*END
+
+*R_NET reg_div_do\[2\] 2.927e+00
+*DRIVER cfg_divider_reg\[2\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.463e+00 6.820e-05 1.463e+00 
+*LOADS
+*RC U409:B2 7.528e-05
+*RC U250:A 4.635e-05
+*RC reg_div_do\[2\] 1.452e-05
+*END
+
+*R_NET reg_div_do\[1\] 1.315e+00
+*DRIVER cfg_divider_reg\[1\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 6.576e-01 3.422e-05 6.576e-01 
+*LOADS
+*RC U249:A 1.474e-05
+*RC reg_div_do\[1\] 1.364e-05
+*END
+
+*R_NET reg_div_do\[0\] 1.311e+00
+*DRIVER cfg_divider_reg\[0\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 6.553e-01 3.306e-05 6.553e-01 
+*LOADS
+*RC U248:A 1.763e-05
+*RC reg_div_do\[0\] 4.095e-06
+*END
+
+*R_NET reg_dat_we 8.461e-01
+*DRIVER reg_dat_we
+*CELL NULL
+*C2_R1_C1 4.231e-01 7.600e-06 4.231e-01 
+*LOADS
+*RC U467:B 2.936e-06
+*RC U626:A2 2.460e-06
+*END
+
+*R_NET reg_dat_re 5.454e-01
+*DRIVER reg_dat_re
+*CELL NULL
+*C2_R1_C1 2.727e-01 7.634e-06 2.727e-01 
+*LOADS
+*RC U349:B1 2.673e-06
+*END
+
+*R_NET reg_dat_di\[7\] 2.475e-01
+*DRIVER reg_dat_di\[7\]
+*CELL NULL
+*C2_R1_C1 1.238e-01 2.449e-06 1.238e-01 
+*LOADS
+*RC U848:A 4.776e-07
+*END
+
+*R_NET reg_dat_di\[6\] 3.475e-01
+*DRIVER reg_dat_di\[6\]
+*CELL NULL
+*C2_R1_C1 1.737e-01 3.655e-07 1.737e-01 
+*LOADS
+*RC U636:A2 1.240e-07
+*END
+
+*R_NET reg_dat_di\[5\] 3.993e-01
+*DRIVER reg_dat_di\[5\]
+*CELL NULL
+*C2_R1_C1 1.997e-01 2.135e-06 1.997e-01 
+*LOADS
+*RC U646:A2 7.611e-07
+*END
+
+*R_NET reg_dat_di\[4\] 3.929e-01
+*DRIVER reg_dat_di\[4\]
+*CELL NULL
+*C2_R1_C1 1.965e-01 1.848e-06 1.965e-01 
+*LOADS
+*RC U640:A2 6.551e-07
+*END
+
+*R_NET reg_dat_di\[3\] 4.334e-01
+*DRIVER reg_dat_di\[3\]
+*CELL NULL
+*C2_R1_C1 2.167e-01 2.961e-06 2.167e-01 
+*LOADS
+*RC U642:A2 1.089e-06
+*END
+
+*R_NET reg_dat_di\[2\] 4.703e-01
+*DRIVER reg_dat_di\[2\]
+*CELL NULL
+*C2_R1_C1 2.352e-01 3.879e-06 2.352e-01 
+*LOADS
+*RC U644:A2 1.475e-06
+*END
+
+*R_NET reg_dat_di\[1\] 5.282e-01
+*DRIVER reg_dat_di\[1\]
+*CELL NULL
+*C2_R1_C1 2.641e-01 5.538e-06 2.641e-01 
+*LOADS
+*RC U634:A2 2.212e-06
+*END
+
+*R_NET reg_dat_di\[0\] 3.989e-01
+*DRIVER reg_dat_di\[0\]
+*CELL NULL
+*C2_R1_C1 1.994e-01 1.955e-06 1.994e-01 
+*LOADS
+*RC U638:A2 6.968e-07
+*END
+
+*R_NET reg_dat_do\[7\] 5.244e-01
+*DRIVER U837:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 2.622e-01 1.375e-05 2.622e-01 
+*LOADS
+*RC reg_dat_do\[7\] 2.439e-06
+*END
+
+*R_NET reg_dat_do\[6\] 3.760e-01
+*DRIVER U835:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.880e-01 9.883e-06 1.880e-01 
+*LOADS
+*RC reg_dat_do\[6\] 1.265e-06
+*END
+
+*R_NET reg_dat_do\[5\] 1.764e-01
+*DRIVER U841:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 8.822e-02 5.017e-06 8.822e-02 
+*LOADS
+*RC reg_dat_do\[5\] 3.084e-07
+*END
+
+*R_NET reg_dat_do\[4\] 2.151e-01
+*DRIVER U842:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.075e-01 6.396e-06 1.075e-01 
+*LOADS
+*RC reg_dat_do\[4\] 4.756e-07
+*END
+
+*R_NET reg_dat_do\[3\] 7.140e-01
+*DRIVER U836:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 3.570e-01 2.134e-05 3.570e-01 
+*LOADS
+*RC reg_dat_do\[3\] 5.134e-06
+*END
+
+*R_NET reg_dat_do\[2\] 6.061e-01
+*DRIVER U839:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 3.031e-01 1.586e-05 3.031e-01 
+*LOADS
+*RC reg_dat_do\[2\] 3.246e-06
+*END
+
+*R_NET reg_dat_do\[1\] 1.146e-01
+*DRIVER U840:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 5.732e-02 3.322e-06 5.732e-02 
+*LOADS
+*RC reg_dat_do\[1\] 1.358e-07
+*END
+
+*R_NET reg_dat_do\[0\] 1.325e-01
+*DRIVER U838:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 6.625e-02 3.527e-06 6.625e-02 
+*LOADS
+*RC reg_dat_do\[0\] 1.651e-07
+*END
+
+*R_NET reg_dat_wait 1.319e-01
+*DRIVER U467:X
+*CELL SAEDRVT14_OA21_1
+*C2_R1_C1 6.596e-02 4.240e-06 6.596e-02 
+*LOADS
+*RC reg_dat_wait 1.977e-07
+*END
+
+*R_NET send_bitcnt\[3\] 8.180e-01
+*DRIVER send_bitcnt_reg\[3\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 4.090e-01 7.556e-06 4.090e-01 
+*LOADS
+*RC U230:A1 2.540e-06
+*RC U719:A1 2.519e-06
+*END
+
+*R_NET send_bitcnt\[2\] 1.133e+00
+*DRIVER send_bitcnt_reg\[2\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 5.665e-01 1.652e-05 5.665e-01 
+*LOADS
+*RC U229:A1 8.743e-06
+*RC U355:A1 7.001e-06
+*END
+
+*R_NET send_bitcnt\[1\] 1.066e+00
+*DRIVER send_bitcnt_reg\[1\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 5.328e-01 6.371e-06 5.328e-01 
+*LOADS
+*RC U229:A2 1.493e-06
+*RC U352:A1 1.846e-06
+*RC U893:A2 2.770e-06
+*END
+
+*R_NET send_bitcnt\[0\] 1.507e+00
+*DRIVER send_bitcnt_reg\[0\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 7.533e-01 1.301e-05 7.533e-01 
+*LOADS
+*RC U229:A3 7.384e-06
+*RC U352:A2 8.244e-06
+*RC U893:A1 6.950e-06
+*RC sub_x_27\/U6:A 9.069e-07
+*END
+
+*R_NET send_dummy 2.143e+00
+*DRIVER send_dummy_reg:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 1.071e+00 3.435e-05 1.071e+00 
+*LOADS
+*RC U228:A1 2.763e-05
+*RC U231:A2 1.396e-05
+*RC U467:A1 9.996e-06
+*END
+
+*R_NET recv_buf_valid 1.596e+00
+*DRIVER recv_buf_valid_reg:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 7.982e-01 3.760e-05 7.982e-01 
+*LOADS
+*RC U245:A 2.907e-07
+*RC U909:A2 2.658e-05
+*END
+
+*R_NET recv_buf_data\[7\] 3.406e-01
+*DRIVER recv_buf_data_reg\[7\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 1.703e-01 2.797e-06 1.703e-01 
+*LOADS
+*RC U837:A1 7.623e-07
+*END
+
+*R_NET recv_buf_data\[6\] 6.326e-01
+*DRIVER recv_buf_data_reg\[6\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 3.163e-01 1.038e-05 3.163e-01 
+*LOADS
+*RC U835:A1 3.840e-06
+*END
+
+*R_NET recv_buf_data\[5\] 4.194e-01
+*DRIVER recv_buf_data_reg\[5\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 2.097e-01 4.831e-06 2.097e-01 
+*LOADS
+*RC U841:A1 1.444e-06
+*END
+
+*R_NET recv_buf_data\[4\] 1.121e+00
+*DRIVER recv_buf_data_reg\[4\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 5.604e-01 1.973e-05 5.604e-01 
+*LOADS
+*RC U418:A2 9.565e-06
+*RC U842:A1 1.685e-06
+*END
+
+*R_NET recv_buf_data\[3\] 1.641e+00
+*DRIVER recv_buf_data_reg\[3\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 8.205e-01 3.290e-05 8.205e-01 
+*LOADS
+*RC U416:A2 2.001e-05
+*RC U836:A1 6.074e-06
+*END
+
+*R_NET recv_buf_data\[2\] 1.748e+00
+*DRIVER recv_buf_data_reg\[2\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 8.738e-01 3.663e-05 8.738e-01 
+*LOADS
+*RC U413:A2 2.735e-05
+*RC U839:A1 4.253e-06
+*END
+
+*R_NET recv_buf_data\[1\] 2.438e+00
+*DRIVER recv_buf_data_reg\[1\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.219e+00 6.120e-05 1.219e+00 
+*LOADS
+*RC U426:A2 5.825e-05
+*RC U840:A1 4.389e-06
+*END
+
+*R_NET recv_buf_data\[0\] 1.642e+00
+*DRIVER recv_buf_data_reg\[0\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 8.210e-01 3.388e-05 8.210e-01 
+*LOADS
+*RC U424:A2 1.228e-05
+*RC U838:A1 1.211e-05
+*END
+
+*R_NET N13 1.633e+00
+*DRIVER U834:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 8.164e-01 3.706e-05 8.164e-01 
+*LOADS
+*RC clk_gate_cfg_divider_reg_2/latch:EN 2.553e-05
+*END
+
+*R_NET N14 2.188e+00
+*DRIVER U830:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.094e+00 5.486e-05 1.094e+00 
+*LOADS
+*RC cfg_divider_reg\[0\]:D 4.837e-05
+*END
+
+*R_NET N15 1.478e+00
+*DRIVER U861:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 7.389e-01 3.292e-05 7.389e-01 
+*LOADS
+*RC cfg_divider_reg\[1\]:D 2.124e-05
+*END
+
+*R_NET N16 1.671e+00
+*DRIVER U862:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 8.353e-01 3.811e-05 8.353e-01 
+*LOADS
+*RC cfg_divider_reg\[2\]:D 2.704e-05
+*END
+
+*R_NET N17 1.391e+00
+*DRIVER U863:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 6.957e-01 3.063e-05 6.957e-01 
+*LOADS
+*RC cfg_divider_reg\[3\]:D 1.888e-05
+*END
+
+*R_NET N18 1.345e+00
+*DRIVER U864:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 6.727e-01 2.908e-05 6.727e-01 
+*LOADS
+*RC cfg_divider_reg\[4\]:D 1.748e-05
+*END
+
+*R_NET N19 1.557e+00
+*DRIVER U865:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 7.783e-01 3.524e-05 7.783e-01 
+*LOADS
+*RC cfg_divider_reg\[5\]:D 2.366e-05
+*END
+
+*R_NET N20 1.654e+00
+*DRIVER U866:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 8.270e-01 3.761e-05 8.270e-01 
+*LOADS
+*RC cfg_divider_reg\[6\]:D 2.647e-05
+*END
+
+*R_NET N21 1.416e+00
+*DRIVER U867:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 7.081e-01 3.148e-05 7.081e-01 
+*LOADS
+*RC cfg_divider_reg\[7\]:D 1.967e-05
+*END
+
+*R_NET N22 2.119e+00
+*DRIVER U833:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.059e+00 5.725e-05 1.059e+00 
+*LOADS
+*RC clk_gate_cfg_divider_reg_1/latch:EN 4.871e-05
+*END
+
+*R_NET N23 5.979e-01
+*DRIVER U868:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 2.990e-01 9.633e-06 2.990e-01 
+*LOADS
+*RC cfg_divider_reg\[8\]:D 3.390e-06
+*END
+
+*R_NET N24 9.272e-01
+*DRIVER U869:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 4.636e-01 1.822e-05 4.636e-01 
+*LOADS
+*RC cfg_divider_reg\[9\]:D 8.411e-06
+*END
+
+*R_NET N25 9.615e-01
+*DRIVER U870:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 4.807e-01 1.979e-05 4.807e-01 
+*LOADS
+*RC cfg_divider_reg\[10\]:D 9.364e-06
+*END
+
+*R_NET N26 8.244e-01
+*DRIVER U871:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 4.122e-01 1.624e-05 4.122e-01 
+*LOADS
+*RC cfg_divider_reg\[11\]:D 6.942e-06
+*END
+
+*R_NET N27 1.495e+00
+*DRIVER U872:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 7.474e-01 3.327e-05 7.474e-01 
+*LOADS
+*RC cfg_divider_reg\[12\]:D 2.166e-05
+*END
+
+*R_NET N28 8.652e-01
+*DRIVER U873:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 4.326e-01 1.734e-05 4.326e-01 
+*LOADS
+*RC cfg_divider_reg\[13\]:D 7.648e-06
+*END
+
+*R_NET N29 9.336e-01
+*DRIVER U874:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 4.668e-01 1.953e-05 4.668e-01 
+*LOADS
+*RC cfg_divider_reg\[14\]:D 9.061e-06
+*END
+
+*R_NET N30 7.661e-01
+*DRIVER U875:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 3.830e-01 1.483e-05 3.830e-01 
+*LOADS
+*RC cfg_divider_reg\[15\]:D 6.050e-06
+*END
+
+*R_NET N31 1.270e+00
+*DRIVER U831:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 6.351e-01 2.784e-05 6.351e-01 
+*LOADS
+*RC clk_gate_cfg_divider_reg_0/latch:EN 1.582e-05
+*END
+
+*R_NET N32 1.129e+00
+*DRIVER U876:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 5.644e-01 2.354e-05 5.644e-01 
+*LOADS
+*RC cfg_divider_reg\[16\]:D 1.245e-05
+*END
+
+*R_NET N33 1.557e+00
+*DRIVER U877:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 7.784e-01 3.535e-05 7.784e-01 
+*LOADS
+*RC cfg_divider_reg\[17\]:D 2.374e-05
+*END
+
+*R_NET N34 1.503e+00
+*DRIVER U878:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 7.516e-01 3.346e-05 7.516e-01 
+*LOADS
+*RC cfg_divider_reg\[18\]:D 2.187e-05
+*END
+
+*R_NET N35 1.205e+00
+*DRIVER U879:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 6.025e-01 2.567e-05 6.025e-01 
+*LOADS
+*RC cfg_divider_reg\[19\]:D 1.423e-05
+*END
+
+*R_NET N36 1.958e+00
+*DRIVER U880:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 9.789e-01 4.635e-05 9.789e-01 
+*LOADS
+*RC cfg_divider_reg\[20\]:D 3.732e-05
+*END
+
+*R_NET N37 9.566e-01
+*DRIVER U881:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 4.783e-01 1.932e-05 4.783e-01 
+*LOADS
+*RC cfg_divider_reg\[21\]:D 9.110e-06
+*END
+
+*R_NET N38 1.233e+00
+*DRIVER U882:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 6.167e-01 2.679e-05 6.167e-01 
+*LOADS
+*RC cfg_divider_reg\[22\]:D 1.511e-05
+*END
+
+*R_NET N39 1.311e+00
+*DRIVER U883:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 6.555e-01 2.853e-05 6.555e-01 
+*LOADS
+*RC cfg_divider_reg\[23\]:D 1.682e-05
+*END
+
+*R_NET N40 2.191e+00
+*DRIVER U832:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.095e+00 6.012e-05 1.095e+00 
+*LOADS
+*RC clk_gate_cfg_divider_reg/latch:EN 5.260e-05
+*END
+
+*R_NET N41 9.531e-01
+*DRIVER U884:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 4.765e-01 1.905e-05 4.765e-01 
+*LOADS
+*RC cfg_divider_reg\[24\]:D 8.958e-06
+*END
+
+*R_NET N42 9.726e-01
+*DRIVER U885:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 4.863e-01 1.952e-05 4.863e-01 
+*LOADS
+*RC cfg_divider_reg\[25\]:D 9.309e-06
+*END
+
+*R_NET N43 7.421e-01
+*DRIVER U886:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 3.711e-01 1.346e-05 3.711e-01 
+*LOADS
+*RC cfg_divider_reg\[26\]:D 5.386e-06
+*END
+
+*R_NET N44 6.109e-01
+*DRIVER U887:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 3.055e-01 1.013e-05 3.055e-01 
+*LOADS
+*RC cfg_divider_reg\[27\]:D 3.609e-06
+*END
+
+*R_NET N45 3.939e-01
+*DRIVER U888:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 1.970e-01 4.306e-06 1.970e-01 
+*LOADS
+*RC cfg_divider_reg\[28\]:D 1.223e-06
+*END
+
+*R_NET N46 6.324e-01
+*DRIVER U889:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 3.162e-01 1.053e-05 3.162e-01 
+*LOADS
+*RC cfg_divider_reg\[29\]:D 3.829e-06
+*END
+
+*R_NET N47 3.573e-01
+*DRIVER U890:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 1.787e-01 3.448e-06 1.787e-01 
+*LOADS
+*RC cfg_divider_reg\[30\]:D 9.371e-07
+*END
+
+*R_NET N48 4.069e-01
+*DRIVER U891:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 2.035e-01 5.173e-06 2.035e-01 
+*LOADS
+*RC cfg_divider_reg\[31\]:D 1.491e-06
+*END
+
+*R_NET recv_divcnt\[31\] 3.002e+00
+*DRIVER recv_divcnt_reg\[31\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.501e+00 3.147e-05 1.501e+00 
+*LOADS
+*RC U517:A2 1.334e-05
+*RC U236:A2 3.133e-05
+*RC U340:B2 3.174e-05
+*RC U342:A2 3.014e-05
+*RC U792:A1 5.818e-06
+*RC U793:A1 5.740e-06
+*END
+
+*R_NET recv_divcnt\[30\] 2.802e+00
+*DRIVER recv_divcnt_reg\[30\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.401e+00 4.299e-05 1.401e+00 
+*LOADS
+*RC U520:A2 1.006e-05
+*RC U234:A 1.619e-05
+*RC U340:A2 2.638e-05
+*RC U476:A1 3.566e-05
+*RC U479:A1 4.178e-05
+*END
+
+*R_NET recv_divcnt\[29\] 3.770e+00
+*DRIVER recv_divcnt_reg\[29\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.885e+00 3.625e-05 1.885e+00 
+*LOADS
+*RC U533:A2 1.273e-06
+*RC U240:A2 3.976e-05
+*RC U241:A2 3.708e-05
+*RC U338:A2 3.722e-05
+*RC U475:A1 4.164e-05
+*RC U478:A1 4.065e-05
+*RC U777:A2 7.442e-06
+*RC U778:A1 1.034e-05
+*END
+
+*R_NET recv_divcnt\[28\] 3.414e+00
+*DRIVER recv_divcnt_reg\[28\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.707e+00 5.301e-05 1.707e+00 
+*LOADS
+*RC U942:A2 7.004e-05
+*RC U238:A 3.229e-05
+*RC U338:B2 4.031e-05
+*RC U475:B1 3.218e-05
+*RC U574:A1 3.116e-05
+*END
+
+*R_NET recv_divcnt\[27\] 4.615e+00
+*DRIVER recv_divcnt_reg\[27\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 2.307e+00 4.240e-05 2.307e+00 
+*LOADS
+*RC U917:A2 1.017e-05
+*RC U333:A2 4.343e-05
+*RC U335:A2 4.660e-05
+*RC U336:A2 3.825e-05
+*RC U487:A1 2.453e-05
+*RC U488:A1 2.047e-05
+*RC U490:A1 2.385e-05
+*RC U767:A2 5.278e-05
+*RC U768:A1 5.128e-05
+*END
+
+*R_NET recv_divcnt\[26\] 2.331e+00
+*DRIVER recv_divcnt_reg\[26\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.165e+00 3.870e-05 1.165e+00 
+*LOADS
+*RC U943:A2 2.016e-05
+*RC U333:B2 2.437e-05
+*RC U337:A 3.257e-05
+*RC U486:B1 3.318e-05
+*END
+
+*R_NET recv_divcnt\[25\] 4.181e+00
+*DRIVER recv_divcnt_reg\[25\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 2.090e+00 4.829e-05 2.090e+00 
+*LOADS
+*RC U907:A2 3.767e-05
+*RC U246:A2 3.267e-05
+*RC U247:A2 3.212e-05
+*RC U330:A2 3.580e-05
+*RC U484:A1 6.313e-05
+*RC U486:A1 6.228e-05
+*RC U752:A2 2.416e-05
+*RC U753:A1 2.921e-05
+*END
+
+*R_NET recv_divcnt\[24\] 2.759e+00
+*DRIVER recv_divcnt_reg\[24\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.380e+00 4.131e-05 1.380e+00 
+*LOADS
+*RC U557:A2 1.566e-05
+*RC U244:A 6.809e-06
+*RC U330:B2 8.783e-06
+*RC U484:B1 3.093e-05
+*RC U572:A1 3.462e-05
+*END
+
+*R_NET recv_divcnt\[23\] 3.197e+00
+*DRIVER recv_divcnt_reg\[23\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.598e+00 2.506e-05 1.598e+00 
+*LOADS
+*RC U905:A2 1.526e-05
+*RC U237:A 1.620e-05
+*RC U253:A2 1.789e-05
+*RC U260:A2 2.140e-05
+*RC U493:A1 1.938e-05
+*RC U499:A1 1.975e-05
+*RC U740:A2 1.230e-05
+*RC U741:A1 9.534e-06
+*END
+
+*R_NET recv_divcnt\[22\] 1.405e+00
+*DRIVER recv_divcnt_reg\[22\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 7.027e-01 1.455e-05 7.027e-01 
+*LOADS
+*RC U940:A2 6.503e-06
+*RC U251:A 6.313e-06
+*RC U260:B2 4.215e-06
+*RC U493:B1 3.300e-06
+*END
+
+*R_NET recv_divcnt\[21\] 3.914e+00
+*DRIVER recv_divcnt_reg\[21\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 1.957e+00 3.358e-05 1.957e+00 
+*LOADS
+*RC U968:A2 1.651e-05
+*RC U258:A2 2.578e-05
+*RC U259:A2 2.553e-05
+*RC U326:A2 2.148e-05
+*RC U496:A1 2.311e-05
+*RC U497:A1 2.199e-05
+*RC U502:A1 1.933e-05
+*RC U725:A2 3.941e-05
+*RC U726:A1 4.427e-05
+*END
+
+*R_NET recv_divcnt\[20\] 1.209e+00
+*DRIVER recv_divcnt_reg\[20\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 6.047e-01 1.049e-05 6.047e-01 
+*LOADS
+*RC U941:A2 1.178e-06
+*RC U256:A 2.851e-06
+*RC U326:B2 2.459e-06
+*RC U502:B1 4.235e-06
+*END
+
+*R_NET recv_divcnt\[19\] 4.139e+00
+*DRIVER recv_divcnt_reg\[19\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 2.069e+00 3.612e-05 2.069e+00 
+*LOADS
+*RC U967:A2 1.075e-05
+*RC U265:A2 1.635e-05
+*RC U322:A2 1.043e-05
+*RC U323:A2 1.534e-05
+*RC U559:A1 9.129e-06
+*RC U566:A1 3.169e-06
+*RC U568:A1 7.080e-06
+*RC U622:A2 4.919e-05
+*RC U623:A1 5.019e-05
+*END
+
+*R_NET recv_divcnt\[18\] 3.474e+00
+*DRIVER recv_divcnt_reg\[18\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.737e+00 6.018e-05 1.737e+00 
+*LOADS
+*RC U508:A2 1.251e-05
+*RC U264:A2 7.160e-05
+*RC U323:B2 7.599e-05
+*RC U559:B1 7.289e-05
+*RC U565:A 4.718e-05
+*END
+
+*R_NET recv_divcnt\[17\] 4.300e+00
+*DRIVER recv_divcnt_reg\[17\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 2.150e+00 5.107e-05 2.150e+00 
+*LOADS
+*RC U908:A2 3.709e-05
+*RC U264:B2 5.882e-05
+*RC U324:B2 5.114e-05
+*RC U506:B1 2.503e-05
+*RC U563:A1 2.642e-05
+*RC U564:A1 3.057e-05
+*RC U597:A2 4.099e-05
+*RC U598:A1 4.263e-05
+*END
+
+*R_NET recv_divcnt\[16\] 3.205e+00
+*DRIVER recv_divcnt_reg\[16\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.603e+00 5.322e-05 1.603e+00 
+*LOADS
+*RC U916:A2 6.320e-05
+*RC U320:A2 2.372e-05
+*RC U324:A2 2.323e-05
+*RC U506:A1 3.309e-06
+*RC U562:A 3.480e-06
+*END
+
+*R_NET recv_divcnt\[15\] 3.873e+00
+*DRIVER recv_divcnt_reg\[15\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 1.937e+00 3.217e-05 1.937e+00 
+*LOADS
+*RC U582:A2 4.772e-05
+*RC U308:A2 1.947e-05
+*RC U317:A2 1.532e-05
+*RC U318:A2 1.770e-05
+*RC U513:A1 1.351e-05
+*RC U514:A1 1.010e-05
+*RC U515:A1 8.461e-06
+*RC U595:A1 3.948e-05
+*RC U607:A2 3.342e-05
+*END
+
+*R_NET recv_divcnt\[14\] 2.328e+00
+*DRIVER recv_divcnt_reg\[14\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.164e+00 3.871e-05 1.164e+00 
+*LOADS
+*RC U904:A2 3.156e-06
+*RC U308:B2 2.538e-05
+*RC U316:A 3.445e-05
+*RC U513:B1 2.778e-05
+*END
+
+*R_NET recv_divcnt\[13\] 5.359e+00
+*DRIVER recv_divcnt_reg\[13\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 2.680e+00 6.020e-05 2.680e+00 
+*LOADS
+*RC U966:A2 2.811e-05
+*RC U305:A2 2.942e-05
+*RC U314:A2 4.200e-05
+*RC U315:A2 3.329e-05
+*RC U509:A1 5.780e-05
+*RC U510:A1 5.115e-05
+*RC U553:A1 4.402e-05
+*RC U593:A1 9.748e-05
+*RC U610:A2 9.558e-05
+*END
+
+*R_NET recv_divcnt\[12\] 2.258e+00
+*DRIVER recv_divcnt_reg\[12\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.129e+00 3.830e-05 1.129e+00 
+*LOADS
+*RC U511:A2 8.008e-06
+*RC U310:B2 2.609e-05
+*RC U313:A 2.922e-05
+*RC U554:B1 2.798e-05
+*END
+
+*R_NET recv_divcnt\[11\] 3.306e+00
+*DRIVER recv_divcnt_reg\[11\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.653e+00 3.646e-05 1.653e+00 
+*LOADS
+*RC U523:A2 2.719e-05
+*RC U278:A2 1.865e-05
+*RC U310:A2 2.076e-05
+*RC U526:A1 1.064e-05
+*RC U554:A1 7.806e-06
+*RC U591:A1 2.998e-05
+*RC U604:A2 2.854e-05
+*END
+
+*R_NET recv_divcnt\[10\] 3.630e+00
+*DRIVER recv_divcnt_reg\[10\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.815e+00 3.967e-05 1.815e+00 
+*LOADS
+*RC U545:A2 2.909e-05
+*RC U239:A 1.254e-05
+*RC U269:A2 4.551e-05
+*RC U277:A2 4.454e-05
+*RC U301:B2 4.484e-05
+*RC U519:A1 4.287e-05
+*RC U525:A1 4.564e-05
+*RC U550:B1 3.265e-05
+*END
+
+*R_NET recv_divcnt\[9\] 3.314e+00
+*DRIVER recv_divcnt_reg\[9\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.657e+00 2.739e-05 1.657e+00 
+*LOADS
+*RC U558:A2 8.433e-06
+*RC U242:A 1.129e-05
+*RC U273:A2 9.677e-06
+*RC U302:B2 8.025e-06
+*RC U522:A1 1.335e-05
+*RC U551:B1 9.767e-06
+*RC U589:A1 3.310e-05
+*RC U616:A2 3.031e-05
+*END
+
+*R_NET recv_divcnt\[8\] 1.904e+00
+*DRIVER recv_divcnt_reg\[8\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 9.521e-01 3.025e-05 9.521e-01 
+*LOADS
+*RC U547:A2 1.341e-05
+*RC U270:A 1.860e-05
+*RC U302:A2 2.004e-05
+*RC U551:A1 2.112e-05
+*END
+
+*R_NET recv_divcnt\[7\] 3.337e+00
+*DRIVER recv_divcnt_reg\[7\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.668e+00 3.606e-05 1.668e+00 
+*LOADS
+*RC U902:A2 9.942e-06
+*RC U300:A1 5.809e-06
+*RC U301:A1 4.628e-06
+*RC U549:A1 9.226e-06
+*RC U550:A1 1.195e-05
+*RC U587:A1 3.406e-05
+*RC U613:A2 3.062e-05
+*END
+
+*R_NET recv_divcnt\[6\] 2.016e+00
+*DRIVER recv_divcnt_reg\[6\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 1.008e+00 3.022e-05 1.008e+00 
+*LOADS
+*RC U956:A2 1.637e-05
+*RC U296:B2 1.211e-05
+*RC U297:A 1.217e-05
+*RC U546:B1 1.455e-05
+*END
+
+*R_NET recv_divcnt\[5\] 3.328e+00
+*DRIVER recv_divcnt_reg\[5\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.664e+00 3.397e-05 1.664e+00 
+*LOADS
+*RC U955:A2 3.096e-05
+*RC U294:A1 1.529e-05
+*RC U296:A1 1.641e-05
+*RC U544:A1 1.779e-05
+*RC U546:A1 1.893e-05
+*RC U585:A1 3.269e-05
+*RC U601:A2 3.208e-05
+*END
+
+*R_NET recv_divcnt\[4\] 2.536e+00
+*DRIVER recv_divcnt_reg\[4\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.268e+00 3.043e-05 1.268e+00 
+*LOADS
+*RC U953:A2 2.822e-05
+*RC U243:A 2.268e-05
+*RC U292:A2 1.327e-05
+*RC U293:A1 1.329e-05
+*RC U542:B 1.003e-05
+*END
+
+*R_NET recv_divcnt\[3\] 3.079e+00
+*DRIVER recv_divcnt_reg\[3\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.540e+00 2.645e-05 1.540e+00 
+*LOADS
+*RC U951:A2 2.286e-05
+*RC U283:A1 1.611e-05
+*RC U284:A1 2.006e-05
+*RC U289:A1 1.400e-05
+*RC U471:A2 1.532e-05
+*RC U472:A1 1.884e-05
+*RC U539:A1 1.389e-05
+*RC U540:A1 2.070e-05
+*END
+
+*R_NET recv_divcnt\[2\] 1.804e+00
+*DRIVER recv_divcnt_reg\[2\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 9.022e-01 1.029e-05 9.022e-01 
+*LOADS
+*RC U283:B1 3.336e-06
+*RC U289:B1 1.745e-06
+*RC U470:A1 3.955e-06
+*RC U532:A1 2.448e-06
+*RC U539:B1 1.544e-06
+*RC U671:A1 2.709e-06
+*END
+
+*R_NET recv_divcnt\[1\] 2.287e+00
+*DRIVER recv_divcnt_reg\[1\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.144e+00 1.861e-05 1.144e+00 
+*LOADS
+*RC U287:A2 3.231e-06
+*RC U288:A2 3.555e-06
+*RC U468:A1 1.859e-05
+*RC U534:A1 9.954e-06
+*RC U536:A1 1.222e-05
+*END
+
+*R_NET recv_divcnt\[0\] 2.139e+00
+*DRIVER recv_divcnt_reg\[0\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 1.070e+00 2.480e-05 1.070e+00 
+*LOADS
+*RC U287:B2 1.252e-06
+*RC U468:A2 1.166e-05
+*RC U536:A2 6.899e-06
+*RC U619:A 1.859e-05
+*END
+
+*R_NET recv_state\[3\] 2.791e+00
+*DRIVER recv_state_reg\[3\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.395e+00 3.554e-05 1.395e+00 
+*LOADS
+*RC U208:A3 3.552e-05
+*RC U211:A2 4.085e-05
+*RC U219:A2 3.038e-05
+*RC U220:A2 3.119e-05
+*END
+
+*R_NET recv_state\[2\] 1.563e+00
+*DRIVER recv_state_reg\[2\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 7.813e-01 2.931e-05 7.813e-01 
+*LOADS
+*RC U202:A 1.843e-05
+*RC U208:A2 1.880e-05
+*END
+
+*R_NET recv_state\[1\] 2.569e+00
+*DRIVER recv_state_reg\[1\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.285e+00 2.301e-05 1.285e+00 
+*LOADS
+*RC U203:A2 2.092e-05
+*RC U208:A1 1.943e-05
+*RC U211:A1 2.245e-05
+*RC U224:A2 1.434e-05
+*RC U225:A2 1.264e-05
+*END
+
+*R_NET recv_state\[0\] 1.912e+00
+*DRIVER recv_state_reg\[0\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 9.559e-01 2.042e-05 9.559e-01 
+*LOADS
+*RC U209:A 1.457e-05
+*RC U203:A1 1.423e-05
+*RC U224:A1 7.582e-06
+*RC U225:A1 5.814e-06
+*END
+
+*R_NET recv_pattern\[7\] 1.771e+00
+*DRIVER recv_pattern_reg\[7\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 8.854e-01 2.885e-05 8.854e-01 
+*LOADS
+*RC U456:A2 7.049e-06
+*RC U850:A2 1.965e-05
+*END
+
+*R_NET recv_pattern\[6\] 1.600e+00
+*DRIVER recv_pattern_reg\[6\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 8.002e-01 3.325e-05 8.002e-01 
+*LOADS
+*RC U469:A2 2.159e-05
+*RC U851:A2 2.818e-06
+*END
+
+*R_NET recv_pattern\[5\] 1.202e+00
+*DRIVER recv_pattern_reg\[5\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 6.008e-01 2.020e-05 6.008e-01 
+*LOADS
+*RC U473:A2 9.100e-06
+*RC U852:A2 2.866e-06
+*END
+
+*R_NET recv_pattern\[4\] 1.277e+00
+*DRIVER recv_pattern_reg\[4\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 6.386e-01 2.291e-05 6.386e-01 
+*LOADS
+*RC U474:A2 1.300e-05
+*RC U853:A2 1.551e-06
+*END
+
+*R_NET recv_pattern\[3\] 1.072e+00
+*DRIVER recv_pattern_reg\[3\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 5.359e-01 1.585e-05 5.359e-01 
+*LOADS
+*RC U491:A2 7.697e-06
+*RC U854:A2 1.911e-06
+*END
+
+*R_NET recv_pattern\[2\] 1.117e+00
+*DRIVER recv_pattern_reg\[2\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 5.583e-01 1.693e-05 5.583e-01 
+*LOADS
+*RC U485:A2 8.705e-06
+*RC U855:A2 1.699e-06
+*END
+
+*R_NET recv_pattern\[1\] 1.889e+00
+*DRIVER recv_pattern_reg\[1\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 9.447e-01 4.317e-05 9.447e-01 
+*LOADS
+*RC U492:A2 9.534e-06
+*RC U856:A2 3.458e-05
+*END
+
+*R_NET recv_pattern\[0\] 1.691e+00
+*DRIVER recv_pattern_reg\[0\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 8.456e-01 3.667e-05 8.456e-01 
+*LOADS
+*RC U494:A2 2.610e-05
+*RC U858:A2 2.444e-06
+*END
+
+*R_NET N217 1.507e+00
+*DRIVER U846:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.535e-01 3.388e-05 7.535e-01 
+*LOADS
+*RC clk_gate_recv_state_reg/latch:EN 2.192e-05
+*END
+
+*R_NET N218 5.235e-01
+*DRIVER U217:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 2.617e-01 8.041e-06 2.617e-01 
+*LOADS
+*RC recv_state_reg\[0\]:D 2.631e-06
+*END
+
+*R_NET N219 5.459e-01
+*DRIVER U226:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 2.730e-01 8.358e-06 2.730e-01 
+*LOADS
+*RC recv_state_reg\[1\]:D 2.797e-06
+*END
+
+*R_NET N220 1.019e+00
+*DRIVER U207:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 5.097e-01 2.062e-05 5.097e-01 
+*LOADS
+*RC recv_state_reg\[2\]:D 1.016e-05
+*END
+
+*R_NET N221 1.043e+00
+*DRIVER U221:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 5.214e-01 2.136e-05 5.214e-01 
+*LOADS
+*RC recv_state_reg\[3\]:D 1.069e-05
+*END
+
+*R_NET N222 1.028e+00
+*DRIVER U620:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 5.142e-01 2.171e-05 5.142e-01 
+*LOADS
+*RC recv_divcnt_reg\[0\]:D 1.075e-05
+*END
+
+*R_NET N223 7.476e-01
+*DRIVER U860:X
+*CELL SAEDRVT14_AN3_0P5
+*C2_R1_C1 3.738e-01 1.402e-05 3.738e-01 
+*LOADS
+*RC recv_divcnt_reg\[1\]:D 5.634e-06
+*END
+
+*R_NET N224 2.772e-01
+*DRIVER U672:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.386e-01 1.297e-06 1.386e-01 
+*LOADS
+*RC recv_divcnt_reg\[2\]:D 3.178e-07
+*END
+
+*R_NET N225 9.817e-01
+*DRIVER U581:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 4.908e-01 1.616e-05 4.908e-01 
+*LOADS
+*RC recv_divcnt_reg\[3\]:D 3.876e-06
+*RC U951:A1 3.929e-06
+*END
+
+*R_NET N226 1.341e+00
+*DRIVER U691:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 6.704e-01 2.526e-05 6.704e-01 
+*LOADS
+*RC recv_divcnt_reg\[4\]:D 1.258e-05
+*RC U953:A1 2.595e-06
+*END
+
+*R_NET N227 1.245e+00
+*DRIVER U603:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 6.225e-01 2.199e-05 6.225e-01 
+*LOADS
+*RC recv_divcnt_reg\[5\]:D 9.849e-06
+*RC U955:A1 2.936e-06
+*END
+
+*R_NET N228 1.049e+00
+*DRIVER U714:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 5.243e-01 1.691e-05 5.243e-01 
+*LOADS
+*RC recv_divcnt_reg\[6\]:D 6.866e-06
+*RC U956:A1 1.647e-06
+*END
+
+*R_NET N229 1.364e+00
+*DRIVER U615:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 6.818e-01 2.775e-05 6.818e-01 
+*LOADS
+*RC recv_divcnt_reg\[7\]:D 1.251e-05
+*RC U902:A1 1.537e-05
+*END
+
+*R_NET N230 1.071e+00
+*DRIVER U716:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 5.354e-01 1.950e-05 5.354e-01 
+*LOADS
+*RC recv_divcnt_reg\[8\]:D 1.197e-06
+*RC U547:A1 9.128e-06
+*END
+
+*R_NET N231 1.100e+00
+*DRIVER U618:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 5.499e-01 1.975e-05 5.499e-01 
+*LOADS
+*RC recv_divcnt_reg\[9\]:D 9.280e-06
+*RC U558:A1 7.337e-06
+*END
+
+*R_NET N232 1.258e+00
+*DRIVER U674:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 6.292e-01 2.474e-05 6.292e-01 
+*LOADS
+*RC recv_divcnt_reg\[10\]:D 3.198e-06
+*RC U545:A1 1.191e-05
+*END
+
+*R_NET N233 1.241e+00
+*DRIVER U606:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 6.205e-01 2.411e-05 6.205e-01 
+*LOADS
+*RC recv_divcnt_reg\[11\]:D 1.186e-05
+*RC U523:A1 2.308e-06
+*END
+
+*R_NET N234 6.603e-01
+*DRIVER U712:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 3.302e-01 6.330e-06 3.302e-01 
+*LOADS
+*RC recv_divcnt_reg\[12\]:D 1.268e-06
+*RC U511:A1 1.111e-06
+*END
+
+*R_NET N235 2.369e+00
+*DRIVER U612:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.184e+00 5.427e-05 1.184e+00 
+*LOADS
+*RC U966:A1 4.510e-05
+*RC recv_divcnt_reg\[13\]:D 4.469e-05
+*END
+
+*R_NET N236 1.152e+00
+*DRIVER U710:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 5.761e-01 1.870e-05 5.761e-01 
+*LOADS
+*RC recv_divcnt_reg\[14\]:D 7.503e-06
+*RC U904:A1 1.015e-05
+*END
+
+*R_NET N237 1.679e+00
+*DRIVER U609:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 8.397e-01 3.434e-05 8.397e-01 
+*LOADS
+*RC U582:A1 7.981e-06
+*RC recv_divcnt_reg\[15\]:D 1.793e-05
+*END
+
+*R_NET N238 2.079e+00
+*DRIVER U695:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.039e+00 4.806e-05 1.039e+00 
+*LOADS
+*RC recv_divcnt_reg\[16\]:D 1.480e-05
+*RC U916:A1 2.603e-05
+*END
+
+*R_NET N239 1.553e+00
+*DRIVER U600:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 7.767e-01 3.044e-05 7.767e-01 
+*LOADS
+*RC U908:A1 1.173e-05
+*RC recv_divcnt_reg\[17\]:D 1.676e-05
+*END
+
+*R_NET N240 1.348e+00
+*DRIVER U697:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 6.740e-01 2.628e-05 6.740e-01 
+*LOADS
+*RC recv_divcnt_reg\[18\]:D 1.582e-05
+*RC U508:A1 8.752e-06
+*END
+
+*R_NET N241 1.392e+00
+*DRIVER U625:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 6.960e-01 2.670e-05 6.960e-01 
+*LOADS
+*RC U967:A1 1.437e-05
+*RC recv_divcnt_reg\[19\]:D 1.440e-05
+*END
+
+*R_NET N242 6.895e-01
+*DRIVER U718:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 3.448e-01 6.956e-06 3.448e-01 
+*LOADS
+*RC recv_divcnt_reg\[20\]:D 2.107e-06
+*RC U941:A1 2.358e-06
+*END
+
+*R_NET N243 1.501e+00
+*DRIVER U728:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 7.506e-01 3.027e-05 7.506e-01 
+*LOADS
+*RC U968:A1 1.530e-05
+*RC recv_divcnt_reg\[21\]:D 1.717e-05
+*END
+
+*R_NET N244 7.339e-01
+*DRIVER U738:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 3.670e-01 8.448e-06 3.670e-01 
+*LOADS
+*RC recv_divcnt_reg\[22\]:D 1.029e-06
+*RC U940:A1 2.649e-06
+*END
+
+*R_NET N245 8.976e-01
+*DRIVER U743:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 4.488e-01 1.337e-05 4.488e-01 
+*LOADS
+*RC recv_divcnt_reg\[23\]:D 2.375e-06
+*RC U905:A1 5.318e-06
+*END
+
+*R_NET N246 9.119e-01
+*DRIVER U745:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 4.560e-01 1.326e-05 4.560e-01 
+*LOADS
+*RC recv_divcnt_reg\[24\]:D 2.162e-06
+*RC U557:A1 4.549e-06
+*END
+
+*R_NET N247 1.463e+00
+*DRIVER U755:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 7.317e-01 2.889e-05 7.317e-01 
+*LOADS
+*RC U907:A1 1.169e-05
+*RC recv_divcnt_reg\[25\]:D 9.342e-06
+*END
+
+*R_NET N248 1.215e+00
+*DRIVER U760:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 6.077e-01 2.210e-05 6.077e-01 
+*LOADS
+*RC recv_divcnt_reg\[26\]:D 6.457e-06
+*RC U943:A1 7.879e-06
+*END
+
+*R_NET N249 1.551e+00
+*DRIVER U770:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 7.755e-01 3.101e-05 7.755e-01 
+*LOADS
+*RC U917:A1 1.974e-05
+*RC recv_divcnt_reg\[27\]:D 2.154e-05
+*END
+
+*R_NET N250 2.648e+00
+*DRIVER U775:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.324e+00 6.396e-05 1.324e+00 
+*LOADS
+*RC recv_divcnt_reg\[28\]:D 5.372e-05
+*RC U942:A1 2.167e-05
+*END
+
+*R_NET N251 6.758e-01
+*DRIVER U780:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.379e-01 6.084e-06 3.379e-01 
+*LOADS
+*RC recv_divcnt_reg\[29\]:D 9.926e-07
+*RC U533:A1 2.338e-06
+*END
+
+*R_NET N252 7.098e-01
+*DRIVER U787:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 3.549e-01 6.733e-06 3.549e-01 
+*LOADS
+*RC recv_divcnt_reg\[30\]:D 4.827e-07
+*RC U520:A1 2.173e-06
+*END
+
+*R_NET N253 7.679e-01
+*DRIVER U793:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 3.839e-01 8.987e-06 3.839e-01 
+*LOADS
+*RC recv_divcnt_reg\[31\]:D 9.431e-07
+*RC U517:A1 2.772e-06
+*END
+
+*R_NET N254 9.464e-01
+*DRIVER U345:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 4.732e-01 2.318e-05 4.732e-01 
+*LOADS
+*RC clk_gate_recv_pattern_reg/latch:EN 1.067e-05
+*END
+
+*R_NET N262 1.033e+00
+*DRIVER U859:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 5.164e-01 1.177e-05 5.164e-01 
+*LOADS
+*RC recv_pattern_reg\[7\]:D 1.826e-06
+*RC U456:A1 6.795e-06
+*END
+
+*R_NET N263 2.166e+00
+*DRIVER U351:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.083e+00 5.409e-05 1.083e+00 
+*LOADS
+*RC U844:A1 4.246e-06
+*RC clk_gate_recv_buf_data_reg/latch:EN 4.710e-05
+*END
+
+*R_NET N264 2.441e+00
+*DRIVER U858:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 1.221e+00 5.919e-05 1.221e+00 
+*LOADS
+*RC recv_buf_data_reg\[0\]:D 5.720e-05
+*RC U424:A1 4.341e-05
+*END
+
+*R_NET send_pattern\[8\] 4.001e-01
+*DRIVER send_pattern_reg\[8\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 2.001e-01 4.960e-06 2.001e-01 
+*LOADS
+*RC U637:A2 1.470e-06
+*END
+
+*R_NET send_pattern\[7\] 5.286e-01
+*DRIVER send_pattern_reg\[7\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 2.643e-01 8.914e-06 2.643e-01 
+*LOADS
+*RC U647:A2 3.024e-06
+*END
+
+*R_NET send_pattern\[6\] 3.861e-01
+*DRIVER send_pattern_reg\[6\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 1.931e-01 3.845e-06 1.931e-01 
+*LOADS
+*RC U641:A2 1.122e-06
+*END
+
+*R_NET send_pattern\[5\] 3.650e-01
+*DRIVER send_pattern_reg\[5\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 1.825e-01 3.651e-06 1.825e-01 
+*LOADS
+*RC U643:A2 1.039e-06
+*END
+
+*R_NET send_pattern\[4\] 4.416e-01
+*DRIVER send_pattern_reg\[4\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 2.208e-01 5.527e-06 2.208e-01 
+*LOADS
+*RC U645:A2 1.714e-06
+*END
+
+*R_NET send_pattern\[3\] 3.245e-01
+*DRIVER send_pattern_reg\[3\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 1.622e-01 2.669e-06 1.622e-01 
+*LOADS
+*RC U635:A2 7.237e-07
+*END
+
+*R_NET send_pattern\[2\] 5.437e-01
+*DRIVER send_pattern_reg\[2\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 2.719e-01 7.971e-06 2.719e-01 
+*LOADS
+*RC U639:A2 2.744e-06
+*END
+
+*R_NET send_pattern\[1\] 4.053e-01
+*DRIVER send_pattern_reg\[1\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 2.026e-01 2.577e-06 2.026e-01 
+*LOADS
+*RC U648:A2 9.121e-07
+*END
+
+*R_NET send_divcnt\[31\] 2.726e+00
+*DRIVER send_divcnt_reg\[31\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.363e+00 2.808e-05 1.363e+00 
+*LOADS
+*RC U922:A2 1.947e-05
+*RC U357:A1 9.881e-06
+*RC U360:A1 1.301e-05
+*RC U461:B2 1.319e-05
+*RC U826:A1 7.567e-06
+*RC U827:A1 6.700e-06
+*END
+
+*R_NET send_divcnt\[30\] 1.896e+00
+*DRIVER send_divcnt_reg\[30\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 9.479e-01 2.590e-05 9.479e-01 
+*LOADS
+*RC U921:A2 1.190e-05
+*RC U358:A2 7.202e-06
+*RC U461:A2 7.634e-06
+*RC U898:A 5.390e-06
+*END
+
+*R_NET send_divcnt\[29\] 2.306e+00
+*DRIVER send_divcnt_reg\[29\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.153e+00 1.868e-05 1.153e+00 
+*LOADS
+*RC U920:A2 1.083e-05
+*RC U457:A2 8.125e-06
+*RC U459:A1 6.699e-06
+*RC U460:B2 8.466e-06
+*RC U819:A2 4.489e-06
+*RC U820:A1 4.239e-06
+*END
+
+*R_NET send_divcnt\[28\] 1.521e+00
+*DRIVER send_divcnt_reg\[28\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 7.607e-01 1.449e-05 7.607e-01 
+*LOADS
+*RC U919:A2 4.490e-06
+*RC U216:A 3.708e-06
+*RC U457:B2 3.367e-06
+*RC U460:A2 4.613e-06
+*END
+
+*R_NET send_divcnt\[27\] 2.533e+00
+*DRIVER send_divcnt_reg\[27\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.267e+00 2.161e-05 1.267e+00 
+*LOADS
+*RC U918:A2 3.550e-06
+*RC U361:A1 1.603e-05
+*RC U365:A1 1.490e-05
+*RC U368:A2 1.850e-05
+*RC U811:A2 6.023e-06
+*RC U812:A1 5.961e-06
+*END
+
+*R_NET send_divcnt\[26\] 2.784e+00
+*DRIVER send_divcnt_reg\[26\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.392e+00 4.889e-05 1.392e+00 
+*LOADS
+*RC U518:A2 1.520e-05
+*RC U363:A1 5.353e-05
+*RC U368:B2 4.819e-05
+*RC U807:A 5.890e-06
+*END
+
+*R_NET send_divcnt\[25\] 3.275e+00
+*DRIVER send_divcnt_reg\[25\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.638e+00 4.203e-05 1.638e+00 
+*LOADS
+*RC U964:A2 1.217e-05
+*RC U367:A2 3.260e-06
+*RC U373:A1 5.563e-06
+*RC U803:A2 4.112e-05
+*RC U804:A1 4.454e-05
+*END
+
+*R_NET send_divcnt\[24\] 2.919e+00
+*DRIVER send_divcnt_reg\[24\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.460e+00 4.711e-05 1.460e+00 
+*LOADS
+*RC U965:A2 1.879e-05
+*RC U227:A 3.921e-05
+*RC U371:A1 2.831e-06
+*RC U452:A2 2.843e-06
+*END
+
+*R_NET send_divcnt\[23\] 3.809e+00
+*DRIVER send_divcnt_reg\[23\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 1.905e+00 5.220e-05 1.905e+00 
+*LOADS
+*RC U963:A2 2.822e-05
+*RC U375:A1 8.696e-06
+*RC U377:B2 5.354e-06
+*RC U384:A2 3.267e-06
+*RC U795:A2 4.719e-05
+*RC U796:A1 5.002e-05
+*END
+
+*R_NET send_divcnt\[22\] 2.840e+00
+*DRIVER send_divcnt_reg\[22\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.420e+00 4.657e-05 1.420e+00 
+*LOADS
+*RC U944:A2 1.375e-05
+*RC U377:A2 6.823e-06
+*RC U384:B2 5.524e-06
+*RC U788:A 3.932e-05
+*END
+
+*R_NET send_divcnt\[21\] 4.054e+00
+*DRIVER send_divcnt_reg\[21\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 2.027e+00 5.816e-05 2.027e+00 
+*LOADS
+*RC U903:A2 6.279e-05
+*RC U379:A1 5.040e-05
+*RC U383:A1 4.594e-05
+*RC U448:A2 4.281e-05
+*RC U782:A2 3.450e-05
+*RC U783:A1 3.531e-05
+*END
+
+*R_NET send_divcnt\[20\] 3.183e+00
+*DRIVER send_divcnt_reg\[20\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.591e+00 5.621e-05 1.591e+00 
+*LOADS
+*RC U937:A2 1.767e-05
+*RC U381:A1 3.570e-05
+*RC U448:B2 3.489e-05
+*RC U771:A 3.236e-05
+*END
+
+*R_NET send_divcnt\[19\] 4.605e+00
+*DRIVER send_divcnt_reg\[19\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 2.303e+00 6.573e-05 2.303e+00 
+*LOADS
+*RC U970:A2 1.641e-05
+*RC U389:A2 1.035e-05
+*RC U444:A2 1.126e-05
+*RC U445:A2 1.355e-05
+*RC U762:A2 1.017e-04
+*RC U763:A1 1.051e-04
+*END
+
+*R_NET send_divcnt\[18\] 3.351e+00
+*DRIVER send_divcnt_reg\[18\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.675e+00 6.359e-05 1.675e+00 
+*LOADS
+*RC U906:A2 1.999e-05
+*RC U388:A2 4.149e-05
+*RC U445:B2 4.538e-05
+*RC U756:A 3.485e-05
+*END
+
+*R_NET send_divcnt\[17\] 4.154e+00
+*DRIVER send_divcnt_reg\[17\]:Q
+*CELL SAEDRVT14_FDP_V2_0P5
+*C2_R1_C1 2.077e+00 6.818e-05 2.077e+00 
+*LOADS
+*RC U512:A2 1.136e-05
+*RC U388:B2 9.459e-05
+*RC U446:B2 8.931e-05
+*RC U747:A2 2.087e-05
+*RC U748:A1 1.942e-05
+*END
+
+*R_NET send_divcnt\[16\] 2.983e+00
+*DRIVER send_divcnt_reg\[16\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.491e+00 5.183e-05 1.491e+00 
+*LOADS
+*RC U969:A2 8.877e-06
+*RC U442:A2 1.599e-05
+*RC U446:A2 9.317e-06
+*RC U734:A 5.500e-05
+*END
+
+*R_NET send_divcnt\[15\] 1.483e+00
+*DRIVER send_divcnt_reg\[15\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 7.416e-01 5.971e-06 7.416e-01 
+*LOADS
+*RC U428:A2 2.300e-06
+*RC U437:A1 2.213e-06
+*RC U440:A1 2.792e-06
+*RC U730:A2 3.689e-06
+*RC U731:A1 3.692e-06
+*END
+
+*R_NET send_divcnt\[14\] 2.550e+00
+*DRIVER send_divcnt_reg\[14\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.275e+00 3.665e-05 1.275e+00 
+*LOADS
+*RC U538:A2 6.504e-06
+*RC U428:B2 3.034e-05
+*RC U438:A1 3.080e-05
+*RC U698:A 3.057e-05
+*END
+
+*R_NET send_divcnt\[13\] 3.051e+00
+*DRIVER send_divcnt_reg\[13\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.526e+00 3.424e-05 1.526e+00 
+*LOADS
+*RC U915:A2 3.847e-05
+*RC U425:A2 2.752e-06
+*RC U433:A1 3.519e-06
+*RC U436:A1 4.780e-06
+*RC U664:A2 3.204e-06
+*RC U665:A1 4.523e-06
+*END
+
+*R_NET send_divcnt\[12\] 2.603e+00
+*DRIVER send_divcnt_reg\[12\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.301e+00 3.896e-05 1.301e+00 
+*LOADS
+*RC U560:A2 1.129e-05
+*RC U430:B2 2.168e-05
+*RC U434:A1 3.087e-05
+*RC U649:A 2.538e-05
+*END
+
+*R_NET send_divcnt\[11\] 3.005e+00
+*DRIVER send_divcnt_reg\[11\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.502e+00 3.634e-05 1.502e+00 
+*LOADS
+*RC U939:A2 4.608e-06
+*RC U399:A2 3.303e-05
+*RC U430:A2 3.795e-05
+*RC U662:A1 4.137e-05
+*RC U675:A2 3.655e-05
+*END
+
+*R_NET send_divcnt\[10\] 2.353e+00
+*DRIVER send_divcnt_reg\[10\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.176e+00 2.688e-05 1.176e+00 
+*LOADS
+*RC U521:A2 1.558e-05
+*RC U235:A 6.435e-06
+*RC U393:A2 4.012e-06
+*RC U398:A2 6.992e-06
+*RC U421:B2 6.184e-06
+*END
+
+*R_NET send_divcnt\[9\] 1.550e+00
+*DRIVER send_divcnt_reg\[9\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 7.748e-01 8.046e-06 7.748e-01 
+*LOADS
+*RC U395:A1 1.994e-06
+*RC U397:B2 2.342e-06
+*RC U422:B2 1.917e-06
+*RC U660:A1 3.032e-06
+*RC U668:A2 2.896e-06
+*END
+
+*R_NET send_divcnt\[8\] 1.078e+00
+*DRIVER send_divcnt_reg\[8\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 5.391e-01 1.425e-05 5.391e-01 
+*LOADS
+*RC U397:A3 6.912e-06
+*RC U422:A2 5.662e-06
+*RC U651:A 1.927e-06
+*END
+
+*R_NET send_divcnt\[7\] 3.377e+00
+*DRIVER send_divcnt_reg\[7\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.688e+00 4.945e-05 1.688e+00 
+*LOADS
+*RC U938:A2 9.600e-06
+*RC U420:A1 3.270e-05
+*RC U421:A1 3.197e-05
+*RC U658:A1 5.845e-05
+*RC U678:A2 5.943e-05
+*END
+
+*R_NET send_divcnt\[6\] 1.566e+00
+*DRIVER send_divcnt_reg\[6\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 7.829e-01 2.318e-05 7.829e-01 
+*LOADS
+*RC U957:A2 1.455e-05
+*RC U417:B2 1.660e-06
+*RC U897:A 3.877e-06
+*END
+
+*R_NET send_divcnt\[5\] 2.993e+00
+*DRIVER send_divcnt_reg\[5\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.497e+00 3.936e-05 1.497e+00 
+*LOADS
+*RC U954:A2 1.815e-05
+*RC U415:A1 3.936e-05
+*RC U417:A1 2.923e-05
+*RC U656:A1 4.625e-05
+*RC U681:A2 4.442e-05
+*END
+
+*R_NET send_divcnt\[4\] 1.806e+00
+*DRIVER send_divcnt_reg\[4\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 9.029e-01 2.865e-05 9.029e-01 
+*LOADS
+*RC U952:A2 2.045e-05
+*RC U412:B2 3.221e-06
+*RC U896:A 1.242e-06
+*END
+
+*R_NET send_divcnt\[3\] 2.726e+00
+*DRIVER send_divcnt_reg\[3\]:Q
+*CELL SAEDRVT14_FDP_V2LP_1
+*C2_R1_C1 1.363e+00 3.266e-05 1.363e+00 
+*LOADS
+*RC U950:A2 3.299e-05
+*RC U410:A1 3.070e-06
+*RC U412:A1 8.904e-06
+*RC U654:A1 8.009e-06
+*RC U684:A2 4.412e-06
+*END
+
+*R_NET send_divcnt\[2\] 5.699e-01
+*DRIVER send_divcnt_reg\[2\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 2.849e-01 5.536e-06 2.849e-01 
+*LOADS
+*RC U407:B2 1.306e-06
+*RC U895:A 1.332e-06
+*END
+
+*R_NET send_divcnt\[1\] 1.291e+00
+*DRIVER send_divcnt_reg\[1\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 6.455e-01 8.410e-06 6.455e-01 
+*LOADS
+*RC U405:A1 1.609e-06
+*RC U407:A1 2.550e-06
+*RC U652:A1 4.401e-06
+*RC U687:A2 3.562e-06
+*END
+
+*R_NET send_divcnt\[0\] 1.252e+00
+*DRIVER send_divcnt_reg\[0\]:Q
+*CELL SAEDRVT14_FDP_V2LP_0P5
+*C2_R1_C1 6.260e-01 9.203e-06 6.260e-01 
+*LOADS
+*RC U405:B1 2.949e-06
+*RC U631:A 3.420e-06
+*RC U652:A2 5.143e-06
+*RC U687:A1 4.202e-06
+*END
+
+*R_NET N318 4.202e-01
+*DRIVER sub_x_27\/U6:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 2.101e-01 5.110e-06 2.101e-01 
+*LOADS
+*RC U892:A2 1.480e-06
+*END
+
+*R_NET N322 2.407e+00
+*DRIVER U629:X
+*CELL SAEDRVT14_OR3_0P5
+*C2_R1_C1 1.204e+00 5.945e-05 1.204e+00 
+*LOADS
+*RC U356:A 2.944e-05
+*RC clk_gate_send_pattern_reg/latch:EN 2.931e-05
+*END
+
+*R_NET N323 1.107e+00
+*DRIVER U648:X
+*CELL SAEDRVT14_AO21_1
+*C2_R1_C1 5.534e-01 2.087e-05 5.534e-01 
+*LOADS
+*RC send_pattern_reg\[0\]:D 1.212e-05
+*END
+
+*R_NET N324 1.116e+00
+*DRIVER U639:X
+*CELL SAEDRVT14_AO21B_0P5
+*C2_R1_C1 5.578e-01 2.465e-05 5.578e-01 
+*LOADS
+*RC send_pattern_reg\[1\]:D 1.293e-05
+*END
+
+*R_NET N325 2.926e-01
+*DRIVER U635:X
+*CELL SAEDRVT14_AO21B_0P5
+*C2_R1_C1 1.463e-01 2.162e-06 1.463e-01 
+*LOADS
+*RC send_pattern_reg\[2\]:D 5.409e-07
+*END
+
+*R_NET N326 2.955e-01
+*DRIVER U645:X
+*CELL SAEDRVT14_AO21B_0P5
+*C2_R1_C1 1.478e-01 2.006e-06 1.478e-01 
+*LOADS
+*RC send_pattern_reg\[3\]:D 5.039e-07
+*END
+
+*R_NET N327 3.102e-01
+*DRIVER U643:X
+*CELL SAEDRVT14_AO21B_0P5
+*C2_R1_C1 1.551e-01 2.307e-06 1.551e-01 
+*LOADS
+*RC send_pattern_reg\[4\]:D 5.907e-07
+*END
+
+*R_NET N328 4.512e-01
+*DRIVER U641:X
+*CELL SAEDRVT14_AO21B_0P5
+*C2_R1_C1 2.256e-01 7.377e-06 2.256e-01 
+*LOADS
+*RC send_pattern_reg\[5\]:D 2.235e-06
+*END
+
+*R_NET N329 1.096e+00
+*DRIVER U647:X
+*CELL SAEDRVT14_AO21B_0P5
+*C2_R1_C1 5.479e-01 2.951e-05 5.479e-01 
+*LOADS
+*RC send_pattern_reg\[6\]:D 1.528e-05
+*END
+
+*R_NET N330 3.109e-01
+*DRIVER U637:X
+*CELL SAEDRVT14_AO21B_0P5
+*C2_R1_C1 1.555e-01 2.718e-06 1.555e-01 
+*LOADS
+*RC send_pattern_reg\[7\]:D 6.967e-07
+*END
+
+*R_NET N331 3.159e-01
+*DRIVER U849:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.579e-01 2.645e-06 1.579e-01 
+*LOADS
+*RC send_pattern_reg\[8\]:D 6.824e-07
+*END
+
+*R_NET N332 2.647e-01
+*DRIVER U892:X
+*CELL SAEDRVT14_AO21_U_0P5
+*C2_R1_C1 1.324e-01 9.960e-07 1.324e-01 
+*LOADS
+*RC send_bitcnt_reg\[0\]:D 2.399e-07
+*END
+
+*R_NET N333 2.580e-01
+*DRIVER U894:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.290e-01 7.857e-07 1.290e-01 
+*LOADS
+*RC send_bitcnt_reg\[1\]:D 1.875e-07
+*END
+
+*R_NET N334 7.234e-01
+*DRIVER U465:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 3.617e-01 1.292e-05 3.617e-01 
+*LOADS
+*RC send_bitcnt_reg\[2\]:D 5.086e-06
+*END
+
+*R_NET N335 2.518e-01
+*DRIVER U723:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.259e-01 6.222e-07 1.259e-01 
+*LOADS
+*RC send_bitcnt_reg\[3\]:D 1.472e-07
+*END
+
+*R_NET N336 3.777e-01
+*DRIVER U632:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 1.888e-01 5.072e-06 1.888e-01 
+*LOADS
+*RC send_divcnt_reg\[0\]:D 1.413e-06
+*END
+
+*R_NET N337 2.599e-01
+*DRIVER U689:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.300e-01 8.099e-07 1.300e-01 
+*LOADS
+*RC send_divcnt_reg\[1\]:D 1.938e-07
+*END
+
+*R_NET N338 3.383e-01
+*DRIVER U702:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.691e-01 3.539e-06 1.691e-01 
+*LOADS
+*RC send_divcnt_reg\[2\]:D 9.392e-07
+*END
+
+*R_NET N339 1.633e+00
+*DRIVER U686:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 8.165e-01 3.287e-05 8.165e-01 
+*LOADS
+*RC send_divcnt_reg\[3\]:D 2.096e-06
+*RC U950:A1 2.124e-05
+*END
+
+*R_NET N340 1.552e+00
+*DRIVER U704:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 7.759e-01 2.868e-05 7.759e-01 
+*LOADS
+*RC send_divcnt_reg\[4\]:D 4.943e-06
+*RC U952:A1 1.441e-05
+*END
+
+*R_NET N341 1.586e+00
+*DRIVER U683:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 7.930e-01 3.239e-05 7.930e-01 
+*LOADS
+*RC send_divcnt_reg\[5\]:D 1.785e-05
+*RC U954:A1 1.644e-05
+*END
+
+*R_NET N342 1.378e+00
+*DRIVER U706:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 6.890e-01 2.499e-05 6.890e-01 
+*LOADS
+*RC send_divcnt_reg\[6\]:D 3.659e-06
+*RC U957:A1 1.303e-05
+*END
+
+*R_NET N343 2.009e+00
+*DRIVER U680:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.005e+00 4.503e-05 1.005e+00 
+*LOADS
+*RC send_divcnt_reg\[7\]:D 3.160e-05
+*RC U938:A1 3.490e-05
+*END
+
+*R_NET N344 4.299e-01
+*DRIVER U708:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 2.149e-01 5.594e-06 2.149e-01 
+*LOADS
+*RC send_divcnt_reg\[8\]:D 1.655e-06
+*END
+
+*R_NET N345 2.848e-01
+*DRIVER U670:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.424e-01 1.463e-06 1.424e-01 
+*LOADS
+*RC send_divcnt_reg\[9\]:D 3.622e-07
+*END
+
+*R_NET N346 1.254e+00
+*DRIVER U693:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 6.269e-01 2.298e-05 6.269e-01 
+*LOADS
+*RC send_divcnt_reg\[10\]:D 2.674e-06
+*RC U521:A1 1.326e-05
+*END
+
+*R_NET N347 1.598e+00
+*DRIVER U677:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 7.991e-01 3.000e-05 7.991e-01 
+*LOADS
+*RC send_divcnt_reg\[11\]:D 2.008e-05
+*RC U939:A1 1.914e-05
+*END
+
+*R_NET N348 1.621e+00
+*DRIVER U829:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 8.104e-01 3.219e-05 8.104e-01 
+*LOADS
+*RC send_divcnt_reg\[12\]:D 1.334e-05
+*RC U560:A1 2.250e-05
+*END
+
+*R_NET N349 1.703e+00
+*DRIVER U667:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 8.516e-01 3.687e-05 8.516e-01 
+*LOADS
+*RC send_divcnt_reg\[13\]:D 2.630e-06
+*RC U915:A1 2.604e-05
+*END
+
+*R_NET N350 1.587e+00
+*DRIVER U700:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 7.935e-01 3.054e-05 7.935e-01 
+*LOADS
+*RC send_divcnt_reg\[14\]:D 2.082e-05
+*RC U538:A1 1.824e-05
+*END
+
+*R_NET N351 3.294e-01
+*DRIVER U733:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.647e-01 3.212e-06 1.647e-01 
+*LOADS
+*RC send_divcnt_reg\[15\]:D 8.431e-07
+*END
+
+*R_NET N352 2.764e+00
+*DRIVER U736:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.382e+00 6.730e-05 1.382e+00 
+*LOADS
+*RC send_divcnt_reg\[16\]:D 6.889e-05
+*RC U969:A1 6.554e-05
+*END
+
+*R_NET N353 9.876e-01
+*DRIVER U750:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 4.938e-01 1.277e-05 4.938e-01 
+*LOADS
+*RC U512:A1 4.269e-06
+*RC send_divcnt_reg\[17\]:D 3.788e-06
+*END
+
+*R_NET N354 1.729e+00
+*DRIVER U758:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 8.645e-01 3.505e-05 8.645e-01 
+*LOADS
+*RC send_divcnt_reg\[18\]:D 2.111e-05
+*RC U906:A1 2.059e-05
+*END
+
+*R_NET N355 2.274e+00
+*DRIVER U765:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.137e+00 5.100e-05 1.137e+00 
+*LOADS
+*RC U970:A1 4.039e-05
+*RC send_divcnt_reg\[19\]:D 4.942e-05
+*END
+
+*R_NET N356 1.576e+00
+*DRIVER U773:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 7.882e-01 3.112e-05 7.882e-01 
+*LOADS
+*RC send_divcnt_reg\[20\]:D 1.486e-05
+*RC U937:A1 1.944e-05
+*END
+
+*R_NET N357 2.025e+00
+*DRIVER U785:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.012e+00 4.331e-05 1.012e+00 
+*LOADS
+*RC U903:A1 2.198e-05
+*RC send_divcnt_reg\[21\]:D 1.551e-05
+*END
+
+*R_NET N358 1.496e+00
+*DRIVER U790:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 7.481e-01 2.788e-05 7.481e-01 
+*LOADS
+*RC send_divcnt_reg\[22\]:D 1.560e-05
+*RC U944:A1 1.437e-05
+*END
+
+*R_NET N359 2.013e+00
+*DRIVER U798:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.006e+00 4.171e-05 1.006e+00 
+*LOADS
+*RC U963:A1 3.121e-05
+*RC send_divcnt_reg\[23\]:D 2.540e-05
+*END
+
+*R_NET N360 1.869e+00
+*DRIVER U801:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 9.344e-01 3.952e-05 9.344e-01 
+*LOADS
+*RC send_divcnt_reg\[24\]:D 2.332e-05
+*RC U965:A1 2.739e-05
+*END
+
+*R_NET N361 1.872e+00
+*DRIVER U806:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 9.358e-01 3.877e-05 9.358e-01 
+*LOADS
+*RC send_divcnt_reg\[25\]:D 2.318e-05
+*RC U964:A1 2.854e-05
+*END
+
+*R_NET N362 1.699e+00
+*DRIVER U809:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 8.496e-01 3.967e-05 8.496e-01 
+*LOADS
+*RC send_divcnt_reg\[26\]:D 2.404e-05
+*RC U518:A1 2.155e-05
+*END
+
+*R_NET N363 7.462e-01
+*DRIVER U814:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.731e-01 7.436e-06 3.731e-01 
+*LOADS
+*RC send_divcnt_reg\[27\]:D 8.938e-07
+*RC U918:A1 2.857e-06
+*END
+
+*R_NET N364 7.999e-01
+*DRIVER U817:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 4.000e-01 9.528e-06 4.000e-01 
+*LOADS
+*RC send_divcnt_reg\[28\]:D 1.213e-06
+*RC U919:A1 3.148e-06
+*END
+
+*R_NET N365 9.659e-01
+*DRIVER U822:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 4.829e-01 1.466e-05 4.829e-01 
+*LOADS
+*RC send_divcnt_reg\[29\]:D 5.634e-07
+*RC U920:A1 7.051e-06
+*END
+
+*R_NET N366 1.056e+00
+*DRIVER U824:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 5.278e-01 1.768e-05 5.278e-01 
+*LOADS
+*RC send_divcnt_reg\[30\]:D 4.021e-07
+*RC U921:A1 9.034e-06
+*END
+
+*R_NET N367 1.226e+00
+*DRIVER U827:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 6.131e-01 2.285e-05 6.131e-01 
+*LOADS
+*RC send_divcnt_reg\[31\]:D 2.164e-06
+*RC U922:A1 1.243e-05
+*END
+
+*R_NET net984 5.370e+00
+*DRIVER clk_gate_cfg_divider_reg/latch:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 2.685e+00 8.117e-05 2.685e+00 
+*LOADS
+*RC cfg_divider_reg\[31\]:CK 2.851e-05
+*RC cfg_divider_reg\[27\]:CK 6.159e-06
+*RC cfg_divider_reg\[24\]:CK 1.577e-05
+*RC cfg_divider_reg\[25\]:CK 9.785e-06
+*RC cfg_divider_reg\[30\]:CK 1.428e-04
+*RC cfg_divider_reg\[26\]:CK 1.243e-04
+*RC cfg_divider_reg\[29\]:CK 1.309e-04
+*RC cfg_divider_reg\[28\]:CK 1.370e-04
+*END
+
+*R_NET net990 5.055e+00
+*DRIVER clk_gate_cfg_divider_reg_0/latch:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 2.528e+00 7.325e-05 2.528e+00 
+*LOADS
+*RC cfg_divider_reg\[23\]:CK 1.145e-04
+*RC cfg_divider_reg\[22\]:CK 1.257e-05
+*RC cfg_divider_reg\[17\]:CK 1.084e-04
+*RC cfg_divider_reg\[21\]:CK 1.085e-04
+*RC cfg_divider_reg\[18\]:CK 9.599e-05
+*RC cfg_divider_reg\[16\]:CK 1.666e-05
+*RC cfg_divider_reg\[19\]:CK 1.823e-05
+*RC cfg_divider_reg\[20\]:CK 3.569e-05
+*END
+
+*R_NET net995 5.341e+00
+*DRIVER clk_gate_cfg_divider_reg_1/latch:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 2.670e+00 8.059e-05 2.670e+00 
+*LOADS
+*RC cfg_divider_reg\[11\]:CK 1.386e-05
+*RC cfg_divider_reg\[15\]:CK 2.066e-05
+*RC cfg_divider_reg\[8\]:CK 2.616e-05
+*RC cfg_divider_reg\[13\]:CK 1.161e-04
+*RC cfg_divider_reg\[12\]:CK 6.091e-05
+*RC cfg_divider_reg\[14\]:CK 3.278e-05
+*RC cfg_divider_reg\[9\]:CK 1.197e-04
+*RC cfg_divider_reg\[10\]:CK 1.100e-04
+*END
+
+*R_NET net1000 3.633e+00
+*DRIVER clk_gate_cfg_divider_reg_2/latch:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 1.817e+00 4.872e-05 1.817e+00 
+*LOADS
+*RC cfg_divider_reg\[5\]:CK 3.082e-05
+*RC cfg_divider_reg\[3\]:CK 3.086e-05
+*RC cfg_divider_reg\[4\]:CK 2.666e-05
+*RC cfg_divider_reg\[7\]:CK 2.432e-05
+*RC cfg_divider_reg\[6\]:CK 2.206e-05
+*RC cfg_divider_reg\[2\]:CK 4.693e-06
+*RC cfg_divider_reg\[1\]:CK 3.269e-05
+*RC cfg_divider_reg\[0\]:CK 2.714e-05
+*END
+
+*R_NET net1005 1.037e+00
+*DRIVER clk_gate_recv_pattern_reg/latch:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 5.187e-01 8.069e-06 5.187e-01 
+*LOADS
+*RC self_gate_recv_pattern_reg_1:CK 2.780e-06
+*RC self_gate_recv_pattern_reg_0:CK 4.315e-06
+*END
+
+*R_NET net1010 2.367e+00
+*DRIVER clk_gate_recv_state_reg/latch:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 1.184e+00 3.513e-05 1.184e+00 
+*LOADS
+*RC recv_state_reg\[3\]:CK 1.597e-05
+*RC recv_state_reg\[1\]:CK 2.783e-05
+*RC recv_state_reg\[0\]:CK 3.283e-05
+*RC recv_state_reg\[2\]:CK 2.183e-05
+*END
+
+*R_NET net1015 4.362e+00
+*DRIVER clk_gate_recv_buf_data_reg/latch:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 2.181e+00 8.816e-05 2.181e+00 
+*LOADS
+*RC recv_buf_data_reg\[7\]:CK 1.296e-04
+*RC recv_buf_data_reg\[6\]:CK 1.331e-04
+*RC recv_buf_data_reg\[5\]:CK 1.250e-05
+*RC self_gate_recv_buf_data_reg_0:CK 2.796e-05
+*END
+
+*R_NET net1020 8.214e+00
+*DRIVER clk_gate_send_pattern_reg/latch:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 4.107e+00 9.289e-05 4.107e+00 
+*LOADS
+*RC send_bitcnt_reg\[0\]:CK 6.255e-05
+*RC send_bitcnt_reg\[3\]:CK 1.851e-05
+*RC send_bitcnt_reg\[1\]:CK 3.686e-05
+*RC send_bitcnt_reg\[2\]:CK 1.040e-05
+*RC send_pattern_reg\[2\]:CK 2.106e-04
+*RC send_pattern_reg\[7\]:CK 1.146e-04
+*RC send_pattern_reg\[6\]:CK 2.173e-04
+*RC send_pattern_reg\[4\]:CK 2.289e-04
+*RC send_pattern_reg\[5\]:CK 2.413e-04
+*RC send_pattern_reg\[1\]:CK 1.915e-04
+*RC send_pattern_reg\[3\]:CK 2.209e-04
+*RC send_pattern_reg\[8\]:CK 1.170e-04
+*RC send_pattern_reg\[0\]:CK 1.479e-04
+*END
+
+*R_NET n1 1.032e+00
+*DRIVER U233:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 5.162e-01 2.127e-05 5.162e-01 
+*LOADS
+*RC send_dummy_reg:D 1.056e-05
+*END
+
+*R_NET n2 2.630e+00
+*DRIVER U350:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.315e+00 6.367e-05 1.315e+00 
+*LOADS
+*RC recv_buf_valid_reg:D 4.089e-05
+*RC U909:A1 5.480e-05
+*END
+
+*R_NET gt_x_34\/n151 1.021e+00
+*DRIVER gt_x_34\/U121:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 5.107e-01 8.515e-06 5.107e-01 
+*LOADS
+*RC U236:A1 2.936e-06
+*RC U340:B1 3.784e-06
+*RC U342:A1 2.922e-06
+*END
+
+*R_NET gt_x_26\/n150 7.470e-01
+*DRIVER gt_x_26\/U122:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 3.735e-01 6.069e-06 3.735e-01 
+*LOADS
+*RC U358:A1 1.573e-06
+*RC U461:A1 1.800e-06
+*END
+
+*R_NET gt_x_26\/n147 1.028e+00
+*DRIVER gt_x_26\/U125:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 5.141e-01 7.515e-06 5.141e-01 
+*LOADS
+*RC U361:A2 3.103e-06
+*RC U365:A2 4.295e-06
+*RC U368:A1 1.465e-06
+*END
+
+*R_NET gt_x_5\/n148 6.434e-01
+*DRIVER gt_x_5\/U119:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 3.217e-01 3.514e-06 3.217e-01 
+*LOADS
+*RC U476:A2 1.282e-06
+*RC U479:A2 2.414e-07
+*END
+
+*R_NET n56 2.170e-01
+*DRIVER U206:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.085e-01 4.085e-07 1.085e-01 
+*LOADS
+*RC U207:B 8.449e-08
+*END
+
+*R_NET n58 3.570e-01
+*DRIVER U215:X
+*CELL SAEDRVT14_ND2B_U_0P5
+*C2_R1_C1 1.785e-01 7.347e-07 1.785e-01 
+*LOADS
+*RC U217:A2 2.516e-07
+*END
+
+*R_NET n59 1.144e+00
+*DRIVER U203:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 5.722e-01 4.791e-06 5.722e-01 
+*LOADS
+*RC U206:A2 2.191e-06
+*RC U207:A2 2.365e-06
+*RC U218:A2 2.577e-06
+*END
+
+*R_NET n60 1.371e+00
+*DRIVER U202:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 6.855e-01 1.067e-05 6.855e-01 
+*LOADS
+*RC U206:A1 3.553e-06
+*RC U207:A1 4.000e-06
+*RC U211:A4 3.689e-06
+*RC U218:A1 4.138e-06
+*END
+
+*R_NET n61 2.515e-01
+*DRIVER U219:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.257e-01 1.549e-06 1.257e-01 
+*LOADS
+*RC U220:B 3.350e-07
+*END
+
+*R_NET n62 6.739e-01
+*DRIVER U218:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.370e-01 3.539e-06 3.370e-01 
+*LOADS
+*RC U219:A1 6.900e-07
+*RC U220:A1 1.439e-06
+*END
+
+*R_NET n63 3.377e-01
+*DRIVER U220:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.689e-01 1.962e-06 1.689e-01 
+*LOADS
+*RC U221:A2 5.674e-07
+*END
+
+*R_NET n64 9.533e-01
+*DRIVER U208:X
+*CELL SAEDRVT14_OR3_0P5
+*C2_R1_C1 4.767e-01 3.859e-06 4.767e-01 
+*LOADS
+*RC U210:A 1.123e-06
+*RC U213:A2 1.400e-06
+*RC U222:A2 1.608e-06
+*END
+
+*R_NET n65 1.280e+00
+*DRIVER U209:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 6.401e-01 1.160e-05 6.401e-01 
+*LOADS
+*RC U215:B 5.199e-06
+*RC U210:B 4.364e-06
+*RC U211:A3 1.786e-06
+*RC U222:A1 5.145e-06
+*END
+
+*R_NET n66 2.594e-01
+*DRIVER U224:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.297e-01 1.755e-06 1.297e-01 
+*LOADS
+*RC U225:B 3.841e-07
+*END
+
+*R_NET n67 3.581e-01
+*DRIVER U225:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.791e-01 7.832e-07 1.791e-01 
+*LOADS
+*RC U226:A2 2.685e-07
+*END
+
+*R_NET n68 3.018e-01
+*DRIVER U228:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.509e-01 8.135e-07 1.509e-01 
+*LOADS
+*RC U232:A1 2.312e-07
+*END
+
+*R_NET n69 4.938e-01
+*DRIVER U232:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 2.469e-01 6.468e-06 2.469e-01 
+*LOADS
+*RC U233:A2 2.234e-06
+*END
+
+*R_NET n70 3.350e-01
+*DRIVER U240:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.675e-01 2.925e-06 1.675e-01 
+*LOADS
+*RC U241:B2 7.772e-07
+*END
+
+*R_NET n71 2.671e-01
+*DRIVER U246:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.336e-01 1.008e-06 1.336e-01 
+*LOADS
+*RC U247:B2 2.452e-07
+*END
+
+*R_NET n72 3.037e-01
+*DRIVER U253:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.519e-01 2.307e-06 1.519e-01 
+*LOADS
+*RC U254:B2 5.666e-07
+*END
+
+*R_NET n74 3.339e-01
+*DRIVER U258:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.669e-01 2.763e-06 1.669e-01 
+*LOADS
+*RC U259:B2 7.331e-07
+*END
+
+*R_NET n77 3.177e-01
+*DRIVER U264:X
+*CELL SAEDRVT14_OA22_U_0P5
+*C2_R1_C1 1.588e-01 3.429e-06 1.588e-01 
+*LOADS
+*RC U265:B 8.172e-07
+*END
+
+*R_NET n79 2.794e-01
+*DRIVER U273:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.397e-01 2.683e-06 1.397e-01 
+*LOADS
+*RC U276:A2 6.015e-07
+*END
+
+*R_NET n80 4.288e-01
+*DRIVER U276:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.144e-01 6.638e-06 2.144e-01 
+*LOADS
+*RC U277:B 1.842e-06
+*END
+
+*R_NET n81 3.000e-01
+*DRIVER U277:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.500e-01 2.026e-06 1.500e-01 
+*LOADS
+*RC U278:B2 5.147e-07
+*END
+
+*R_NET n82 2.004e-01
+*DRIVER U269:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.002e-01 7.418e-07 1.002e-01 
+*LOADS
+*RC U278:B1 1.367e-07
+*END
+
+*R_NET n84 2.127e-01
+*DRIVER U287:X
+*CELL SAEDRVT14_AO22_0P5
+*C2_R1_C1 1.063e-01 4.298e-07 1.063e-01 
+*LOADS
+*RC U288:B 8.740e-08
+*END
+
+*R_NET n88 4.105e-01
+*DRIVER U289:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.052e-01 5.179e-06 2.052e-01 
+*LOADS
+*RC U290:B2 1.456e-06
+*END
+
+*R_NET n89 4.179e-01
+*DRIVER U288:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 2.090e-01 7.526e-06 2.090e-01 
+*LOADS
+*RC U290:B1 1.946e-06
+*END
+
+*R_NET n90 2.367e-01
+*DRIVER U284:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.183e-01 1.179e-06 1.183e-01 
+*LOADS
+*RC U290:A2 2.475e-07
+*END
+
+*R_NET n91 2.845e-01
+*DRIVER U283:X
+*CELL SAEDRVT14_AOI22_0P5
+*C2_R1_C1 1.423e-01 2.952e-06 1.423e-01 
+*LOADS
+*RC U290:A1 6.274e-07
+*END
+
+*R_NET n93 2.731e-01
+*DRIVER U292:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.366e-01 2.353e-06 1.366e-01 
+*LOADS
+*RC U293:B 5.275e-07
+*END
+
+*R_NET n94 6.360e-01
+*DRIVER U290:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 3.180e-01 3.419e-06 3.180e-01 
+*LOADS
+*RC U292:A1 1.143e-06
+*RC U293:A2 8.505e-07
+*END
+
+*R_NET n95 2.596e-01
+*DRIVER U293:X
+*CELL SAEDRVT14_AO21B_0P5
+*C2_R1_C1 1.298e-01 1.845e-06 1.298e-01 
+*LOADS
+*RC U294:B 4.078e-07
+*END
+
+*R_NET n99 2.179e-01
+*DRIVER U296:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.089e-01 7.176e-07 1.089e-01 
+*LOADS
+*RC U299:A2 1.462e-07
+*END
+
+*R_NET n100 3.081e-01
+*DRIVER U294:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.540e-01 3.742e-06 1.540e-01 
+*LOADS
+*RC U299:A1 8.246e-07
+*END
+
+*R_NET n101 1.164e+00
+*DRIVER U299:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 5.819e-01 2.941e-05 5.819e-01 
+*LOADS
+*RC U300:B 1.537e-05
+*END
+
+*R_NET n106 5.776e-01
+*DRIVER U302:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.888e-01 8.894e-06 2.888e-01 
+*LOADS
+*RC U303:A3 3.209e-06
+*END
+
+*R_NET n107 3.262e-01
+*DRIVER U301:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.631e-01 8.228e-07 1.631e-01 
+*LOADS
+*RC U303:A2 2.533e-07
+*END
+
+*R_NET n108 3.530e-01
+*DRIVER U300:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.765e-01 1.817e-06 1.765e-01 
+*LOADS
+*RC U303:A1 5.595e-07
+*END
+
+*R_NET n110 3.380e-01
+*DRIVER U310:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.690e-01 2.424e-06 1.690e-01 
+*LOADS
+*RC U311:A3 6.809e-07
+*END
+
+*R_NET n111 3.873e-01
+*DRIVER U305:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.937e-01 3.343e-06 1.937e-01 
+*LOADS
+*RC U311:A1 1.068e-06
+*END
+
+*R_NET n112 2.507e-01
+*DRIVER U311:X
+*CELL SAEDRVT14_OR3_0P5
+*C2_R1_C1 1.253e-01 1.336e-06 1.253e-01 
+*LOADS
+*RC U312:B 2.913e-07
+*END
+
+*R_NET n113 5.310e-01
+*DRIVER U303:X
+*CELL SAEDRVT14_OR3_0P5
+*C2_R1_C1 2.655e-01 6.657e-06 2.655e-01 
+*LOADS
+*RC U312:A2 2.666e-06
+*END
+
+*R_NET n114 4.998e-01
+*DRIVER U278:X
+*CELL SAEDRVT14_OA2BB2_V1_0P5
+*C2_R1_C1 2.499e-01 6.462e-06 2.499e-01 
+*LOADS
+*RC U312:A1 2.275e-06
+*END
+
+*R_NET n116 3.007e-01
+*DRIVER U314:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.504e-01 2.206e-06 1.504e-01 
+*LOADS
+*RC U315:B2 5.609e-07
+*END
+
+*R_NET n119 2.754e-01
+*DRIVER U317:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.377e-01 1.274e-06 1.377e-01 
+*LOADS
+*RC U318:B2 3.133e-07
+*END
+
+*R_NET n121 4.821e-01
+*DRIVER U318:X
+*CELL SAEDRVT14_OA2BB2_V1_0P5
+*C2_R1_C1 2.410e-01 7.554e-06 2.410e-01 
+*LOADS
+*RC U319:B 2.214e-06
+*END
+
+*R_NET n122 9.508e-01
+*DRIVER U308:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 4.754e-01 7.183e-06 4.754e-01 
+*LOADS
+*RC U311:A2 3.723e-06
+*RC U319:A2 3.622e-06
+*END
+
+*R_NET n123 3.770e-01
+*DRIVER U315:X
+*CELL SAEDRVT14_OA2BB2_V1_0P5
+*C2_R1_C1 1.885e-01 3.237e-06 1.885e-01 
+*LOADS
+*RC U319:A1 1.001e-06
+*END
+
+*R_NET n124 5.742e-01
+*DRIVER U319:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 2.871e-01 9.312e-06 2.871e-01 
+*LOADS
+*RC U320:B2 3.127e-06
+*END
+
+*R_NET n125 4.701e-01
+*DRIVER U312:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 2.351e-01 7.621e-06 2.351e-01 
+*LOADS
+*RC U320:B1 2.103e-06
+*END
+
+*R_NET n126 2.967e-01
+*DRIVER U320:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.484e-01 8.970e-07 1.484e-01 
+*LOADS
+*RC U321:A2 2.471e-07
+*END
+
+*R_NET n131 6.132e-01
+*DRIVER U265:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 3.066e-01 6.122e-06 3.066e-01 
+*LOADS
+*RC U321:A1 2.096e-06
+*RC U325:B2 6.947e-07
+*END
+
+*R_NET n132 2.613e-01
+*DRIVER U324:X
+*CELL SAEDRVT14_AOI22_0P5
+*C2_R1_C1 1.306e-01 2.681e-06 1.306e-01 
+*LOADS
+*RC U325:B1 5.533e-07
+*END
+
+*R_NET n133 3.484e-01
+*DRIVER U323:X
+*CELL SAEDRVT14_AOI22_0P5
+*C2_R1_C1 1.742e-01 4.557e-06 1.742e-01 
+*LOADS
+*RC U325:A2 1.127e-06
+*END
+
+*R_NET n134 3.012e-01
+*DRIVER U322:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.506e-01 4.254e-06 1.506e-01 
+*LOADS
+*RC U325:A1 9.279e-07
+*END
+
+*R_NET n137 3.554e-01
+*DRIVER U326:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.777e-01 2.558e-06 1.777e-01 
+*LOADS
+*RC U327:A2 7.546e-07
+*END
+
+*R_NET n138 2.501e-01
+*DRIVER U327:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.251e-01 1.610e-06 1.251e-01 
+*LOADS
+*RC U328:B 3.475e-07
+*END
+
+*R_NET n139 5.968e-01
+*DRIVER U325:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.984e-01 6.142e-06 2.984e-01 
+*LOADS
+*RC U328:A2 2.822e-06
+*END
+
+*R_NET n140 3.280e-01
+*DRIVER U321:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.640e-01 1.795e-06 1.640e-01 
+*LOADS
+*RC U328:A1 5.258e-07
+*END
+
+*R_NET n141 3.044e-01
+*DRIVER U328:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.522e-01 3.290e-06 1.522e-01 
+*LOADS
+*RC U329:B 7.696e-07
+*END
+
+*R_NET n142 6.843e-01
+*DRIVER U260:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 3.421e-01 3.374e-06 3.421e-01 
+*LOADS
+*RC U327:A1 9.305e-07
+*RC U329:A2 1.483e-06
+*END
+
+*R_NET n143 4.430e-01
+*DRIVER U259:X
+*CELL SAEDRVT14_OA2BB2_V1_0P5
+*C2_R1_C1 2.215e-01 4.642e-06 2.215e-01 
+*LOADS
+*RC U329:A1 1.538e-06
+*END
+
+*R_NET n146 4.599e-01
+*DRIVER U330:X
+*CELL SAEDRVT14_OA22_U_0P5
+*C2_R1_C1 2.299e-01 8.847e-06 2.299e-01 
+*LOADS
+*RC U331:B 2.528e-06
+*END
+
+*R_NET n147 5.241e-01
+*DRIVER U329:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 2.621e-01 4.128e-06 2.621e-01 
+*LOADS
+*RC U331:A2 1.797e-06
+*END
+
+*R_NET n148 3.700e-01
+*DRIVER U254:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.850e-01 3.108e-06 1.850e-01 
+*LOADS
+*RC U331:A1 9.539e-07
+*END
+
+*R_NET n149 4.290e-01
+*DRIVER U333:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.145e-01 6.819e-06 2.145e-01 
+*LOADS
+*RC U334:B 1.892e-06
+*END
+
+*R_NET n150 3.909e-01
+*DRIVER U331:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.955e-01 1.561e-06 1.955e-01 
+*LOADS
+*RC U334:A2 5.523e-07
+*END
+
+*R_NET n151 6.618e-01
+*DRIVER U247:X
+*CELL SAEDRVT14_OA2BB2_V1_0P5
+*C2_R1_C1 3.309e-01 1.310e-05 3.309e-01 
+*LOADS
+*RC U334:A1 5.318e-06
+*END
+
+*R_NET n152 4.253e-01
+*DRIVER U334:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 2.126e-01 6.169e-06 2.126e-01 
+*LOADS
+*RC U335:B 1.704e-06
+*END
+
+*R_NET n157 7.658e-01
+*DRIVER U338:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 3.829e-01 1.502e-05 3.829e-01 
+*LOADS
+*RC U339:C 6.678e-06
+*END
+
+*R_NET n158 3.374e-01
+*DRIVER U336:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.687e-01 2.050e-06 1.687e-01 
+*LOADS
+*RC U339:A2 6.096e-07
+*END
+
+*R_NET n159 6.403e-01
+*DRIVER U335:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 3.201e-01 3.443e-06 3.201e-01 
+*LOADS
+*RC U339:B1 1.241e-06
+*RC U339:A1 1.316e-06
+*END
+
+*R_NET n161 2.279e-01
+*DRIVER U340:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.139e-01 6.948e-07 1.139e-01 
+*LOADS
+*RC U341:B 1.463e-07
+*END
+
+*R_NET n162 6.844e-01
+*DRIVER U339:X
+*CELL SAEDRVT14_AO221_0P5
+*C2_R1_C1 3.422e-01 9.334e-06 3.422e-01 
+*LOADS
+*RC U341:A2 4.215e-06
+*END
+
+*R_NET n163 5.659e-01
+*DRIVER U241:X
+*CELL SAEDRVT14_OA2BB2_V1_0P5
+*C2_R1_C1 2.830e-01 9.741e-06 2.830e-01 
+*LOADS
+*RC U341:A1 3.643e-06
+*END
+
+*R_NET n164 2.892e-01
+*DRIVER U341:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.446e-01 2.842e-06 1.446e-01 
+*LOADS
+*RC U342:B 6.564e-07
+*END
+
+*R_NET n165 2.946e-01
+*DRIVER U342:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.473e-01 2.578e-06 1.473e-01 
+*LOADS
+*RC U343:B 5.947e-07
+*END
+
+*R_NET n166 4.628e-01
+*DRIVER U236:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 2.314e-01 1.882e-06 2.314e-01 
+*LOADS
+*RC U343:A2 7.810e-07
+*END
+
+*R_NET n170 3.362e-01
+*DRIVER U349:X
+*CELL SAEDRVT14_OA22_U_0P5
+*C2_R1_C1 1.681e-01 4.600e-06 1.681e-01 
+*LOADS
+*RC U350:A1 1.131e-06
+*END
+
+*R_NET n171 1.219e+00
+*DRIVER U212:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 6.094e-01 9.377e-06 6.094e-01 
+*LOADS
+*RC U213:A1 2.369e-06
+*RC U349:A2 4.717e-06
+*RC U351:A2 1.676e-07
+*END
+
+*R_NET n172 5.396e-01
+*DRIVER U229:X
+*CELL SAEDRVT14_OR3_0P5
+*C2_R1_C1 2.698e-01 3.540e-06 2.698e-01 
+*LOADS
+*RC U348:A 9.547e-07
+*RC U230:A2 1.253e-06
+*END
+
+*R_NET n174 2.900e-01
+*DRIVER U358:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.450e-01 6.754e-07 1.450e-01 
+*LOADS
+*RC U359:A2 1.846e-07
+*END
+
+*R_NET n175 2.442e-01
+*DRIVER U357:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.221e-01 1.140e-06 1.221e-01 
+*LOADS
+*RC U359:A1 2.452e-07
+*END
+
+*R_NET n176 2.870e-01
+*DRIVER U359:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.435e-01 2.404e-06 1.435e-01 
+*LOADS
+*RC U360:B 5.534e-07
+*END
+
+*R_NET n177 3.331e-01
+*DRIVER U363:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.665e-01 2.203e-06 1.665e-01 
+*LOADS
+*RC U364:A2 6.337e-07
+*END
+
+*R_NET n178 2.150e-01
+*DRIVER U361:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.075e-01 4.094e-07 1.075e-01 
+*LOADS
+*RC U364:A1 8.411e-08
+*END
+
+*R_NET n179 2.282e-01
+*DRIVER U364:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.141e-01 8.824e-07 1.141e-01 
+*LOADS
+*RC U365:B 1.858e-07
+*END
+
+*R_NET n181 7.839e-01
+*DRIVER U368:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 3.919e-01 1.388e-05 3.919e-01 
+*LOADS
+*RC U369:A2 6.076e-06
+*END
+
+*R_NET n182 4.092e-01
+*DRIVER U367:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.046e-01 6.155e-06 2.046e-01 
+*LOADS
+*RC U369:A1 1.663e-06
+*END
+
+*R_NET n183 3.874e-01
+*DRIVER U371:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.937e-01 6.448e-06 1.937e-01 
+*LOADS
+*RC U372:A 1.558e-06
+*END
+
+*R_NET n184 2.963e-01
+*DRIVER U372:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.481e-01 3.222e-06 1.481e-01 
+*LOADS
+*RC U373:B 7.517e-07
+*END
+
+*R_NET n186 3.544e-01
+*DRIVER U375:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.772e-01 3.388e-06 1.772e-01 
+*LOADS
+*RC U377:A1 9.646e-07
+*END
+
+*R_NET n187 4.553e-01
+*DRIVER U381:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.276e-01 6.507e-06 2.276e-01 
+*LOADS
+*RC U382:A2 2.136e-06
+*END
+
+*R_NET n188 2.105e-01
+*DRIVER U379:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.053e-01 3.215e-07 1.053e-01 
+*LOADS
+*RC U382:A1 6.557e-08
+*END
+
+*R_NET n189 4.655e-01
+*DRIVER U382:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.327e-01 8.354e-06 2.327e-01 
+*LOADS
+*RC U383:B 2.420e-06
+*END
+
+*R_NET n192 2.656e-01
+*DRIVER U388:X
+*CELL SAEDRVT14_OA22_U_0P5
+*C2_R1_C1 1.328e-01 2.079e-06 1.328e-01 
+*LOADS
+*RC U389:B 4.594e-07
+*END
+
+*R_NET n193 3.213e-01
+*DRIVER U395:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.607e-01 2.121e-06 1.607e-01 
+*LOADS
+*RC U397:A1 5.807e-07
+*END
+
+*R_NET n194 3.167e-01
+*DRIVER U397:X
+*CELL SAEDRVT14_AO32_U_0P5
+*C2_R1_C1 1.583e-01 3.892e-06 1.583e-01 
+*LOADS
+*RC U398:B 9.345e-07
+*END
+
+*R_NET n195 3.165e-01
+*DRIVER U398:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.583e-01 2.866e-06 1.583e-01 
+*LOADS
+*RC U399:B2 7.439e-07
+*END
+
+*R_NET n196 3.349e-01
+*DRIVER U393:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.675e-01 4.784e-06 1.675e-01 
+*LOADS
+*RC U399:B1 1.096e-06
+*END
+
+*R_NET n201 3.696e-01
+*DRIVER U407:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.848e-01 5.336e-06 1.848e-01 
+*LOADS
+*RC U409:A2 1.357e-06
+*END
+
+*R_NET n202 4.389e-01
+*DRIVER U405:X
+*CELL SAEDRVT14_AOI22_0P5
+*C2_R1_C1 2.194e-01 6.847e-06 2.194e-01 
+*LOADS
+*RC U409:A1 1.807e-06
+*END
+
+*R_NET n203 4.062e-01
+*DRIVER U409:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.031e-01 6.204e-06 2.031e-01 
+*LOADS
+*RC U410:B 1.675e-06
+*END
+
+*R_NET n207 4.646e-01
+*DRIVER U412:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.323e-01 7.706e-06 2.323e-01 
+*LOADS
+*RC U414:A2 2.204e-06
+*END
+
+*R_NET n208 4.329e-01
+*DRIVER U410:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 2.165e-01 8.263e-06 2.165e-01 
+*LOADS
+*RC U414:A1 2.165e-06
+*END
+
+*R_NET n209 2.444e-01
+*DRIVER U414:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.222e-01 1.190e-06 1.222e-01 
+*LOADS
+*RC U415:B 2.571e-07
+*END
+
+*R_NET n213 3.343e-01
+*DRIVER U417:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.672e-01 3.674e-06 1.672e-01 
+*LOADS
+*RC U419:A2 8.911e-07
+*END
+
+*R_NET n214 3.365e-01
+*DRIVER U415:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.683e-01 5.180e-06 1.683e-01 
+*LOADS
+*RC U419:A1 1.191e-06
+*END
+
+*R_NET n215 7.585e-01
+*DRIVER U419:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 3.792e-01 1.872e-05 3.792e-01 
+*LOADS
+*RC U420:B 7.252e-06
+*END
+
+*R_NET n220 4.755e-01
+*DRIVER U422:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.377e-01 6.942e-06 2.377e-01 
+*LOADS
+*RC U423:A3 2.268e-06
+*END
+
+*R_NET n221 4.039e-01
+*DRIVER U421:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.020e-01 2.963e-06 2.020e-01 
+*LOADS
+*RC U423:A2 9.890e-07
+*END
+
+*R_NET n222 4.074e-01
+*DRIVER U420:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 2.037e-01 3.182e-06 2.037e-01 
+*LOADS
+*RC U423:A1 1.038e-06
+*END
+
+*R_NET n224 4.141e-01
+*DRIVER U430:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.070e-01 4.440e-06 2.070e-01 
+*LOADS
+*RC U431:A3 1.360e-06
+*END
+
+*R_NET n225 4.531e-01
+*DRIVER U425:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.266e-01 5.215e-06 2.266e-01 
+*LOADS
+*RC U431:A1 1.780e-06
+*END
+
+*R_NET n226 4.713e-01
+*DRIVER U431:X
+*CELL SAEDRVT14_OR3_0P5
+*C2_R1_C1 2.357e-01 7.280e-06 2.357e-01 
+*LOADS
+*RC U432:B 2.123e-06
+*END
+
+*R_NET n227 4.643e-01
+*DRIVER U423:X
+*CELL SAEDRVT14_OR3_0P5
+*C2_R1_C1 2.322e-01 4.308e-06 2.322e-01 
+*LOADS
+*RC U432:A2 1.629e-06
+*END
+
+*R_NET n228 3.580e-01
+*DRIVER U399:X
+*CELL SAEDRVT14_OA2BB2_V1_0P5
+*C2_R1_C1 1.790e-01 2.114e-06 1.790e-01 
+*LOADS
+*RC U432:A1 6.441e-07
+*END
+
+*R_NET n230 3.221e-01
+*DRIVER U434:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.611e-01 1.865e-06 1.611e-01 
+*LOADS
+*RC U435:A2 5.294e-07
+*END
+
+*R_NET n231 2.422e-01
+*DRIVER U433:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.211e-01 1.106e-06 1.211e-01 
+*LOADS
+*RC U435:A1 2.373e-07
+*END
+
+*R_NET n232 3.729e-01
+*DRIVER U435:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.864e-01 4.657e-06 1.864e-01 
+*LOADS
+*RC U436:B 1.205e-06
+*END
+
+*R_NET n235 2.957e-01
+*DRIVER U438:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.479e-01 8.456e-07 1.479e-01 
+*LOADS
+*RC U439:A2 2.327e-07
+*END
+
+*R_NET n236 4.007e-01
+*DRIVER U437:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.004e-01 6.513e-06 2.004e-01 
+*LOADS
+*RC U439:A1 1.741e-06
+*END
+
+*R_NET n237 3.915e-01
+*DRIVER U439:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.958e-01 6.353e-06 1.958e-01 
+*LOADS
+*RC U440:B 1.684e-06
+*END
+
+*R_NET n239 4.067e-01
+*DRIVER U440:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 2.033e-01 7.045e-06 2.033e-01 
+*LOADS
+*RC U441:B 1.888e-06
+*END
+
+*R_NET n240 1.045e+00
+*DRIVER U428:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 5.223e-01 1.229e-05 5.223e-01 
+*LOADS
+*RC U431:A2 6.604e-06
+*RC U441:A2 4.366e-06
+*END
+
+*R_NET n241 3.176e-01
+*DRIVER U436:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.588e-01 1.432e-06 1.588e-01 
+*LOADS
+*RC U441:A1 4.146e-07
+*END
+
+*R_NET n242 1.825e+00
+*DRIVER U441:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 9.127e-01 4.506e-05 9.127e-01 
+*LOADS
+*RC U442:B2 3.393e-05
+*END
+
+*R_NET n243 1.423e+00
+*DRIVER U432:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 7.114e-01 3.461e-05 7.114e-01 
+*LOADS
+*RC U442:B1 2.054e-05
+*END
+
+*R_NET n244 9.004e-01
+*DRIVER U442:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 4.502e-01 1.841e-05 4.502e-01 
+*LOADS
+*RC U443:A2 8.776e-06
+*END
+
+*R_NET n249 5.464e-01
+*DRIVER U389:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 2.732e-01 4.298e-06 2.732e-01 
+*LOADS
+*RC U443:A1 1.069e-06
+*RC U447:B2 1.123e-06
+*END
+
+*R_NET n250 4.691e-01
+*DRIVER U446:X
+*CELL SAEDRVT14_AOI22_0P5
+*C2_R1_C1 2.345e-01 8.701e-06 2.345e-01 
+*LOADS
+*RC U447:B1 2.398e-06
+*END
+
+*R_NET n251 2.931e-01
+*DRIVER U445:X
+*CELL SAEDRVT14_AOI22_0P5
+*C2_R1_C1 1.465e-01 3.283e-06 1.465e-01 
+*LOADS
+*RC U447:A2 7.510e-07
+*END
+
+*R_NET n252 2.975e-01
+*DRIVER U444:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.487e-01 4.064e-06 1.487e-01 
+*LOADS
+*RC U447:A1 8.814e-07
+*END
+
+*R_NET n255 4.970e-01
+*DRIVER U448:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.485e-01 6.712e-06 2.485e-01 
+*LOADS
+*RC U449:A2 2.297e-06
+*END
+
+*R_NET n256 2.577e-01
+*DRIVER U449:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.289e-01 1.640e-06 1.289e-01 
+*LOADS
+*RC U450:B 3.581e-07
+*END
+
+*R_NET n257 5.020e-01
+*DRIVER U447:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.510e-01 3.136e-06 2.510e-01 
+*LOADS
+*RC U450:A2 1.342e-06
+*END
+
+*R_NET n258 3.077e-01
+*DRIVER U443:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.538e-01 9.993e-07 1.538e-01 
+*LOADS
+*RC U450:A1 2.860e-07
+*END
+
+*R_NET n259 2.587e-01
+*DRIVER U450:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.294e-01 1.965e-06 1.294e-01 
+*LOADS
+*RC U451:B 4.298e-07
+*END
+
+*R_NET n260 1.317e+00
+*DRIVER U384:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 6.587e-01 2.487e-05 6.587e-01 
+*LOADS
+*RC U449:A1 1.359e-05
+*RC U451:A2 1.631e-05
+*END
+
+*R_NET n261 3.667e-01
+*DRIVER U383:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.833e-01 2.883e-06 1.833e-01 
+*LOADS
+*RC U451:A1 8.818e-07
+*END
+
+*R_NET n262 7.834e-01
+*DRIVER U451:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 3.917e-01 1.913e-05 3.917e-01 
+*LOADS
+*RC U452:B2 7.757e-06
+*END
+
+*R_NET n263 3.440e-01
+*DRIVER U377:X
+*CELL SAEDRVT14_AO32_U_0P5
+*C2_R1_C1 1.720e-01 5.396e-06 1.720e-01 
+*LOADS
+*RC U452:B1 1.262e-06
+*END
+
+*R_NET n265 5.650e-01
+*DRIVER U452:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.825e-01 9.174e-06 2.825e-01 
+*LOADS
+*RC U453:A2 3.387e-06
+*END
+
+*R_NET n266 3.854e-01
+*DRIVER U373:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.927e-01 1.030e-06 1.927e-01 
+*LOADS
+*RC U453:A1 3.756e-07
+*END
+
+*R_NET n267 5.262e-01
+*DRIVER U453:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.631e-01 7.616e-06 2.631e-01 
+*LOADS
+*RC U454:A2 2.713e-06
+*END
+
+*R_NET n268 4.316e-01
+*DRIVER U369:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.158e-01 2.174e-06 2.158e-01 
+*LOADS
+*RC U454:A1 8.264e-07
+*END
+
+*R_NET n269 4.904e-01
+*DRIVER U457:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.452e-01 7.521e-06 2.452e-01 
+*LOADS
+*RC U458:B 2.241e-06
+*END
+
+*R_NET n270 1.231e+00
+*DRIVER U454:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 6.154e-01 2.541e-05 6.154e-01 
+*LOADS
+*RC U458:A2 1.610e-05
+*END
+
+*R_NET n271 4.933e-01
+*DRIVER U365:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 2.466e-01 6.728e-06 2.466e-01 
+*LOADS
+*RC U458:A1 2.353e-06
+*END
+
+*R_NET n274 3.027e-01
+*DRIVER U459:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.513e-01 1.414e-06 1.513e-01 
+*LOADS
+*RC U460:A1 3.784e-07
+*END
+
+*R_NET n276 2.686e-01
+*DRIVER U461:X
+*CELL SAEDRVT14_OA22_U_0P5
+*C2_R1_C1 1.343e-01 2.182e-06 1.343e-01 
+*LOADS
+*RC U462:B 4.843e-07
+*END
+
+*R_NET n277 4.915e-01
+*DRIVER U460:X
+*CELL SAEDRVT14_AO32_U_0P5
+*C2_R1_C1 2.458e-01 3.125e-06 2.458e-01 
+*LOADS
+*RC U462:A2 1.327e-06
+*END
+
+*R_NET n278 5.386e-01
+*DRIVER U458:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 2.693e-01 7.493e-06 2.693e-01 
+*LOADS
+*RC U462:A1 2.721e-06
+*END
+
+*R_NET n279 4.220e-01
+*DRIVER U462:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 2.110e-01 2.865e-06 2.110e-01 
+*LOADS
+*RC U463:A2 1.043e-06
+*END
+
+*R_NET n280 3.151e-01
+*DRIVER U360:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.575e-01 1.129e-06 1.575e-01 
+*LOADS
+*RC U463:A1 3.279e-07
+*END
+
+*R_NET n281 3.057e-01
+*DRIVER U355:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.529e-01 3.438e-06 1.529e-01 
+*LOADS
+*RC U465:A1 7.550e-07
+*END
+
+*R_NET n282 4.129e-01
+*DRIVER U466:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 2.064e-01 2.775e-06 2.064e-01 
+*LOADS
+*RC U467:A2 9.667e-07
+*END
+
+*R_NET n283 2.319e-01
+*DRIVER U476:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.160e-01 1.824e-06 1.160e-01 
+*LOADS
+*RC U477:A 3.463e-07
+*END
+
+*R_NET n284 3.910e-01
+*DRIVER U477:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.955e-01 5.323e-06 1.955e-01 
+*LOADS
+*RC U478:B 1.399e-06
+*END
+
+*R_NET n286 2.266e-01
+*DRIVER U479:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.133e-01 1.527e-06 1.133e-01 
+*LOADS
+*RC U480:A 2.871e-07
+*END
+
+*R_NET n288 3.166e-01
+*DRIVER U486:X
+*CELL SAEDRVT14_OA22_U_0P5
+*C2_R1_C1 1.583e-01 3.895e-06 1.583e-01 
+*LOADS
+*RC U487:B 9.270e-07
+*END
+
+*R_NET n290 2.898e-01
+*DRIVER U488:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.449e-01 1.947e-06 1.449e-01 
+*LOADS
+*RC U489:B2 4.692e-07
+*END
+
+*R_NET n291 3.473e-01
+*DRIVER U484:X
+*CELL SAEDRVT14_AOI22_0P5
+*C2_R1_C1 1.737e-01 5.163e-06 1.737e-01 
+*LOADS
+*RC U489:A1 1.205e-06
+*END
+
+*R_NET n292 2.638e-01
+*DRIVER U489:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.319e-01 1.789e-06 1.319e-01 
+*LOADS
+*RC U490:B 3.981e-07
+*END
+
+*R_NET n294 2.913e-01
+*DRIVER U496:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.457e-01 1.930e-06 1.457e-01 
+*LOADS
+*RC U497:B2 4.848e-07
+*END
+
+*R_NET n297 3.384e-01
+*DRIVER U499:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.692e-01 3.285e-06 1.692e-01 
+*LOADS
+*RC U500:B2 8.449e-07
+*END
+
+*R_NET n300 6.270e-01
+*DRIVER U500:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 3.135e-01 1.276e-05 3.135e-01 
+*LOADS
+*RC U501:B 4.714e-06
+*END
+
+*R_NET n301 5.334e-01
+*DRIVER U497:X
+*CELL SAEDRVT14_OA2BB2_V1_0P5
+*C2_R1_C1 2.667e-01 4.762e-06 2.667e-01 
+*LOADS
+*RC U501:A2 2.039e-06
+*END
+
+*R_NET n304 4.059e-01
+*DRIVER U502:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.029e-01 4.022e-06 2.029e-01 
+*LOADS
+*RC U503:A2 1.254e-06
+*END
+
+*R_NET n305 9.105e-01
+*DRIVER U493:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 4.552e-01 1.373e-05 4.552e-01 
+*LOADS
+*RC U501:A1 6.569e-06
+*RC U503:A1 5.492e-06
+*END
+
+*R_NET n306 3.723e-01
+*DRIVER U509:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.861e-01 3.991e-06 1.861e-01 
+*LOADS
+*RC U510:B2 1.110e-06
+*END
+
+*R_NET n308 3.095e-01
+*DRIVER U514:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.547e-01 2.081e-06 1.547e-01 
+*LOADS
+*RC U515:B2 5.353e-07
+*END
+
+*R_NET n310 3.309e-01
+*DRIVER U515:X
+*CELL SAEDRVT14_OA2BB2_V1_0P5
+*C2_R1_C1 1.654e-01 3.887e-06 1.654e-01 
+*LOADS
+*RC U516:B 9.435e-07
+*END
+
+*R_NET n311 4.819e-01
+*DRIVER U510:X
+*CELL SAEDRVT14_OA2BB2_V1_0P5
+*C2_R1_C1 2.410e-01 5.411e-06 2.410e-01 
+*LOADS
+*RC U516:A1 1.863e-06
+*END
+
+*R_NET n314 2.583e-01
+*DRIVER U522:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.291e-01 1.831e-06 1.291e-01 
+*LOADS
+*RC U524:A2 3.977e-07
+*END
+
+*R_NET n315 2.798e-01
+*DRIVER U524:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.399e-01 2.668e-06 1.399e-01 
+*LOADS
+*RC U525:B 6.077e-07
+*END
+
+*R_NET n316 3.303e-01
+*DRIVER U525:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.651e-01 3.286e-06 1.651e-01 
+*LOADS
+*RC U526:B2 8.680e-07
+*END
+
+*R_NET n317 2.730e-01
+*DRIVER U519:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.365e-01 2.994e-06 1.365e-01 
+*LOADS
+*RC U526:B1 6.240e-07
+*END
+
+*R_NET n320 2.945e-01
+*DRIVER U534:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.473e-01 9.650e-07 1.473e-01 
+*LOADS
+*RC U535:A2 2.651e-07
+*END
+
+*R_NET n321 4.322e-01
+*DRIVER U532:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.161e-01 7.249e-06 2.161e-01 
+*LOADS
+*RC U535:A1 2.014e-06
+*END
+
+*R_NET n322 5.373e-01
+*DRIVER U535:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.686e-01 5.495e-06 2.686e-01 
+*LOADS
+*RC U537:A1 2.283e-06
+*END
+
+*R_NET n325 2.611e-01
+*DRIVER U540:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.305e-01 1.564e-06 1.305e-01 
+*LOADS
+*RC U541:B 3.466e-07
+*END
+
+*R_NET n326 4.292e-01
+*DRIVER U539:X
+*CELL SAEDRVT14_AOI22_0P5
+*C2_R1_C1 2.146e-01 2.458e-06 2.146e-01 
+*LOADS
+*RC U541:A2 9.009e-07
+*END
+
+*R_NET n327 5.631e-01
+*DRIVER U537:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.815e-01 8.328e-06 2.815e-01 
+*LOADS
+*RC U541:A1 3.107e-06
+*END
+
+*R_NET n328 4.140e-01
+*DRIVER U542:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 2.070e-01 6.318e-06 2.070e-01 
+*LOADS
+*RC U543:B 1.713e-06
+*END
+
+*R_NET n329 8.481e-01
+*DRIVER U541:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 4.241e-01 9.238e-06 4.241e-01 
+*LOADS
+*RC U542:A1 2.687e-06
+*RC U543:A2 3.171e-06
+*END
+
+*R_NET n331 2.455e-01
+*DRIVER U543:X
+*CELL SAEDRVT14_AO21B_0P5
+*C2_R1_C1 1.228e-01 1.396e-06 1.228e-01 
+*LOADS
+*RC U544:B 3.021e-07
+*END
+
+*R_NET n335 2.208e-01
+*DRIVER U546:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.104e-01 7.196e-07 1.104e-01 
+*LOADS
+*RC U548:A2 1.473e-07
+*END
+
+*R_NET n336 4.567e-01
+*DRIVER U544:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 2.284e-01 8.197e-06 2.284e-01 
+*LOADS
+*RC U548:A1 2.213e-06
+*END
+
+*R_NET n337 1.310e+00
+*DRIVER U548:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 6.548e-01 3.185e-05 6.548e-01 
+*LOADS
+*RC U549:B 1.819e-05
+*END
+
+*R_NET n342 4.008e-01
+*DRIVER U551:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.004e-01 3.877e-06 2.004e-01 
+*LOADS
+*RC U552:A3 1.170e-06
+*END
+
+*R_NET n343 3.911e-01
+*DRIVER U550:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.955e-01 2.472e-06 1.955e-01 
+*LOADS
+*RC U552:A2 8.146e-07
+*END
+
+*R_NET n344 3.108e-01
+*DRIVER U549:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.554e-01 8.081e-07 1.554e-01 
+*LOADS
+*RC U552:A1 2.375e-07
+*END
+
+*R_NET n348 3.055e-01
+*DRIVER U554:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.528e-01 1.510e-06 1.528e-01 
+*LOADS
+*RC U555:A3 4.079e-07
+*END
+
+*R_NET n349 9.588e-01
+*DRIVER U513:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 4.794e-01 8.150e-06 4.794e-01 
+*LOADS
+*RC U516:A2 3.749e-07
+*RC U555:A2 3.911e-06
+*END
+
+*R_NET n350 5.525e-01
+*DRIVER U553:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.763e-01 8.865e-06 2.763e-01 
+*LOADS
+*RC U555:A1 3.319e-06
+*END
+
+*R_NET n351 4.809e-01
+*DRIVER U555:X
+*CELL SAEDRVT14_OR3_0P5
+*C2_R1_C1 2.405e-01 7.867e-06 2.405e-01 
+*LOADS
+*RC U556:B 2.319e-06
+*END
+
+*R_NET n352 6.895e-01
+*DRIVER U552:X
+*CELL SAEDRVT14_OR3_0P5
+*C2_R1_C1 3.447e-01 1.194e-05 3.447e-01 
+*LOADS
+*RC U556:A2 5.411e-06
+*END
+
+*R_NET n353 5.276e-01
+*DRIVER U526:X
+*CELL SAEDRVT14_OA2BB2_V1_0P5
+*C2_R1_C1 2.638e-01 7.293e-06 2.638e-01 
+*LOADS
+*RC U556:A1 2.635e-06
+*END
+
+*R_NET n355 8.156e-01
+*DRIVER U556:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 4.078e-01 1.175e-05 4.078e-01 
+*LOADS
+*RC U561:A2 6.254e-06
+*END
+
+*R_NET n356 7.014e-01
+*DRIVER U516:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 3.507e-01 1.130e-05 3.507e-01 
+*LOADS
+*RC U561:A1 4.718e-06
+*END
+
+*R_NET n358 3.328e-01
+*DRIVER U563:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.664e-01 3.247e-06 1.664e-01 
+*LOADS
+*RC U564:B2 8.605e-07
+*END
+
+*R_NET n361 3.995e-01
+*DRIVER U566:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.998e-01 6.086e-06 1.998e-01 
+*LOADS
+*RC U567:B2 1.689e-06
+*END
+
+*R_NET n362 7.486e-01
+*DRIVER U559:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 3.743e-01 1.060e-05 3.743e-01 
+*LOADS
+*RC U354:A 3.647e-06
+*RC U567:A2 1.257e-06
+*END
+
+*R_NET n363 7.508e-01
+*DRIVER U564:X
+*CELL SAEDRVT14_OA2BB2_V1_0P5
+*C2_R1_C1 3.754e-01 1.916e-05 3.754e-01 
+*LOADS
+*RC U567:A1 7.051e-06
+*END
+
+*R_NET n364 2.854e-01
+*DRIVER U567:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 1.427e-01 2.837e-06 1.427e-01 
+*LOADS
+*RC U568:B 6.515e-07
+*END
+
+*R_NET n366 2.522e-01
+*DRIVER U568:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.261e-01 1.443e-06 1.261e-01 
+*LOADS
+*RC U569:B 3.123e-07
+*END
+
+*R_NET n367 6.521e-01
+*DRIVER U561:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 3.260e-01 7.215e-06 3.260e-01 
+*LOADS
+*RC U569:A2 3.449e-06
+*END
+
+*R_NET n368 1.040e+00
+*DRIVER U506:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 5.202e-01 2.533e-05 5.202e-01 
+*LOADS
+*RC U569:A1 1.343e-05
+*END
+
+*R_NET n369 3.682e-01
+*DRIVER U569:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.841e-01 2.674e-06 1.841e-01 
+*LOADS
+*RC U570:A2 8.118e-07
+*END
+
+*R_NET n370 4.382e-01
+*DRIVER U503:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.191e-01 2.736e-06 2.191e-01 
+*LOADS
+*RC U570:A1 1.046e-06
+*END
+
+*R_NET n371 5.310e-01
+*DRIVER U487:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 2.655e-01 4.311e-06 2.655e-01 
+*LOADS
+*RC U489:A2 1.125e-08
+*RC U571:B 1.351e-06
+*END
+
+*R_NET n372 4.327e-01
+*DRIVER U570:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.164e-01 2.710e-06 2.164e-01 
+*LOADS
+*RC U571:A2 9.966e-07
+*END
+
+*R_NET n373 4.294e-01
+*DRIVER U501:X
+*CELL SAEDRVT14_OA21B_1
+*C2_R1_C1 2.147e-01 4.775e-06 2.147e-01 
+*LOADS
+*RC U571:A1 1.569e-06
+*END
+
+*R_NET n374 3.273e-01
+*DRIVER U571:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.637e-01 3.392e-06 1.637e-01 
+*LOADS
+*RC U572:B 8.195e-07
+*END
+
+*R_NET n376 2.468e-01
+*DRIVER U573:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.234e-01 1.393e-06 1.234e-01 
+*LOADS
+*RC U574:B 2.992e-07
+*END
+
+*R_NET n378 5.691e-01
+*DRIVER U574:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 2.846e-01 1.019e-05 2.846e-01 
+*LOADS
+*RC U575:B 3.303e-06
+*END
+
+*R_NET n379 4.865e-01
+*DRIVER U572:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 2.432e-01 4.402e-06 2.432e-01 
+*LOADS
+*RC U575:A2 1.697e-06
+*END
+
+*R_NET n380 3.685e-01
+*DRIVER U490:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.842e-01 2.467e-06 1.842e-01 
+*LOADS
+*RC U575:A1 7.603e-07
+*END
+
+*R_NET n381 3.144e-01
+*DRIVER U575:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.572e-01 1.329e-06 1.572e-01 
+*LOADS
+*RC U576:A2 3.738e-07
+*END
+
+*R_NET n382 3.157e-01
+*DRIVER U480:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.579e-01 3.728e-06 1.579e-01 
+*LOADS
+*RC U576:A1 8.911e-07
+*END
+
+*R_NET n383 4.528e-01
+*DRIVER U576:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.264e-01 6.742e-06 2.264e-01 
+*LOADS
+*RC U577:B 1.911e-06
+*END
+
+*R_NET n384 6.860e-01
+*DRIVER U478:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 3.430e-01 4.102e-06 3.430e-01 
+*LOADS
+*RC U573:A 1.053e-06
+*RC U577:A2 7.016e-07
+*END
+
+*R_NET n385 3.223e-01
+*DRIVER U475:X
+*CELL SAEDRVT14_AOI22_0P5
+*C2_R1_C1 1.611e-01 1.281e-06 1.611e-01 
+*LOADS
+*RC U577:A1 3.728e-07
+*END
+
+*R_NET n386 7.238e-01
+*DRIVER U223:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 3.619e-01 8.065e-06 3.619e-01 
+*LOADS
+*RC U226:A1 2.185e-06
+*RC U578:B1 1.901e-06
+*END
+
+*R_NET n387 1.149e+00
+*DRIVER U343:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 5.744e-01 2.190e-05 5.744e-01 
+*LOADS
+*RC U362:A 1.085e-05
+*RC U578:A1 6.354e-06
+*END
+
+*R_NET n388 7.943e-01
+*DRIVER U578:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 3.971e-01 1.513e-05 3.971e-01 
+*LOADS
+*RC U579:A2 7.195e-06
+*END
+
+*R_NET n389 1.398e+00
+*DRIVER U211:X
+*CELL SAEDRVT14_AN4_0P5
+*C2_R1_C1 6.989e-01 2.741e-05 6.989e-01 
+*LOADS
+*RC U579:A1 1.735e-05
+*RC U212:A 1.730e-06
+*END
+
+*R_NET n390 4.209e-01
+*DRIVER U580:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.104e-01 5.053e-06 2.104e-01 
+*LOADS
+*RC U581:A2 1.601e-06
+*END
+
+*R_NET n391 2.514e-01
+*DRIVER U471:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.257e-01 1.700e-06 1.257e-01 
+*LOADS
+*RC U581:A1 3.698e-07
+*END
+
+*R_NET n392 6.552e-01
+*DRIVER U596:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.276e-01 5.527e-06 3.276e-01 
+*LOADS
+*RC U597:A1 1.572e-06
+*RC U598:A2 2.163e-06
+*END
+
+*R_NET n393 3.547e-01
+*DRIVER U599:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.773e-01 2.615e-06 1.773e-01 
+*LOADS
+*RC U600:A2 7.709e-07
+*END
+
+*R_NET n394 2.294e-01
+*DRIVER U597:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.147e-01 9.164e-07 1.147e-01 
+*LOADS
+*RC U600:A1 1.927e-07
+*END
+
+*R_NET n395 5.228e-01
+*DRIVER U584:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.614e-01 2.080e-06 2.614e-01 
+*LOADS
+*RC U585:A2 5.115e-07
+*RC U601:A1 5.715e-07
+*END
+
+*R_NET n396 3.480e-01
+*DRIVER U602:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.740e-01 2.706e-06 1.740e-01 
+*LOADS
+*RC U603:A2 7.918e-07
+*END
+
+*R_NET n397 4.168e-01
+*DRIVER U601:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.084e-01 7.196e-06 2.084e-01 
+*LOADS
+*RC U603:A1 1.962e-06
+*END
+
+*R_NET n398 5.151e-01
+*DRIVER U590:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.576e-01 2.052e-06 2.576e-01 
+*LOADS
+*RC U591:A2 5.831e-07
+*RC U604:A1 4.591e-07
+*END
+
+*R_NET n399 3.488e-01
+*DRIVER U605:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.744e-01 2.235e-06 1.744e-01 
+*LOADS
+*RC U606:A2 6.545e-07
+*END
+
+*R_NET n400 2.816e-01
+*DRIVER U604:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.408e-01 2.594e-06 1.408e-01 
+*LOADS
+*RC U606:A1 5.906e-07
+*END
+
+*R_NET n401 5.606e-01
+*DRIVER U594:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.803e-01 2.991e-06 2.803e-01 
+*LOADS
+*RC U595:A2 8.879e-07
+*RC U607:A1 2.610e-07
+*END
+
+*R_NET n402 5.418e-01
+*DRIVER U608:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.709e-01 8.548e-06 2.709e-01 
+*LOADS
+*RC U609:A2 3.053e-06
+*END
+
+*R_NET n403 2.308e-01
+*DRIVER U607:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.154e-01 9.905e-07 1.154e-01 
+*LOADS
+*RC U609:A1 2.087e-07
+*END
+
+*R_NET n404 5.064e-01
+*DRIVER U592:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.532e-01 1.853e-06 2.532e-01 
+*LOADS
+*RC U593:A2 5.992e-07
+*RC U610:A1 4.050e-07
+*END
+
+*R_NET n405 3.051e-01
+*DRIVER U611:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.525e-01 1.075e-06 1.525e-01 
+*LOADS
+*RC U612:A2 2.992e-07
+*END
+
+*R_NET n406 2.817e-01
+*DRIVER U610:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.409e-01 2.472e-06 1.409e-01 
+*LOADS
+*RC U612:A1 5.629e-07
+*END
+
+*R_NET n407 5.530e-01
+*DRIVER U586:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.765e-01 2.788e-06 2.765e-01 
+*LOADS
+*RC U587:A2 1.038e-06
+*RC U613:A1 3.801e-07
+*END
+
+*R_NET n408 3.331e-01
+*DRIVER U614:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.666e-01 1.846e-06 1.666e-01 
+*LOADS
+*RC U615:A2 5.311e-07
+*END
+
+*R_NET n409 2.050e-01
+*DRIVER U613:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.025e-01 1.468e-07 1.025e-01 
+*LOADS
+*RC U615:A1 2.968e-08
+*END
+
+*R_NET n410 5.749e-01
+*DRIVER U588:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.875e-01 3.731e-06 2.875e-01 
+*LOADS
+*RC U589:A2 1.345e-06
+*RC U616:A1 1.042e-06
+*END
+
+*R_NET n411 3.792e-01
+*DRIVER U617:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.896e-01 3.518e-06 1.896e-01 
+*LOADS
+*RC U618:A2 1.066e-06
+*END
+
+*R_NET n412 2.810e-01
+*DRIVER U616:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.405e-01 2.496e-06 1.405e-01 
+*LOADS
+*RC U618:A1 5.677e-07
+*END
+
+*R_NET n413 4.759e-01
+*DRIVER U619:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 2.379e-01 5.048e-06 2.379e-01 
+*LOADS
+*RC U620:A2 1.893e-06
+*END
+
+*R_NET n414 5.164e-01
+*DRIVER U621:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.582e-01 1.825e-06 2.582e-01 
+*LOADS
+*RC U622:A1 3.968e-07
+*RC U623:A2 5.809e-07
+*END
+
+*R_NET n415 4.699e-01
+*DRIVER U624:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.349e-01 5.569e-06 2.349e-01 
+*LOADS
+*RC U625:A2 1.856e-06
+*END
+
+*R_NET n416 4.597e-01
+*DRIVER U622:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.299e-01 6.881e-06 2.299e-01 
+*LOADS
+*RC U625:A1 1.975e-06
+*END
+
+*R_NET n417 1.411e+00
+*DRIVER U230:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 7.055e-01 7.931e-06 7.055e-01 
+*LOADS
+*RC U231:A1 4.036e-06
+*RC U463:B 4.124e-06
+*RC U466:A 1.557e-06
+*RC U626:A1 2.717e-06
+*END
+
+*R_NET n418 1.211e+00
+*DRIVER U463:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 6.057e-01 1.794e-05 6.057e-01 
+*LOADS
+*RC U464:A2 9.207e-07
+*RC U629:A1 1.040e-05
+*END
+
+*R_NET n419 4.729e-01
+*DRIVER U631:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 2.365e-01 4.563e-06 2.365e-01 
+*LOADS
+*RC U632:A2 1.706e-06
+*END
+
+*R_NET n420 8.405e-01
+*DRIVER U634:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 4.202e-01 2.129e-05 4.202e-01 
+*LOADS
+*RC U635:B 8.798e-06
+*END
+
+*R_NET n421 3.237e-01
+*DRIVER U636:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.619e-01 3.839e-06 1.619e-01 
+*LOADS
+*RC U637:B 9.254e-07
+*END
+
+*R_NET n422 9.180e-01
+*DRIVER U638:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 4.590e-01 2.447e-05 4.590e-01 
+*LOADS
+*RC U639:B 1.074e-05
+*END
+
+*R_NET n423 7.807e-01
+*DRIVER U640:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 3.903e-01 1.984e-05 3.903e-01 
+*LOADS
+*RC U641:B 7.805e-06
+*END
+
+*R_NET n424 9.081e-01
+*DRIVER U642:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 4.540e-01 2.419e-05 4.540e-01 
+*LOADS
+*RC U643:B 1.054e-05
+*END
+
+*R_NET n425 9.156e-01
+*DRIVER U644:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 4.578e-01 2.424e-05 4.578e-01 
+*LOADS
+*RC U645:B 1.063e-05
+*END
+
+*R_NET n426 3.399e+00
+*DRIVER U627:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.700e+00 2.636e-05 1.700e+00 
+*LOADS
+*RC U629:A2 1.545e-06
+*RC U634:A1 3.056e-05
+*RC U636:A1 1.372e-05
+*RC U638:A1 3.128e-05
+*RC U640:A1 3.440e-05
+*RC U642:A1 3.331e-05
+*RC U644:A1 3.135e-05
+*RC U646:A1 1.575e-05
+*END
+
+*R_NET n427 3.795e-01
+*DRIVER U646:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 1.897e-01 5.762e-06 1.897e-01 
+*LOADS
+*RC U647:B 1.496e-06
+*END
+
+*R_NET n428 5.292e-01
+*DRIVER U663:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.646e-01 2.414e-06 2.646e-01 
+*LOADS
+*RC U664:A1 5.542e-07
+*RC U665:A2 8.774e-07
+*END
+
+*R_NET n429 3.258e-01
+*DRIVER U666:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.629e-01 1.606e-06 1.629e-01 
+*LOADS
+*RC U667:A2 4.580e-07
+*END
+
+*R_NET n430 3.833e-01
+*DRIVER U664:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.917e-01 5.345e-06 1.917e-01 
+*LOADS
+*RC U667:A1 1.398e-06
+*END
+
+*R_NET n431 5.454e-01
+*DRIVER U659:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.727e-01 3.038e-06 2.727e-01 
+*LOADS
+*RC U660:A2 1.123e-06
+*RC U668:A1 7.292e-07
+*END
+
+*R_NET n432 2.878e-01
+*DRIVER U669:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.439e-01 6.044e-07 1.439e-01 
+*LOADS
+*RC U670:A2 1.647e-07
+*END
+
+*R_NET n433 3.803e-01
+*DRIVER U668:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.902e-01 5.260e-06 1.902e-01 
+*LOADS
+*RC U670:A1 1.371e-06
+*END
+
+*R_NET n435 3.152e-01
+*DRIVER U671:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.576e-01 1.512e-06 1.576e-01 
+*LOADS
+*RC U672:A2 4.259e-07
+*END
+
+*R_NET n436 8.281e-01
+*DRIVER U470:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 4.141e-01 5.102e-06 4.141e-01 
+*LOADS
+*RC U471:A1 2.051e-06
+*RC U472:A2 1.570e-06
+*RC U672:A1 1.494e-06
+*END
+
+*R_NET n437 2.314e-01
+*DRIVER U673:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.157e-01 8.062e-07 1.157e-01 
+*LOADS
+*RC U674:B 1.706e-07
+*END
+
+*R_NET n438 1.490e+00
+*DRIVER U589:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.448e-01 4.864e-06 7.448e-01 
+*LOADS
+*RC U590:A2 1.769e-06
+*RC U617:A1 7.038e-07
+*RC U673:A2 2.761e-06
+*RC U674:A2 1.899e-06
+*END
+
+*R_NET n440 5.798e-01
+*DRIVER U661:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.899e-01 3.756e-06 2.899e-01 
+*LOADS
+*RC U662:A2 9.327e-07
+*RC U675:A1 8.556e-07
+*END
+
+*R_NET n441 3.453e-01
+*DRIVER U676:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.726e-01 2.163e-06 1.726e-01 
+*LOADS
+*RC U677:A2 6.310e-07
+*END
+
+*R_NET n442 2.940e-01
+*DRIVER U675:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.470e-01 2.749e-06 1.470e-01 
+*LOADS
+*RC U677:A1 6.372e-07
+*END
+
+*R_NET n443 5.950e-01
+*DRIVER U657:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.975e-01 4.729e-06 2.975e-01 
+*LOADS
+*RC U658:A2 1.645e-06
+*RC U678:A1 7.720e-07
+*END
+
+*R_NET n444 3.599e-01
+*DRIVER U679:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.799e-01 3.043e-06 1.799e-01 
+*LOADS
+*RC U680:A2 9.025e-07
+*END
+
+*R_NET n445 3.336e-01
+*DRIVER U678:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.668e-01 3.773e-06 1.668e-01 
+*LOADS
+*RC U680:A1 9.243e-07
+*END
+
+*R_NET n446 5.979e-01
+*DRIVER U655:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.990e-01 4.342e-06 2.990e-01 
+*LOADS
+*RC U656:A2 1.260e-06
+*RC U681:A1 1.477e-06
+*END
+
+*R_NET n447 4.453e-01
+*DRIVER U682:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.227e-01 5.312e-06 2.227e-01 
+*LOADS
+*RC U683:A2 1.726e-06
+*END
+
+*R_NET n448 4.848e-01
+*DRIVER U681:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.424e-01 8.210e-06 2.424e-01 
+*LOADS
+*RC U683:A1 2.425e-06
+*END
+
+*R_NET n449 6.139e-01
+*DRIVER U653:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.070e-01 4.959e-06 3.070e-01 
+*LOADS
+*RC U654:A2 8.260e-07
+*RC U684:A1 1.614e-06
+*END
+
+*R_NET n450 4.817e-01
+*DRIVER U685:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.408e-01 6.689e-06 2.408e-01 
+*LOADS
+*RC U686:A2 2.255e-06
+*END
+
+*R_NET n451 2.966e-01
+*DRIVER U684:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.483e-01 2.784e-06 1.483e-01 
+*LOADS
+*RC U686:A1 6.476e-07
+*END
+
+*R_NET n452 4.465e-01
+*DRIVER U688:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.233e-01 5.687e-06 2.233e-01 
+*LOADS
+*RC U689:A2 1.850e-06
+*END
+
+*R_NET n453 3.299e-01
+*DRIVER U687:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.650e-01 4.310e-06 1.650e-01 
+*LOADS
+*RC U689:A1 1.051e-06
+*END
+
+*R_NET n454 2.126e-01
+*DRIVER U690:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.063e-01 3.271e-07 1.063e-01 
+*LOADS
+*RC U691:B 6.719e-08
+*END
+
+*R_NET n455 1.461e+00
+*DRIVER U472:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.306e-01 3.916e-06 7.306e-01 
+*LOADS
+*RC U580:A1 1.097e-06
+*RC U584:A2 1.714e-06
+*RC U690:A2 1.854e-06
+*RC U691:A2 1.390e-06
+*END
+
+*R_NET n457 3.366e-01
+*DRIVER U692:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.683e-01 3.854e-06 1.683e-01 
+*LOADS
+*RC U693:B 9.508e-07
+*END
+
+*R_NET n458 1.621e+00
+*DRIVER U660:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 8.106e-01 8.417e-06 8.106e-01 
+*LOADS
+*RC U661:A2 4.667e-06
+*RC U669:A1 4.234e-06
+*RC U692:A2 5.345e-06
+*RC U693:A2 4.454e-06
+*END
+
+*R_NET n460 2.886e-01
+*DRIVER U694:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.443e-01 2.848e-06 1.443e-01 
+*LOADS
+*RC U695:B 6.571e-07
+*END
+
+*R_NET n461 1.477e+00
+*DRIVER U595:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.383e-01 4.720e-06 7.383e-01 
+*LOADS
+*RC U596:A2 3.170e-06
+*RC U608:A1 2.600e-06
+*RC U694:A2 3.142e-06
+*RC U695:A2 1.524e-06
+*END
+
+*R_NET n462 2.024e+00
+*DRIVER U562:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.012e+00 2.684e-05 1.012e+00 
+*LOADS
+*RC U564:B1 4.807e-06
+*RC U596:A1 1.716e-05
+*RC U694:A1 1.870e-05
+*RC U695:A1 2.014e-05
+*END
+
+*R_NET n463 2.160e-01
+*DRIVER U696:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.080e-01 3.931e-07 1.080e-01 
+*LOADS
+*RC U697:B 8.119e-08
+*END
+
+*R_NET n464 1.647e+00
+*DRIVER U598:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 8.236e-01 9.186e-06 8.236e-01 
+*LOADS
+*RC U599:A1 8.944e-07
+*RC U621:A2 6.778e-06
+*RC U696:A2 5.758e-06
+*RC U697:A2 5.495e-06
+*END
+
+*R_NET n465 2.168e+00
+*DRIVER U565:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.084e+00 3.258e-05 1.084e+00 
+*LOADS
+*RC U567:B1 1.393e-05
+*RC U621:A1 1.773e-05
+*RC U696:A1 1.761e-05
+*RC U697:A1 1.717e-05
+*END
+
+*R_NET n466 2.475e-01
+*DRIVER U699:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.238e-01 1.313e-06 1.238e-01 
+*LOADS
+*RC U700:B 2.850e-07
+*END
+
+*R_NET n467 3.320e-01
+*DRIVER U701:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.660e-01 4.248e-06 1.660e-01 
+*LOADS
+*RC U702:B 1.042e-06
+*END
+
+*R_NET n468 1.588e+00
+*DRIVER U652:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.938e-01 7.274e-06 7.938e-01 
+*LOADS
+*RC U653:A2 2.412e-06
+*RC U688:A1 2.034e-06
+*RC U701:A2 2.812e-06
+*RC U702:A2 4.115e-06
+*END
+
+*R_NET n469 2.051e-01
+*DRIVER U703:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.026e-01 9.232e-08 1.026e-01 
+*LOADS
+*RC U704:B 1.873e-08
+*END
+
+*R_NET n470 1.480e+00
+*DRIVER U654:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.400e-01 4.704e-06 7.400e-01 
+*LOADS
+*RC U655:A2 2.775e-06
+*RC U685:A1 1.114e-06
+*RC U703:A2 3.077e-06
+*RC U704:A2 2.998e-06
+*END
+
+*R_NET n471 2.095e-01
+*DRIVER U705:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.048e-01 2.350e-07 1.048e-01 
+*LOADS
+*RC U706:B 4.804e-08
+*END
+
+*R_NET n472 1.495e+00
+*DRIVER U656:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.475e-01 4.685e-06 7.475e-01 
+*LOADS
+*RC U657:A2 3.219e-06
+*RC U682:A1 2.008e-06
+*RC U705:A2 2.739e-06
+*RC U706:A2 2.778e-06
+*END
+
+*R_NET n473 2.232e-01
+*DRIVER U707:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.116e-01 7.079e-07 1.116e-01 
+*LOADS
+*RC U708:B 1.479e-07
+*END
+
+*R_NET n474 1.549e+00
+*DRIVER U658:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.744e-01 6.721e-06 7.744e-01 
+*LOADS
+*RC U659:A2 4.197e-06
+*RC U679:A1 2.234e-06
+*RC U707:A2 3.053e-06
+*RC U708:A2 2.519e-06
+*END
+
+*R_NET n475 9.267e-01
+*DRIVER U651:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 4.634e-01 5.594e-06 4.634e-01 
+*LOADS
+*RC U659:A1 2.528e-06
+*RC U707:A1 1.662e-06
+*RC U708:A1 1.450e-06
+*END
+
+*R_NET n476 2.451e-01
+*DRIVER U709:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.225e-01 1.437e-06 1.225e-01 
+*LOADS
+*RC U710:B 3.106e-07
+*END
+
+*R_NET n477 1.519e+00
+*DRIVER U593:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.596e-01 5.628e-06 7.596e-01 
+*LOADS
+*RC U594:A2 2.826e-06
+*RC U611:A1 1.912e-06
+*RC U709:A2 2.534e-06
+*RC U710:A2 3.620e-06
+*END
+
+*R_NET n478 2.050e+00
+*DRIVER U316:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.025e+00 2.640e-05 1.025e+00 
+*LOADS
+*RC U318:B1 7.046e-06
+*RC U515:B1 2.485e-06
+*RC U594:A1 1.849e-05
+*RC U709:A1 2.189e-05
+*RC U710:A1 2.081e-05
+*END
+
+*R_NET n479 2.553e-01
+*DRIVER U711:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.276e-01 1.484e-06 1.276e-01 
+*LOADS
+*RC U712:B 3.259e-07
+*END
+
+*R_NET n480 1.512e+00
+*DRIVER U591:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.560e-01 5.342e-06 7.560e-01 
+*LOADS
+*RC U592:A2 2.469e-06
+*RC U605:A1 1.990e-06
+*RC U711:A2 1.929e-06
+*RC U712:A2 2.504e-06
+*END
+
+*R_NET n481 2.615e+00
+*DRIVER U313:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.307e+00 3.925e-05 1.307e+00 
+*LOADS
+*RC U315:B1 1.709e-05
+*RC U510:B1 7.417e-06
+*RC U592:A1 2.463e-05
+*RC U711:A1 2.808e-05
+*RC U712:A1 2.958e-05
+*END
+
+*R_NET n482 2.649e-01
+*DRIVER U713:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.325e-01 2.077e-06 1.325e-01 
+*LOADS
+*RC U714:B 4.628e-07
+*END
+
+*R_NET n483 1.486e+00
+*DRIVER U585:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.431e-01 4.861e-06 7.431e-01 
+*LOADS
+*RC U586:A2 1.202e-06
+*RC U602:A1 2.381e-06
+*RC U713:A2 1.177e-06
+*RC U714:A2 2.500e-06
+*END
+
+*R_NET n484 2.165e+00
+*DRIVER U297:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.082e+00 2.560e-05 1.082e+00 
+*LOADS
+*RC U299:B1 4.838e-06
+*RC U548:B1 6.161e-06
+*RC U586:A1 1.293e-05
+*RC U713:A1 1.457e-05
+*RC U714:A1 1.618e-05
+*END
+
+*R_NET n485 2.159e-01
+*DRIVER U715:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.079e-01 3.985e-07 1.079e-01 
+*LOADS
+*RC U716:B 8.228e-08
+*END
+
+*R_NET n486 1.508e+00
+*DRIVER U587:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.540e-01 4.761e-06 7.540e-01 
+*LOADS
+*RC U588:A2 2.801e-06
+*RC U614:A1 7.495e-07
+*RC U715:A2 2.285e-06
+*RC U716:A2 1.940e-06
+*END
+
+*R_NET n487 2.045e+00
+*DRIVER U270:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.023e+00 2.622e-05 1.023e+00 
+*LOADS
+*RC U276:A1 6.577e-06
+*RC U524:A1 4.949e-06
+*RC U588:A1 1.427e-05
+*RC U715:A1 1.715e-05
+*RC U716:A1 1.742e-05
+*END
+
+*R_NET n488 2.460e-01
+*DRIVER U717:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.230e-01 1.414e-06 1.230e-01 
+*LOADS
+*RC U718:B 3.063e-07
+*END
+
+*R_NET n489 1.977e+00
+*DRIVER U231:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 9.883e-01 2.490e-05 9.883e-01 
+*LOADS
+*RC U628:A2 1.932e-05
+*RC U232:B 1.599e-05
+*RC U465:B2 4.277e-07
+*RC U720:A2 1.877e-05
+*END
+
+*R_NET n490 1.184e+00
+*DRIVER U626:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 5.918e-01 2.167e-05 5.918e-01 
+*LOADS
+*RC U627:A 1.099e-05
+*RC U721:A1 6.972e-06
+*END
+
+*R_NET n491 2.765e-01
+*DRIVER U721:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.383e-01 3.989e-07 1.383e-01 
+*LOADS
+*RC U722:A2 1.072e-07
+*END
+
+*R_NET n492 4.383e-01
+*DRIVER U719:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.192e-01 1.504e-06 2.192e-01 
+*LOADS
+*RC U723:A2 6.118e-07
+*END
+
+*R_NET n494 1.514e+00
+*DRIVER U623:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.568e-01 5.289e-06 7.568e-01 
+*LOADS
+*RC U624:A1 6.750e-07
+*RC U717:A2 2.533e-06
+*RC U718:A2 3.599e-06
+*RC U724:A2 2.671e-06
+*END
+
+*R_NET n495 1.669e+00
+*DRIVER U256:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 8.346e-01 1.575e-05 8.346e-01 
+*LOADS
+*RC U259:B1 2.409e-06
+*RC U497:B1 1.699e-06
+*RC U717:A1 1.142e-05
+*RC U718:A1 1.010e-05
+*RC U724:A1 1.008e-05
+*END
+
+*R_NET n496 5.529e-01
+*DRIVER U724:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.764e-01 2.837e-06 2.764e-01 
+*LOADS
+*RC U725:A1 6.928e-07
+*RC U726:A2 6.222e-07
+*END
+
+*R_NET n497 4.654e-01
+*DRIVER U727:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.327e-01 5.825e-06 2.327e-01 
+*LOADS
+*RC U728:A2 1.932e-06
+*END
+
+*R_NET n498 2.765e-01
+*DRIVER U725:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.383e-01 2.253e-06 1.383e-01 
+*LOADS
+*RC U728:A1 5.092e-07
+*END
+
+*R_NET n499 1.499e+00
+*DRIVER U665:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.497e-01 4.782e-06 7.497e-01 
+*LOADS
+*RC U666:A1 2.155e-06
+*RC U699:A2 2.026e-06
+*RC U700:A2 1.576e-06
+*RC U729:A2 1.968e-06
+*END
+
+*R_NET n500 1.088e+00
+*DRIVER U698:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 5.442e-01 9.962e-06 5.442e-01 
+*LOADS
+*RC U699:A1 4.236e-06
+*RC U700:A1 4.615e-06
+*RC U729:A1 4.713e-06
+*END
+
+*R_NET n501 5.796e-01
+*DRIVER U729:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.898e-01 3.883e-06 2.898e-01 
+*LOADS
+*RC U730:A1 1.248e-06
+*RC U731:A2 1.466e-06
+*END
+
+*R_NET n502 4.466e-01
+*DRIVER U732:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.233e-01 5.120e-06 2.233e-01 
+*LOADS
+*RC U733:A2 1.666e-06
+*END
+
+*R_NET n503 3.808e-01
+*DRIVER U730:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.904e-01 5.196e-06 1.904e-01 
+*LOADS
+*RC U733:A1 1.355e-06
+*END
+
+*R_NET n504 2.134e-01
+*DRIVER U735:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.067e-01 3.040e-07 1.067e-01 
+*LOADS
+*RC U736:B 6.253e-08
+*END
+
+*R_NET n505 3.187e-01
+*DRIVER U737:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.593e-01 3.411e-06 1.593e-01 
+*LOADS
+*RC U738:B 8.212e-07
+*END
+
+*R_NET n506 1.534e+00
+*DRIVER U726:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.670e-01 5.932e-06 7.670e-01 
+*LOADS
+*RC U727:A1 2.796e-06
+*RC U737:A2 2.302e-06
+*RC U738:A2 6.046e-07
+*RC U739:A2 3.411e-06
+*END
+
+*R_NET n507 1.642e+00
+*DRIVER U251:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 8.210e-01 1.397e-05 8.210e-01 
+*LOADS
+*RC U254:B1 4.668e-06
+*RC U500:B1 4.555e-06
+*RC U737:A1 5.034e-06
+*RC U738:A1 5.203e-06
+*RC U739:A1 6.023e-06
+*END
+
+*R_NET n508 6.286e-01
+*DRIVER U739:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.143e-01 5.851e-06 3.143e-01 
+*LOADS
+*RC U740:A1 1.160e-06
+*RC U741:A2 2.326e-06
+*END
+
+*R_NET n509 3.114e-01
+*DRIVER U742:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.557e-01 1.457e-06 1.557e-01 
+*LOADS
+*RC U743:A2 4.086e-07
+*END
+
+*R_NET n510 2.924e-01
+*DRIVER U740:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.462e-01 3.129e-06 1.462e-01 
+*LOADS
+*RC U743:A1 7.237e-07
+*END
+
+*R_NET n511 3.059e-01
+*DRIVER U744:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.530e-01 2.803e-06 1.530e-01 
+*LOADS
+*RC U745:B 6.630e-07
+*END
+
+*R_NET n512 1.504e+00
+*DRIVER U731:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.522e-01 5.135e-06 7.522e-01 
+*LOADS
+*RC U732:A1 2.083e-06
+*RC U735:A2 2.551e-06
+*RC U736:A2 2.685e-06
+*RC U746:A2 3.135e-06
+*END
+
+*R_NET n513 1.348e+00
+*DRIVER U734:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 6.741e-01 1.906e-05 6.741e-01 
+*LOADS
+*RC U735:A1 1.140e-05
+*RC U736:A1 1.100e-05
+*RC U746:A1 1.062e-05
+*END
+
+*R_NET n514 5.892e-01
+*DRIVER U746:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.946e-01 3.736e-06 2.946e-01 
+*LOADS
+*RC U747:A1 8.854e-07
+*RC U748:A2 1.428e-06
+*END
+
+*R_NET n515 2.987e-01
+*DRIVER U749:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.493e-01 9.001e-07 1.493e-01 
+*LOADS
+*RC U750:A2 2.486e-07
+*END
+
+*R_NET n516 4.226e-01
+*DRIVER U747:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.113e-01 5.952e-06 2.113e-01 
+*LOADS
+*RC U750:A1 1.635e-06
+*END
+
+*R_NET n517 1.497e+00
+*DRIVER U741:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.486e-01 4.782e-06 7.486e-01 
+*LOADS
+*RC U742:A1 5.880e-07
+*RC U744:A2 1.911e-06
+*RC U745:A2 3.177e-06
+*RC U751:A2 2.848e-06
+*END
+
+*R_NET n518 1.420e+00
+*DRIVER U244:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 7.098e-01 1.338e-05 7.098e-01 
+*LOADS
+*RC U247:B1 6.546e-06
+*RC U744:A1 1.052e-06
+*RC U745:A1 3.019e-06
+*RC U751:A1 2.101e-06
+*END
+
+*R_NET n519 6.001e-01
+*DRIVER U751:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.000e-01 4.796e-06 3.000e-01 
+*LOADS
+*RC U752:A1 1.827e-07
+*RC U753:A2 1.653e-06
+*END
+
+*R_NET n520 5.323e-01
+*DRIVER U754:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.661e-01 8.189e-06 2.661e-01 
+*LOADS
+*RC U755:A2 2.899e-06
+*END
+
+*R_NET n521 2.795e-01
+*DRIVER U752:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.398e-01 2.402e-06 1.398e-01 
+*LOADS
+*RC U755:A1 5.452e-07
+*END
+
+*R_NET n522 2.509e-01
+*DRIVER U757:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.254e-01 1.348e-06 1.254e-01 
+*LOADS
+*RC U758:B 2.941e-07
+*END
+
+*R_NET n523 2.588e-01
+*DRIVER U759:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.294e-01 1.851e-06 1.294e-01 
+*LOADS
+*RC U760:B 4.088e-07
+*END
+
+*R_NET n524 1.507e+00
+*DRIVER U748:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.537e-01 5.035e-06 7.537e-01 
+*LOADS
+*RC U749:A1 2.142e-06
+*RC U757:A2 1.397e-06
+*RC U758:A2 1.933e-06
+*RC U761:A2 2.711e-06
+*END
+
+*R_NET n525 9.412e-01
+*DRIVER U756:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 4.706e-01 6.344e-06 4.706e-01 
+*LOADS
+*RC U757:A1 2.008e-06
+*RC U758:A1 1.690e-06
+*RC U761:A1 2.572e-06
+*END
+
+*R_NET n526 5.061e-01
+*DRIVER U761:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.530e-01 1.773e-06 2.530e-01 
+*LOADS
+*RC U762:A1 4.354e-07
+*RC U763:A2 6.253e-07
+*END
+
+*R_NET n527 4.178e-01
+*DRIVER U764:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.089e-01 4.124e-06 2.089e-01 
+*LOADS
+*RC U765:A2 1.302e-06
+*END
+
+*R_NET n528 3.896e-01
+*DRIVER U762:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.948e-01 4.947e-06 1.948e-01 
+*LOADS
+*RC U765:A1 1.304e-06
+*END
+
+*R_NET n529 1.536e+00
+*DRIVER U753:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.679e-01 6.266e-06 7.679e-01 
+*LOADS
+*RC U754:A1 1.022e-06
+*RC U759:A2 3.347e-06
+*RC U760:A2 2.412e-06
+*RC U766:A2 3.903e-06
+*END
+
+*R_NET n530 2.261e+00
+*DRIVER U337:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.131e+00 3.047e-05 1.131e+00 
+*LOADS
+*RC U339:B2 1.225e-05
+*RC U489:B1 1.823e-06
+*RC U759:A1 2.688e-05
+*RC U760:A1 2.775e-05
+*RC U766:A1 2.551e-05
+*END
+
+*R_NET n531 6.685e-01
+*DRIVER U766:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.343e-01 6.006e-06 3.343e-01 
+*LOADS
+*RC U767:A1 1.259e-06
+*RC U768:A2 2.281e-06
+*END
+
+*R_NET n532 3.197e-01
+*DRIVER U769:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.599e-01 1.693e-06 1.599e-01 
+*LOADS
+*RC U770:A2 4.794e-07
+*END
+
+*R_NET n533 3.076e-01
+*DRIVER U767:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.538e-01 2.847e-06 1.538e-01 
+*LOADS
+*RC U770:A1 6.728e-07
+*END
+
+*R_NET n534 2.201e-01
+*DRIVER U772:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.100e-01 5.140e-07 1.100e-01 
+*LOADS
+*RC U773:B 1.069e-07
+*END
+
+*R_NET n535 2.463e-01
+*DRIVER U774:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.232e-01 1.407e-06 1.232e-01 
+*LOADS
+*RC U775:B 3.048e-07
+*END
+
+*R_NET n536 1.535e+00
+*DRIVER U768:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.673e-01 5.707e-06 7.673e-01 
+*LOADS
+*RC U769:A1 9.079e-07
+*RC U774:A2 3.805e-06
+*RC U775:A2 2.986e-06
+*RC U776:A2 3.584e-06
+*END
+
+*R_NET n537 1.931e+00
+*DRIVER U238:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 9.656e-01 2.945e-05 9.656e-01 
+*LOADS
+*RC U241:B1 4.765e-06
+*RC U774:A1 2.097e-05
+*RC U775:A1 1.973e-05
+*RC U776:A1 2.054e-05
+*END
+
+*R_NET n538 5.630e-01
+*DRIVER U776:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.815e-01 3.766e-06 2.815e-01 
+*LOADS
+*RC U777:A1 7.896e-07
+*RC U778:A2 1.372e-06
+*END
+
+*R_NET n539 3.200e-01
+*DRIVER U779:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.600e-01 1.847e-06 1.600e-01 
+*LOADS
+*RC U780:A2 5.230e-07
+*END
+
+*R_NET n540 2.527e-01
+*DRIVER U777:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.263e-01 1.609e-06 1.263e-01 
+*LOADS
+*RC U780:A1 3.508e-07
+*END
+
+*R_NET n541 1.446e+00
+*DRIVER U763:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.231e-01 3.348e-06 7.231e-01 
+*LOADS
+*RC U764:A1 6.072e-07
+*RC U772:A2 1.556e-06
+*RC U773:A2 1.884e-06
+*RC U781:A2 1.910e-06
+*END
+
+*R_NET n542 8.662e-01
+*DRIVER U771:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 4.331e-01 4.276e-06 4.331e-01 
+*LOADS
+*RC U772:A1 1.441e-06
+*RC U773:A1 1.510e-06
+*RC U781:A1 1.745e-06
+*END
+
+*R_NET n543 5.409e-01
+*DRIVER U781:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.704e-01 2.938e-06 2.704e-01 
+*LOADS
+*RC U782:A1 5.199e-07
+*RC U783:A2 1.001e-06
+*END
+
+*R_NET n544 3.394e-01
+*DRIVER U784:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.697e-01 2.147e-06 1.697e-01 
+*LOADS
+*RC U785:A2 6.221e-07
+*END
+
+*R_NET n545 3.913e-01
+*DRIVER U782:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.957e-01 5.882e-06 1.957e-01 
+*LOADS
+*RC U785:A1 1.554e-06
+*END
+
+*R_NET n546 2.805e-01
+*DRIVER U786:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.403e-01 2.087e-06 1.403e-01 
+*LOADS
+*RC U787:B 4.758e-07
+*END
+
+*R_NET n547 2.303e-01
+*DRIVER U789:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.151e-01 9.472e-07 1.151e-01 
+*LOADS
+*RC U790:B 2.001e-07
+*END
+
+*R_NET n548 1.511e+00
+*DRIVER U778:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.557e-01 5.351e-06 7.557e-01 
+*LOADS
+*RC U779:A1 5.397e-07
+*RC U786:A2 2.645e-06
+*RC U787:A2 2.139e-06
+*RC U791:A2 3.201e-06
+*END
+
+*R_NET n549 1.741e+00
+*DRIVER U234:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 8.707e-01 2.150e-05 8.707e-01 
+*LOADS
+*RC U343:A1 7.109e-06
+*RC U786:A1 7.370e-06
+*RC U787:A1 8.911e-06
+*RC U791:A1 7.788e-06
+*END
+
+*R_NET n550 2.090e-01
+*DRIVER U792:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.045e-01 1.992e-07 1.045e-01 
+*LOADS
+*RC U793:B 4.067e-08
+*END
+
+*R_NET n551 7.930e-01
+*DRIVER U791:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.965e-01 2.286e-06 3.965e-01 
+*LOADS
+*RC U792:A2 1.068e-06
+*RC U793:A2 1.115e-06
+*END
+
+*R_NET n552 1.508e+00
+*DRIVER U783:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.539e-01 5.207e-06 7.539e-01 
+*LOADS
+*RC U784:A1 2.769e-06
+*RC U789:A2 1.782e-06
+*RC U790:A2 2.535e-06
+*RC U794:A2 2.136e-06
+*END
+
+*R_NET n553 1.153e+00
+*DRIVER U788:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 5.767e-01 1.315e-05 5.767e-01 
+*LOADS
+*RC U789:A1 6.250e-06
+*RC U790:A1 7.029e-06
+*RC U794:A1 6.457e-06
+*END
+
+*R_NET n554 5.385e-01
+*DRIVER U794:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.693e-01 2.762e-06 2.693e-01 
+*LOADS
+*RC U795:A1 2.270e-07
+*RC U796:A2 1.015e-06
+*END
+
+*R_NET n555 5.183e-01
+*DRIVER U797:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.591e-01 7.028e-06 2.591e-01 
+*LOADS
+*RC U798:A2 2.455e-06
+*END
+
+*R_NET n556 2.828e-01
+*DRIVER U795:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.414e-01 2.149e-06 1.414e-01 
+*LOADS
+*RC U798:A1 4.902e-07
+*END
+
+*R_NET n557 3.439e-01
+*DRIVER U800:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.720e-01 3.982e-06 1.720e-01 
+*LOADS
+*RC U801:B 9.922e-07
+*END
+
+*R_NET n558 1.654e+00
+*DRIVER U796:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 8.272e-01 8.852e-06 8.272e-01 
+*LOADS
+*RC U797:A1 4.425e-06
+*RC U800:A2 5.985e-06
+*RC U801:A2 2.634e-06
+*RC U802:A2 6.014e-06
+*END
+
+*R_NET n560 5.199e-01
+*DRIVER U802:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.599e-01 2.275e-06 2.599e-01 
+*LOADS
+*RC U803:A1 2.875e-07
+*RC U804:A2 8.220e-07
+*END
+
+*R_NET n561 3.704e-01
+*DRIVER U805:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.852e-01 3.315e-06 1.852e-01 
+*LOADS
+*RC U806:A2 9.945e-07
+*END
+
+*R_NET n562 2.494e-01
+*DRIVER U803:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.247e-01 1.315e-06 1.247e-01 
+*LOADS
+*RC U806:A1 2.853e-07
+*END
+
+*R_NET n563 2.231e-01
+*DRIVER U808:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.116e-01 7.141e-07 1.116e-01 
+*LOADS
+*RC U809:B 1.492e-07
+*END
+
+*R_NET n564 1.527e+00
+*DRIVER U804:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.634e-01 6.082e-06 7.634e-01 
+*LOADS
+*RC U805:A1 1.904e-06
+*RC U808:A2 2.773e-06
+*RC U809:A2 2.250e-06
+*RC U810:A2 3.944e-06
+*END
+
+*R_NET n565 1.813e+00
+*DRIVER U807:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 9.063e-01 3.369e-05 9.063e-01 
+*LOADS
+*RC U808:A1 2.468e-05
+*RC U809:A1 2.434e-05
+*RC U810:A1 2.518e-05
+*END
+
+*R_NET n566 5.380e-01
+*DRIVER U810:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.690e-01 2.663e-06 2.690e-01 
+*LOADS
+*RC U811:A1 4.762e-07
+*RC U812:A2 9.781e-07
+*END
+
+*R_NET n567 2.786e-01
+*DRIVER U813:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.393e-01 3.741e-07 1.393e-01 
+*LOADS
+*RC U814:A2 1.008e-07
+*END
+
+*R_NET n568 2.856e-01
+*DRIVER U811:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.428e-01 2.583e-06 1.428e-01 
+*LOADS
+*RC U814:A1 5.916e-07
+*END
+
+*R_NET n569 2.283e-01
+*DRIVER U816:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.141e-01 8.175e-07 1.141e-01 
+*LOADS
+*RC U817:B 1.722e-07
+*END
+
+*R_NET n570 1.557e+00
+*DRIVER U812:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.787e-01 6.608e-06 7.787e-01 
+*LOADS
+*RC U813:A1 2.412e-06
+*RC U816:A2 3.228e-06
+*RC U817:A2 3.227e-06
+*RC U818:A2 4.678e-06
+*END
+
+*R_NET n572 6.044e-01
+*DRIVER U818:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.022e-01 5.168e-06 3.022e-01 
+*LOADS
+*RC U819:A1 1.213e-06
+*RC U820:A2 2.004e-06
+*END
+
+*R_NET n573 3.062e-01
+*DRIVER U821:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.531e-01 1.277e-06 1.531e-01 
+*LOADS
+*RC U822:A2 3.558e-07
+*END
+
+*R_NET n574 2.346e-01
+*DRIVER U819:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 1.173e-01 9.812e-07 1.173e-01 
+*LOADS
+*RC U822:A1 2.080e-07
+*END
+
+*R_NET n575 2.076e-01
+*DRIVER U823:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.038e-01 1.567e-07 1.038e-01 
+*LOADS
+*RC U824:B 3.192e-08
+*END
+
+*R_NET n576 1.479e+00
+*DRIVER U820:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.395e-01 4.693e-06 7.395e-01 
+*LOADS
+*RC U821:A1 7.156e-07
+*RC U823:A2 2.453e-06
+*RC U824:A2 2.510e-06
+*RC U825:A2 3.062e-06
+*END
+
+*R_NET n577 2.151e-01
+*DRIVER U826:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.075e-01 4.313e-07 1.075e-01 
+*LOADS
+*RC U827:B 8.894e-08
+*END
+
+*R_NET n578 8.081e-01
+*DRIVER U825:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 4.041e-01 2.876e-06 4.041e-01 
+*LOADS
+*RC U826:A2 1.310e-06
+*RC U827:A2 1.336e-06
+*END
+
+*R_NET n580 2.042e-01
+*DRIVER U828:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 1.021e-01 6.284e-08 1.021e-01 
+*LOADS
+*RC U829:B 1.273e-08
+*END
+
+*R_NET n581 1.503e+00
+*DRIVER U662:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 7.513e-01 5.254e-06 7.513e-01 
+*LOADS
+*RC U663:A2 1.235e-06
+*RC U676:A1 2.582e-06
+*RC U828:A2 3.438e-06
+*RC U829:A2 3.283e-06
+*END
+
+*R_NET n582 9.995e-01
+*DRIVER U649:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 4.998e-01 7.599e-06 4.998e-01 
+*LOADS
+*RC U663:A1 3.583e-06
+*RC U828:A1 2.102e-06
+*RC U829:A1 2.009e-06
+*END
+
+*R_NET n584 6.757e-01
+*DRIVER U210:X
+*CELL SAEDRVT14_ND2B_U_0P5
+*C2_R1_C1 3.379e-01 5.364e-06 3.379e-01 
+*LOADS
+*RC U217:A1 1.452e-06
+*RC U843:B2 1.121e-06
+*END
+
+*R_NET n585 2.202e+00
+*DRIVER U213:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 1.101e+00 1.777e-05 1.101e+00 
+*LOADS
+*RC U215:A 3.434e-06
+*RC U221:A1 4.702e-06
+*RC U224:B 4.027e-06
+*RC U345:A2 6.039e-06
+*RC U578:A2 1.112e-05
+*RC U843:A2 4.248e-06
+*END
+
+*R_NET n587 4.147e-01
+*DRIVER U843:X
+*CELL SAEDRVT14_OAI22_0P5
+*C2_R1_C1 2.074e-01 3.926e-06 2.074e-01 
+*LOADS
+*RC U844:A2 1.236e-06
+*END
+
+*R_NET n588 1.123e+00
+*DRIVER U577:X
+*CELL SAEDRVT14_OAI21_0P5
+*C2_R1_C1 5.613e-01 1.851e-05 5.613e-01 
+*LOADS
+*RC U578:B2 9.597e-06
+*RC U845:A2 5.822e-06
+*END
+
+*R_NET n589 9.768e-01
+*DRIVER U222:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 4.884e-01 1.285e-05 4.884e-01 
+*LOADS
+*RC U223:A 3.527e-06
+*RC U845:A1 7.220e-06
+*END
+
+*R_NET n590 4.007e-01
+*DRIVER U845:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.004e-01 3.994e-06 2.004e-01 
+*LOADS
+*RC U846:A2 1.256e-06
+*END
+
+*R_NET n591 6.294e-01
+*DRIVER U844:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.147e-01 8.355e-06 3.147e-01 
+*LOADS
+*RC U846:A1 3.727e-06
+*END
+
+*R_NET n592 5.853e+00
+*DRIVER U628:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 2.926e+00 6.875e-05 2.926e+00 
+*LOADS
+*RC U629:A3 1.483e-05
+*RC U634:B 3.969e-05
+*RC U636:B 1.948e-05
+*RC U638:B 4.083e-05
+*RC U640:B 4.579e-05
+*RC U642:B 4.405e-05
+*RC U644:B 4.094e-05
+*RC U646:B 1.617e-05
+*RC U648:B 1.188e-04
+*RC U721:A2 2.613e-05
+*RC U847:A2 2.525e-05
+*END
+
+*R_NET n593 4.272e-01
+*DRIVER U848:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 2.136e-01 5.226e-06 2.136e-01 
+*LOADS
+*RC U849:A2 1.689e-06
+*END
+
+*R_NET n594 4.808e-01
+*DRIVER U847:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 2.404e-01 4.297e-06 2.404e-01 
+*LOADS
+*RC U849:A1 1.704e-06
+*END
+
+*R_NET n596 7.044e-01
+*DRIVER U536:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 3.522e-01 5.764e-06 3.522e-01 
+*LOADS
+*RC U537:A2 1.451e-06
+*RC U860:A3 1.772e-06
+*END
+
+*R_NET n597 6.591e-01
+*DRIVER U468:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 3.296e-01 7.493e-06 3.296e-01 
+*LOADS
+*RC U347:A 2.490e-06
+*RC U860:A2 1.921e-06
+*END
+
+*R_NET n598 1.029e+01
+*DRIVER U579:X
+*CELL SAEDRVT14_OA21_1
+*C2_R1_C1 5.144e+00 3.617e-05 5.144e+00 
+*LOADS
+*RC U580:A2 1.062e-04
+*RC U599:A2 5.687e-05
+*RC U602:A2 1.106e-04
+*RC U605:A2 4.000e-05
+*RC U608:A2 3.709e-05
+*RC U611:A2 2.311e-05
+*RC U614:A2 8.343e-05
+*RC U617:A2 5.704e-05
+*RC U620:A1 8.047e-05
+*RC U624:A2 5.072e-05
+*RC U671:B 1.066e-04
+*RC U673:B 6.450e-05
+*RC U690:B 1.163e-04
+*RC U694:B 4.010e-05
+*RC U696:B 3.982e-05
+*RC U709:B 2.707e-05
+*RC U711:B 4.484e-05
+*RC U713:B 1.069e-04
+*RC U715:B 8.135e-05
+*RC U717:B 4.875e-05
+*RC U727:A2 6.042e-05
+*RC U737:B 6.106e-05
+*RC U742:A2 8.630e-05
+*RC U744:B 9.070e-05
+*RC U754:A2 7.280e-05
+*RC U759:B 6.084e-05
+*RC U769:A2 3.013e-05
+*RC U774:B 3.197e-05
+*RC U779:A2 5.099e-05
+*RC U786:B 5.183e-05
+*RC U792:B 6.278e-05
+*RC U860:A1 1.280e-04
+*END
+
+*R_NET n600 7.957e-01
+*DRIVER U720:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.979e-01 1.147e-05 3.979e-01 
+*LOADS
+*RC U722:A1 4.423e-06
+*RC U892:B 3.847e-06
+*END
+
+*R_NET n601 6.387e+00
+*DRIVER U633:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 3.194e+00 7.492e-05 3.194e+00 
+*LOADS
+*RC U635:A1 1.308e-04
+*RC U637:A1 5.342e-05
+*RC U639:A1 1.470e-04
+*RC U641:A1 1.429e-04
+*RC U643:A1 1.515e-04
+*RC U645:A1 1.482e-04
+*RC U647:A1 7.328e-05
+*RC U648:A1 1.100e-04
+*RC U719:A2 1.541e-05
+*RC U847:A1 5.284e-05
+*RC U892:A1 2.235e-05
+*END
+
+*R_NET n602 6.241e-01
+*DRIVER U352:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 3.121e-01 8.146e-06 3.121e-01 
+*LOADS
+*RC U353:A 2.232e-06
+*RC U893:B 5.884e-07
+*END
+
+*R_NET n603 1.092e+00
+*DRIVER U722:X
+*CELL SAEDRVT14_NR2_MM_0P5
+*C2_R1_C1 5.462e-01 1.866e-05 5.462e-01 
+*LOADS
+*RC U723:B 9.265e-06
+*RC U894:B 6.052e-06
+*END
+
+*R_NET n604 9.209e-01
+*DRIVER U464:X
+*CELL SAEDRVT14_ND2_CDC_1
+*C2_R1_C1 4.605e-01 4.777e-06 4.605e-01 
+*LOADS
+*RC U465:A2 2.093e-06
+*RC U633:A 3.223e-07
+*RC U894:A2 4.827e-07
+*END
+
+*R_NET n605 4.240e-01
+*DRIVER U893:X
+*CELL SAEDRVT14_AOI21_0P75
+*C2_R1_C1 2.120e-01 4.546e-06 2.120e-01 
+*LOADS
+*RC U894:A1 1.477e-06
+*END
+
+*R_NET n606 8.451e+00
+*DRIVER U900:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 4.225e+00 7.080e-05 4.225e+00 
+*LOADS
+*RC U861:A1 1.444e-04
+*RC U862:A1 7.400e-05
+*RC U863:A1 1.949e-05
+*RC U864:A1 3.381e-05
+*RC U865:A1 2.273e-05
+*RC U866:A1 1.141e-04
+*RC U867:A1 3.152e-05
+*RC U868:A1 2.084e-04
+*RC U869:A1 1.171e-05
+*RC U870:A1 2.193e-05
+*RC U871:A1 2.036e-04
+*RC U872:A1 1.176e-04
+*RC U873:A1 1.988e-05
+*RC U874:A1 1.705e-04
+*RC U875:A1 2.022e-04
+*RC U876:A1 1.391e-05
+*RC U877:A1 1.997e-04
+*RC U878:A1 1.730e-04
+*RC U882:A1 2.925e-05
+*END
+
+*R_NET n607 1.030e+00
+*DRIVER U901:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 5.149e-01 1.872e-05 5.149e-01 
+*LOADS
+*RC U465:B1 8.659e-06
+*RC U900:A 2.637e-07
+*END
+
+*R_NET n608 1.377e+00
+*DRIVER U899:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 6.884e-01 3.117e-05 6.884e-01 
+*LOADS
+*RC U205:A 1.781e-05
+*RC U720:A1 8.257e-07
+*END
+
+*R_NET n609 2.278e+00
+*DRIVER U850:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 1.139e+00 4.577e-05 1.139e+00 
+*LOADS
+*RC recv_buf_data_reg\[7\]:D 1.746e-05
+*RC recv_pattern_reg\[6\]:D 6.551e-06
+*RC U469:A1 2.439e-05
+*END
+
+*R_NET n610 2.686e+00
+*DRIVER U851:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 1.343e+00 6.137e-05 1.343e+00 
+*LOADS
+*RC recv_buf_data_reg\[6\]:D 1.438e-05
+*RC recv_pattern_reg\[5\]:D 4.801e-05
+*RC U473:A1 3.425e-05
+*END
+
+*R_NET n611 2.242e+00
+*DRIVER U852:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 1.121e+00 4.217e-05 1.121e+00 
+*LOADS
+*RC recv_buf_data_reg\[5\]:D 1.781e-05
+*RC recv_pattern_reg\[4\]:D 7.310e-06
+*RC U474:A1 1.845e-05
+*END
+
+*R_NET n612 2.283e+00
+*DRIVER U853:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 1.142e+00 3.420e-05 1.142e+00 
+*LOADS
+*RC recv_buf_data_reg\[4\]:D 1.312e-05
+*RC recv_pattern_reg\[3\]:D 5.412e-06
+*RC U418:A1 2.763e-05
+*RC U491:A1 1.648e-05
+*END
+
+*R_NET n613 2.855e+00
+*DRIVER U854:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 1.428e+00 4.662e-05 1.428e+00 
+*LOADS
+*RC recv_buf_data_reg\[3\]:D 3.006e-05
+*RC recv_pattern_reg\[2\]:D 9.980e-06
+*RC U416:A1 2.896e-05
+*RC U485:A1 1.590e-05
+*END
+
+*R_NET n614 2.453e+00
+*DRIVER U855:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 1.226e+00 3.826e-05 1.226e+00 
+*LOADS
+*RC recv_buf_data_reg\[2\]:D 6.347e-06
+*RC recv_pattern_reg\[1\]:D 3.363e-06
+*RC U413:A1 3.098e-05
+*RC U492:A1 1.448e-05
+*END
+
+*R_NET n615 3.282e+00
+*DRIVER U856:X
+*CELL SAEDRVT14_AN2_MM_0P5
+*C2_R1_C1 1.641e+00 6.313e-05 1.641e+00 
+*LOADS
+*RC recv_buf_data_reg\[1\]:D 1.864e-05
+*RC recv_pattern_reg\[0\]:D 8.310e-06
+*RC U426:A1 6.279e-05
+*RC U494:A1 4.226e-05
+*END
+
+*R_NET n616 1.060e+00
+*DRIVER U895:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 5.299e-01 4.404e-06 5.299e-01 
+*LOADS
+*RC U409:B1 1.658e-06
+*RC U653:A1 1.538e-06
+*RC U701:A1 1.842e-06
+*RC U702:A1 2.898e-07
+*END
+
+*R_NET n617 1.170e+00
+*DRIVER U896:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 5.848e-01 6.355e-06 5.848e-01 
+*LOADS
+*RC U414:B1 3.183e-06
+*RC U655:A1 1.854e-06
+*RC U703:A1 2.515e-06
+*RC U704:A1 2.682e-06
+*END
+
+*R_NET n618 1.051e+00
+*DRIVER U897:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 5.255e-01 3.812e-06 5.255e-01 
+*LOADS
+*RC U419:B1 7.039e-07
+*RC U657:A1 1.186e-06
+*RC U705:A1 1.441e-06
+*RC U706:A1 1.222e-06
+*END
+
+*R_NET n619 8.697e-01
+*DRIVER U898:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 4.349e-01 4.233e-06 4.349e-01 
+*LOADS
+*RC U823:A1 1.828e-06
+*RC U824:A1 1.827e-06
+*RC U825:A1 1.291e-06
+*END
+
+*R_NET n621 6.621e+00
+*DRIVER U214:X
+*CELL SAEDRVT14_TIE0_PV1ECO_1
+*C2_R1_C1 3.310e+00 1.036e-04 3.310e+00 
+*LOADS
+*RC clk_gate_cfg_divider_reg_0/latch:SE 8.368e-05
+*RC clk_gate_cfg_divider_reg_1/latch:SE 5.996e-05
+*RC clk_gate_cfg_divider_reg_2/latch:SE 6.123e-05
+*RC clk_gate_recv_pattern_reg/latch:SE 9.670e-05
+*RC clk_gate_recv_state_reg/latch:SE 7.391e-05
+*RC clk_gate_recv_buf_data_reg/latch:SE 6.871e-05
+*RC clk_gate_send_pattern_reg/latch:SE 7.634e-05
+*RC clk_gate_cfg_divider_reg/latch:SE 6.542e-05
+*END
+
+*R_NET n622 3.391e+00
+*DRIVER U204:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.695e+00 2.629e-05 1.695e+00 
+*LOADS
+*RC U219:B 9.419e-06
+*RC U350:A2 1.454e-05
+*RC U830:A2 1.114e-05
+*RC U217:B 3.296e-06
+*RC U832:A2 8.312e-06
+*RC U833:A2 8.645e-06
+*RC U834:A2 4.150e-06
+*RC U226:B 2.451e-06
+*RC U831:A2 2.132e-05
+*END
+
+*R_NET n623 8.922e+00
+*DRIVER U205:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 4.461e+00 8.135e-05 4.461e+00 
+*LOADS
+*RC U850:A1 7.787e-05
+*RC U880:A1 4.500e-05
+*RC U628:A1 8.702e-05
+*RC U233:A1 7.533e-05
+*RC U881:A1 1.094e-04
+*RC U889:A1 9.063e-05
+*RC U879:A1 8.999e-05
+*RC U885:A1 1.168e-04
+*RC U890:A1 9.530e-05
+*RC U883:A1 1.106e-04
+*RC U891:A1 1.102e-04
+*RC U579:B 2.319e-05
+*RC U887:A1 1.221e-04
+*RC U888:A1 9.948e-05
+*RC U886:A1 1.024e-04
+*RC U884:A1 1.283e-04
+*RC U464:A1 8.741e-05
+*END
+
+*R_NET n624 8.339e-01
+*DRIVER U216:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 4.169e-01 2.842e-06 4.169e-01 
+*LOADS
+*RC U818:A1 5.628e-07
+*RC U816:A1 5.191e-07
+*RC U817:A1 3.431e-07
+*END
+
+*R_NET n625 9.343e-01
+*DRIVER U227:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 4.671e-01 5.227e-06 4.671e-01 
+*LOADS
+*RC U802:A1 1.096e-06
+*RC U800:A1 3.512e-07
+*RC U801:A1 1.599e-06
+*END
+
+*R_NET n626 8.848e-01
+*DRIVER U235:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 4.424e-01 4.219e-06 4.424e-01 
+*LOADS
+*RC U692:A1 1.034e-06
+*RC U661:A1 6.242e-07
+*RC U693:A1 1.028e-06
+*END
+
+*R_NET n627 3.987e-01
+*DRIVER U237:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.993e-01 1.054e-06 1.993e-01 
+*LOADS
+*RC U254:A2 2.804e-07
+*RC U500:A1 1.331e-07
+*END
+
+*R_NET n628 8.694e-01
+*DRIVER U239:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 4.347e-01 4.244e-06 4.347e-01 
+*LOADS
+*RC U590:A1 1.178e-06
+*RC U673:A1 6.910e-07
+*RC U674:A1 5.481e-07
+*END
+
+*R_NET n629 4.918e-01
+*DRIVER U242:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 2.459e-01 2.871e-06 2.459e-01 
+*LOADS
+*RC U524:B1 3.945e-07
+*RC U276:B2 5.957e-07
+*END
+
+*R_NET n630 8.313e-01
+*DRIVER U243:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 4.157e-01 2.863e-06 4.157e-01 
+*LOADS
+*RC U584:A1 9.845e-07
+*RC U690:A1 1.450e-07
+*RC U691:A1 4.721e-07
+*END
+
+*R_NET reg_dat_do\[8\] 1.023e+01
+*DRIVER U245:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 5.115e+00 1.009e-04 5.115e+00 
+*LOADS
+*RC U840:A2 1.393e-04
+*RC U839:A2 3.474e-04
+*RC U837:A2 1.414e-04
+*RC U349:B2 1.696e-04
+*RC U835:A2 1.247e-04
+*RC reg_dat_do\[9\] 7.662e-05
+*RC reg_dat_do\[13\] 7.553e-05
+*RC reg_dat_do\[15\] 7.498e-05
+*RC reg_dat_do\[16\] 7.443e-05
+*RC U842:A2 2.688e-04
+*RC reg_dat_do\[18\] 7.388e-05
+*RC reg_dat_do\[20\] 7.334e-05
+*RC reg_dat_do\[22\] 7.279e-05
+*RC reg_dat_do\[24\] 7.224e-05
+*RC reg_dat_do\[25\] 7.170e-05
+*RC reg_dat_do\[28\] 7.115e-05
+*RC reg_dat_do\[29\] 7.060e-05
+*RC reg_dat_do\[31\] 7.005e-05
+*RC reg_dat_do\[30\] 6.951e-05
+*RC reg_dat_do\[27\] 6.896e-05
+*RC reg_dat_do\[26\] 6.841e-05
+*RC reg_dat_do\[23\] 6.732e-05
+*RC reg_dat_do\[21\] 6.677e-05
+*RC reg_dat_do\[19\] 6.622e-05
+*RC reg_dat_do\[17\] 6.568e-05
+*RC reg_dat_do\[14\] 6.513e-05
+*RC reg_dat_do\[12\] 6.458e-05
+*RC reg_dat_do\[11\] 6.404e-05
+*RC reg_dat_do\[10\] 6.349e-05
+*RC reg_dat_do\[8\] 6.294e-05
+*RC U841:A2 2.572e-04
+*RC U838:A2 2.375e-04
+*RC U836:A2 2.015e-04
+*END
+
+*R_NET n632 1.616e+00
+*DRIVER U248:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 8.080e-01 2.802e-05 8.080e-01 
+*LOADS
+*RC U405:B2 9.777e-06
+*RC U287:B1 1.068e-05
+*END
+
+*R_NET n633 2.665e+00
+*DRIVER U249:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.333e+00 3.545e-05 1.333e+00 
+*LOADS
+*RC U407:A2 2.192e-05
+*RC U405:A2 1.517e-05
+*RC U534:B 7.191e-06
+*RC U287:A1 1.339e-05
+*RC U288:A1 1.518e-05
+*END
+
+*R_NET n634 2.790e+00
+*DRIVER U250:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.395e+00 3.734e-05 1.395e+00 
+*LOADS
+*RC U407:B1 2.803e-05
+*RC U532:B2 4.981e-06
+*RC U534:A2 8.756e-06
+*RC U289:B2 9.859e-06
+*RC U283:B2 1.140e-05
+*END
+
+*R_NET n635 3.889e+00
+*DRIVER U252:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.944e+00 4.688e-05 1.944e+00 
+*LOADS
+*RC U412:A2 4.096e-05
+*RC U410:A2 4.548e-05
+*RC U532:A2 1.016e-05
+*RC U539:B2 1.236e-05
+*RC U289:A2 1.554e-05
+*RC U283:A2 1.776e-05
+*RC U284:A2 2.182e-05
+*END
+
+*R_NET n636 2.798e+00
+*DRIVER U255:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.399e+00 4.572e-05 1.399e+00 
+*LOADS
+*RC U412:B1 3.387e-05
+*RC U539:A2 6.676e-06
+*RC U540:A2 1.181e-05
+*RC U292:B 1.396e-05
+*END
+
+*R_NET n637 3.664e+00
+*DRIVER U257:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.832e+00 4.213e-05 1.832e+00 
+*LOADS
+*RC U415:A2 3.810e-05
+*RC U417:A2 2.951e-05
+*RC U296:A2 1.584e-05
+*RC U542:A2 1.879e-05
+*RC U294:A2 1.846e-05
+*RC U543:A1 1.934e-05
+*END
+
+*R_NET n638 2.505e+00
+*DRIVER U261:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.253e+00 3.776e-05 1.253e+00 
+*LOADS
+*RC U417:B1 2.437e-05
+*RC U296:B1 6.482e-06
+*RC U546:A2 8.843e-06
+*RC U544:A2 1.290e-05
+*END
+
+*R_NET n639 3.372e+00
+*DRIVER U262:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.686e+00 4.911e-05 1.686e+00 
+*LOADS
+*RC U421:A2 2.242e-05
+*RC U420:A2 2.229e-05
+*RC U301:A2 1.181e-05
+*RC U300:A2 1.490e-05
+*RC U546:B2 3.751e-05
+*END
+
+*R_NET n640 2.238e+00
+*DRIVER U263:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.119e+00 1.967e-05 1.119e+00 
+*LOADS
+*RC U397:A2 8.275e-06
+*RC U422:A1 9.671e-06
+*RC U273:B 4.111e-06
+*RC U550:A2 4.109e-06
+*RC U302:A1 5.929e-06
+*RC U549:A2 6.425e-06
+*END
+
+*R_NET n641 2.396e+00
+*DRIVER U266:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.198e+00 1.835e-05 1.198e+00 
+*LOADS
+*RC U397:B1 6.108e-06
+*RC U422:B1 8.385e-06
+*RC U395:A2 6.754e-06
+*RC U522:B 5.119e-06
+*RC U551:A2 5.000e-06
+*RC U273:A1 6.712e-06
+*RC U302:B1 8.111e-06
+*END
+
+*R_NET n642 3.152e+00
+*DRIVER U267:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.576e+00 2.525e-05 1.576e+00 
+*LOADS
+*RC U421:B1 1.156e-05
+*RC U398:A1 1.129e-05
+*RC U393:A1 7.674e-06
+*RC U522:A2 1.435e-06
+*RC U551:B2 2.442e-06
+*RC U277:A1 1.255e-05
+*RC U269:A1 1.417e-05
+*RC U301:B1 1.376e-05
+*END
+
+*R_NET n643 3.006e+00
+*DRIVER U268:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.503e+00 3.056e-05 1.503e+00 
+*LOADS
+*RC U430:A1 1.581e-05
+*RC U399:A1 9.349e-06
+*RC U525:A2 1.978e-07
+*RC U519:A2 2.006e-06
+*RC U550:B2 8.932e-06
+*RC U310:A1 1.314e-05
+*RC U278:A1 1.096e-05
+*END
+
+*R_NET n644 2.906e+00
+*DRIVER U271:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.453e+00 3.386e-05 1.453e+00 
+*LOADS
+*RC U434:A2 2.260e-05
+*RC U430:B1 1.405e-05
+*RC U554:A2 3.820e-06
+*RC U526:A2 6.178e-06
+*RC U314:B 1.504e-05
+*RC U310:B1 1.392e-05
+*END
+
+*R_NET n645 3.979e+00
+*DRIVER U272:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.990e+00 4.261e-05 1.990e+00 
+*LOADS
+*RC U433:A2 3.261e-05
+*RC U425:A1 2.990e-05
+*RC U436:A2 2.998e-05
+*RC U509:B 9.323e-06
+*RC U554:B2 3.855e-06
+*RC U314:A1 2.006e-05
+*RC U315:A1 2.468e-05
+*RC U305:A1 2.784e-05
+*END
+
+*R_NET n646 3.909e+00
+*DRIVER U274:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.955e+00 4.850e-05 1.955e+00 
+*LOADS
+*RC U428:B1 3.358e-05
+*RC U438:A2 4.073e-05
+*RC U509:A2 1.493e-05
+*RC U553:A2 2.136e-05
+*RC U510:A2 1.665e-05
+*RC U317:B 1.501e-05
+*RC U308:B1 1.688e-05
+*END
+
+*R_NET n647 3.773e+00
+*DRIVER U275:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.886e+00 4.164e-05 1.886e+00 
+*LOADS
+*RC U440:A2 3.305e-05
+*RC U428:A1 3.111e-05
+*RC U437:A2 3.118e-05
+*RC U317:A1 1.631e-05
+*RC U514:B 2.442e-05
+*RC U513:B2 2.214e-05
+*RC U318:A1 1.946e-05
+*RC U308:A1 1.798e-05
+*END
+
+*R_NET n648 3.012e+00
+*DRIVER U279:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.506e+00 2.925e-05 1.506e+00 
+*LOADS
+*RC U515:A2 1.577e-05
+*RC U514:A2 1.622e-05
+*RC U513:A2 1.105e-05
+*RC U442:A1 5.357e-06
+*RC U320:A1 1.026e-05
+*RC U324:A1 1.381e-05
+*RC U446:A1 1.794e-05
+*END
+
+*R_NET n649 2.479e+00
+*DRIVER U280:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.240e+00 2.911e-05 1.240e+00 
+*LOADS
+*RC U324:B1 4.193e-06
+*RC U563:B 1.501e-05
+*RC U506:A2 1.465e-05
+*RC U446:B1 9.767e-06
+*RC U264:B1 5.325e-06
+*RC U388:B1 1.323e-05
+*END
+
+*R_NET n650 3.077e+00
+*DRIVER U281:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.538e+00 3.157e-05 1.538e+00 
+*LOADS
+*RC U506:B2 1.717e-05
+*RC U563:A2 1.890e-05
+*RC U564:A2 1.396e-05
+*RC U323:B1 1.149e-05
+*RC U264:A1 7.179e-06
+*RC U388:A1 1.624e-05
+*RC U445:B1 1.999e-05
+*END
+
+*R_NET n651 2.638e+00
+*DRIVER U282:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.319e+00 2.028e-05 1.319e+00 
+*LOADS
+*RC U566:B 5.235e-06
+*RC U559:B2 4.591e-06
+*RC U322:A1 3.495e-06
+*RC U265:A1 6.414e-06
+*RC U323:A1 3.481e-06
+*RC U389:A1 4.950e-06
+*RC U445:A1 4.874e-06
+*RC U444:A1 1.265e-05
+*END
+
+*R_NET n652 2.554e+00
+*DRIVER U285:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.277e+00 1.910e-05 1.277e+00 
+*LOADS
+*RC U258:B 1.177e-05
+*RC U326:B1 1.092e-05
+*RC U568:A2 8.501e-07
+*RC U566:A2 3.841e-06
+*RC U559:A2 1.560e-06
+*RC U381:A2 6.802e-06
+*RC U448:B1 7.081e-06
+*END
+
+*R_NET n653 3.201e+00
+*DRIVER U286:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.601e+00 3.016e-05 1.601e+00 
+*LOADS
+*RC U496:B 9.146e-06
+*RC U502:B2 7.072e-06
+*RC U259:A1 1.114e-05
+*RC U258:A1 1.073e-05
+*RC U326:A1 8.931e-06
+*RC U379:A2 2.013e-05
+*RC U448:A1 1.307e-05
+*RC U383:A2 1.576e-05
+*END
+
+*R_NET n654 2.946e+00
+*DRIVER U291:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.473e+00 2.843e-05 1.473e+00 
+*LOADS
+*RC U496:A2 1.688e-05
+*RC U497:A2 1.163e-05
+*RC U502:A2 1.252e-05
+*RC U260:B1 9.503e-07
+*RC U253:B 5.512e-06
+*RC U377:A3 1.701e-05
+*RC U384:B1 1.542e-05
+*END
+
+*R_NET n655 2.299e+00
+*DRIVER U295:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.150e+00 1.698e-05 1.150e+00 
+*LOADS
+*RC U253:A1 4.019e-06
+*RC U260:A1 7.079e-06
+*RC U493:B2 6.198e-06
+*RC U499:B 3.726e-06
+*RC U375:A2 8.239e-06
+*RC U384:A1 4.556e-06
+*RC U377:B1 5.936e-06
+*END
+
+*R_NET n656 2.435e+00
+*DRIVER U298:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.217e+00 2.270e-05 1.217e+00 
+*LOADS
+*RC U330:B1 9.904e-06
+*RC U246:B 1.277e-05
+*RC U493:A2 4.408e-06
+*RC U499:A2 3.428e-06
+*RC U452:A1 7.965e-06
+*RC U371:A2 8.245e-06
+*END
+
+*R_NET n657 3.426e+00
+*DRIVER U304:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.713e+00 3.728e-05 1.713e+00 
+*LOADS
+*RC U572:A2 2.660e-05
+*RC U484:B2 2.048e-05
+*RC U246:A1 1.725e-05
+*RC U330:A1 1.207e-05
+*RC U247:A1 1.618e-05
+*RC U367:A1 1.267e-05
+*RC U373:A2 1.524e-05
+*END
+
+*R_NET n658 1.874e+00
+*DRIVER U306:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 9.370e-01 1.558e-05 9.370e-01 
+*LOADS
+*RC U368:B1 4.172e-06
+*RC U363:A2 5.425e-06
+*RC U336:B 2.159e-06
+*RC U486:A2 3.432e-06
+*RC U333:B1 5.128e-06
+*RC U484:A2 5.475e-06
+*END
+
+*R_NET n659 1.737e+00
+*DRIVER U307:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 8.683e-01 1.584e-05 8.683e-01 
+*LOADS
+*RC U488:B 5.613e-06
+*RC U336:A1 2.406e-06
+*RC U486:B2 2.708e-06
+*RC U335:A1 4.926e-06
+*RC U333:A1 4.040e-06
+*END
+
+*R_NET n660 2.845e+00
+*DRIVER U309:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.423e+00 1.979e-05 1.423e+00 
+*LOADS
+*RC U457:B1 1.091e-05
+*RC U460:A3 1.145e-05
+*RC U240:B 1.281e-06
+*RC U338:B1 3.865e-06
+*RC U488:A2 7.102e-06
+*RC U490:A2 7.277e-06
+*RC U487:A2 9.954e-06
+*END
+
+*R_NET n661 2.736e+00
+*DRIVER U332:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.368e+00 1.567e-05 1.368e+00 
+*LOADS
+*RC U459:A2 8.291e-06
+*RC U457:A1 5.761e-06
+*RC U460:B1 5.766e-06
+*RC U475:B2 3.234e-06
+*RC U574:A2 1.805e-06
+*RC U241:A1 5.617e-06
+*RC U240:A1 5.792e-06
+*RC U338:A1 8.456e-06
+*END
+
+*R_NET n662 1.522e+00
+*DRIVER U344:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 7.612e-01 1.583e-05 7.612e-01 
+*LOADS
+*RC U475:A2 4.254e-06
+*RC U478:A2 4.196e-06
+*RC U236:B 5.368e-06
+*RC U340:A1 3.493e-06
+*END
+
+*R_NET n663 1.012e+00
+*DRIVER U346:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 5.060e-01 4.837e-06 5.060e-01 
+*LOADS
+*RC U357:A2 1.039e-06
+*RC U461:B1 8.376e-07
+*RC U360:A2 9.900e-07
+*END
+
+*R_NET n664 1.142e+00
+*DRIVER U347:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 5.709e-01 7.178e-06 5.709e-01 
+*LOADS
+*RC U671:A2 2.670e-06
+*RC U470:A2 1.071e-06
+*RC U532:B1 1.444e-06
+*END
+
+*R_NET n665 6.945e-01
+*DRIVER U348:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 3.473e-01 6.416e-06 3.473e-01 
+*LOADS
+*RC U355:B 9.736e-07
+*RC U723:A1 1.559e-06
+*END
+
+*R_NET n666 3.565e-01
+*DRIVER U353:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.783e-01 7.154e-07 1.783e-01 
+*LOADS
+*RC U355:A2 2.449e-07
+*END
+
+*R_NET n667 2.051e-01
+*DRIVER U354:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 1.025e-01 1.806e-07 1.025e-01 
+*LOADS
+*RC U561:B 3.628e-08
+*END
+
+*R_NET n668 1.254e+01
+*DRIVER U356:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 6.270e+00 6.923e-05 6.270e+00 
+*LOADS
+*RC U666:A2 3.699e-05
+*RC U699:B 3.447e-05
+*RC U828:B 4.941e-05
+*RC U669:A2 1.812e-05
+*RC U676:A2 4.583e-05
+*RC U692:B 2.144e-05
+*RC U732:A2 4.088e-05
+*RC U826:B 1.516e-04
+*RC U735:B 4.196e-05
+*RC U682:A2 7.336e-05
+*RC U821:A2 1.286e-04
+*RC U823:B 1.351e-04
+*RC U685:A2 9.369e-05
+*RC U703:B 8.349e-05
+*RC U705:B 7.050e-05
+*RC U813:A2 8.783e-05
+*RC U707:B 3.206e-05
+*RC U816:B 9.130e-05
+*RC U679:A2 3.743e-05
+*RC U701:B 9.733e-05
+*RC U805:A2 7.148e-05
+*RC U688:A2 1.006e-04
+*RC U797:A2 4.524e-05
+*RC U808:B 7.621e-05
+*RC U757:B 3.914e-05
+*RC U800:B 6.290e-05
+*RC U749:A2 4.132e-05
+*RC U764:A2 2.661e-05
+*RC U784:A2 4.152e-05
+*RC U772:B 3.734e-05
+*RC U789:B 4.069e-05
+*RC U632:A1 1.140e-04
+*END
+
+*R_NET n669 1.342e+00
+*DRIVER U362:X
+*CELL SAEDRVT14_INV_S_0P5
+*C2_R1_C1 6.710e-01 1.180e-05 6.710e-01 
+*LOADS
+*RC U345:A1 2.819e-06
+*RC U351:A1 5.600e-07
+*RC U843:A1 1.046e-06
+*RC U349:A1 4.231e-06
+*END
+
+*R_NET n690 4.900e+00
+*DRIVER self_gate_recv_buf_data_reg_0:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 2.450e+00 9.422e-05 2.450e+00 
+*LOADS
+*RC recv_buf_data_reg\[1\]:CK 1.061e-04
+*RC recv_buf_data_reg\[0\]:CK 2.672e-05
+*RC recv_buf_data_reg\[3\]:CK 4.571e-05
+*RC recv_buf_data_reg\[2\]:CK 6.780e-05
+*RC recv_buf_data_reg\[4\]:CK 2.738e-05
+*END
+
+*R_NET n691 2.510e-01
+*DRIVER U408:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.255e-01 9.627e-07 1.255e-01 
+*LOADS
+*RC self_gate_recv_buf_data_reg_0:EN 2.198e-07
+*END
+
+*R_NET n692 2.641e-01
+*DRIVER U411:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.321e-01 6.750e-07 1.321e-01 
+*LOADS
+*RC U408:A1 1.668e-07
+*END
+
+*R_NET n693 2.972e-01
+*DRIVER U413:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.486e-01 6.750e-07 1.486e-01 
+*LOADS
+*RC U408:A2 1.891e-07
+*END
+
+*R_NET n694 3.422e-01
+*DRIVER U416:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U411:A4 2.924e-07
+*END
+
+*R_NET n695 3.315e-01
+*DRIVER U418:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U411:A3 1.618e-07
+*END
+
+*R_NET n696 3.940e-01
+*DRIVER U424:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U411:A2 1.073e-07
+*END
+
+*R_NET n697 2.779e-01
+*DRIVER U426:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U411:A1 2.896e-08
+*END
+
+*R_NET n698 2.521e-01
+*DRIVER U366:X
+*CELL SAEDRVT14_TIE0_PV1ECO_1
+*C2_R1_C1 1.261e-01 1.028e-06 1.261e-01 
+*LOADS
+*RC self_gate_recv_buf_data_reg_0:SE 2.386e-07
+*END
+
+*R_NET n699 2.824e+00
+*DRIVER self_gate_recv_pattern_reg_1:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 1.412e+00 5.395e-05 1.412e+00 
+*LOADS
+*RC recv_pattern_reg\[7\]:CK 9.191e-06
+*RC recv_pattern_reg\[5\]:CK 1.821e-05
+*RC recv_pattern_reg\[6\]:CK 3.523e-05
+*RC recv_pattern_reg\[4\]:CK 2.462e-05
+*END
+
+*R_NET n700 2.633e-01
+*DRIVER U455:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.317e-01 1.283e-06 1.317e-01 
+*LOADS
+*RC self_gate_recv_pattern_reg_1:EN 2.983e-07
+*END
+
+*R_NET n701 3.507e-01
+*DRIVER U456:X
+*CELL SAEDRVT14_EO2_V1_0P75
+*C2_R1_C1 1.753e-01 1.130e-06 1.753e-01 
+*LOADS
+*RC U455:A4 3.653e-07
+*END
+
+*R_NET n702 3.315e-01
+*DRIVER U469:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U455:A3 1.618e-07
+*END
+
+*R_NET n703 3.940e-01
+*DRIVER U473:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U455:A2 1.073e-07
+*END
+
+*R_NET n704 2.779e-01
+*DRIVER U474:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U455:A1 2.896e-08
+*END
+
+*R_NET n705 2.239e-01
+*DRIVER U370:X
+*CELL SAEDRVT14_TIE0_PV1ECO_1
+*C2_R1_C1 1.120e-01 5.360e-08 1.120e-01 
+*LOADS
+*RC self_gate_recv_pattern_reg_1:SE 1.193e-08
+*END
+
+*R_NET n706 2.734e+00
+*DRIVER self_gate_recv_pattern_reg_0:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 1.367e+00 5.127e-05 1.367e+00 
+*LOADS
+*RC recv_pattern_reg\[1\]:CK 1.482e-05
+*RC recv_pattern_reg\[0\]:CK 3.579e-05
+*RC recv_pattern_reg\[3\]:CK 1.618e-05
+*RC recv_pattern_reg\[2\]:CK 1.904e-05
+*END
+
+*R_NET n707 2.633e-01
+*DRIVER U483:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.317e-01 1.283e-06 1.317e-01 
+*LOADS
+*RC self_gate_recv_pattern_reg_0:EN 2.983e-07
+*END
+
+*R_NET n708 3.422e-01
+*DRIVER U485:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U483:A4 2.924e-07
+*END
+
+*R_NET n709 3.315e-01
+*DRIVER U491:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U483:A3 1.618e-07
+*END
+
+*R_NET n710 3.940e-01
+*DRIVER U492:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U483:A2 1.073e-07
+*END
+
+*R_NET n711 2.779e-01
+*DRIVER U494:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U483:A1 2.896e-08
+*END
+
+*R_NET n712 2.456e-01
+*DRIVER U374:X
+*CELL SAEDRVT14_TIE0_PV1ECO_1
+*C2_R1_C1 1.228e-01 7.993e-07 1.228e-01 
+*LOADS
+*RC self_gate_recv_pattern_reg_0:SE 1.837e-07
+*END
+
+*R_NET n713 3.368e+00
+*DRIVER self_gate_recv_divcnt_reg_2:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 1.684e+00 3.961e-05 1.684e+00 
+*LOADS
+*RC send_divcnt_reg\[10\]:CK 2.238e-05
+*RC recv_divcnt_reg\[18\]:CK 1.425e-05
+*RC recv_divcnt_reg\[11\]:CK 2.855e-05
+*RC recv_divcnt_reg\[31\]:CK 1.163e-05
+*RC recv_divcnt_reg\[30\]:CK 8.814e-06
+*RC send_divcnt_reg\[26\]:CK 1.962e-05
+*RC recv_divcnt_reg\[12\]:CK 8.313e-06
+*RC send_divcnt_reg\[17\]:CK 1.213e-05
+*END
+
+*R_NET n714 2.510e-01
+*DRIVER U504:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.255e-01 9.627e-07 1.255e-01 
+*LOADS
+*RC self_gate_recv_divcnt_reg_2:EN 2.198e-07
+*END
+
+*R_NET n715 3.095e-01
+*DRIVER U505:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.548e-01 9.957e-07 1.548e-01 
+*LOADS
+*RC U504:A2 2.830e-07
+*END
+
+*R_NET n716 2.641e-01
+*DRIVER U507:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.321e-01 6.750e-07 1.321e-01 
+*LOADS
+*RC U504:A1 1.668e-07
+*END
+
+*R_NET n717 3.422e-01
+*DRIVER U508:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U505:A4 2.924e-07
+*END
+
+*R_NET n718 3.315e-01
+*DRIVER U511:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U505:A3 1.618e-07
+*END
+
+*R_NET n719 3.940e-01
+*DRIVER U512:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U505:A2 1.073e-07
+*END
+
+*R_NET n720 2.779e-01
+*DRIVER U517:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U505:A1 2.896e-08
+*END
+
+*R_NET n721 3.422e-01
+*DRIVER U518:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U507:A4 2.924e-07
+*END
+
+*R_NET n722 3.315e-01
+*DRIVER U520:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U507:A3 1.618e-07
+*END
+
+*R_NET n723 3.940e-01
+*DRIVER U521:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U507:A2 1.073e-07
+*END
+
+*R_NET n724 2.779e-01
+*DRIVER U523:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U507:A1 2.896e-08
+*END
+
+*R_NET n725 2.411e-01
+*DRIVER U376:X
+*CELL SAEDRVT14_TIE0_PV1ECO_1
+*C2_R1_C1 1.206e-01 6.487e-07 1.206e-01 
+*LOADS
+*RC self_gate_recv_divcnt_reg_2:SE 1.482e-07
+*END
+
+*R_NET n726 4.236e+00
+*DRIVER self_gate_recv_divcnt_reg_1:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 2.118e+00 5.787e-05 2.118e+00 
+*LOADS
+*RC recv_divcnt_reg\[29\]:CK 4.603e-06
+*RC recv_divcnt_reg\[10\]:CK 3.506e-05
+*RC recv_divcnt_reg\[9\]:CK 1.125e-05
+*RC recv_divcnt_reg\[24\]:CK 1.889e-05
+*RC send_divcnt_reg\[12\]:CK 1.935e-05
+*RC send_divcnt_reg\[14\]:CK 6.715e-06
+*RC recv_divcnt_reg\[8\]:CK 2.909e-05
+*RC recv_divcnt_reg\[15\]:CK 5.407e-05
+*END
+
+*R_NET n727 2.510e-01
+*DRIVER U529:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.255e-01 9.627e-07 1.255e-01 
+*LOADS
+*RC self_gate_recv_divcnt_reg_1:EN 2.198e-07
+*END
+
+*R_NET n728 3.095e-01
+*DRIVER U530:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.548e-01 9.957e-07 1.548e-01 
+*LOADS
+*RC U529:A2 2.830e-07
+*END
+
+*R_NET n729 2.641e-01
+*DRIVER U531:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.321e-01 6.750e-07 1.321e-01 
+*LOADS
+*RC U529:A1 1.668e-07
+*END
+
+*R_NET n730 3.422e-01
+*DRIVER U533:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U530:A4 2.924e-07
+*END
+
+*R_NET n731 3.315e-01
+*DRIVER U538:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U530:A3 1.618e-07
+*END
+
+*R_NET n732 3.940e-01
+*DRIVER U545:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U530:A2 1.073e-07
+*END
+
+*R_NET n733 2.779e-01
+*DRIVER U547:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U530:A1 2.896e-08
+*END
+
+*R_NET n734 3.422e-01
+*DRIVER U557:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U531:A4 2.924e-07
+*END
+
+*R_NET n735 3.315e-01
+*DRIVER U558:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U531:A3 1.618e-07
+*END
+
+*R_NET n736 3.940e-01
+*DRIVER U560:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U531:A2 1.073e-07
+*END
+
+*R_NET n737 2.779e-01
+*DRIVER U582:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U531:A1 2.896e-08
+*END
+
+*R_NET n738 2.415e-01
+*DRIVER U378:X
+*CELL SAEDRVT14_TIE0_PV1ECO_1
+*C2_R1_C1 1.208e-01 6.627e-07 1.208e-01 
+*LOADS
+*RC self_gate_recv_divcnt_reg_1:SE 1.514e-07
+*END
+
+*R_NET n739 5.313e+00
+*DRIVER self_gate_recv_buf_valid_reg_0:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 2.656e+00 7.830e-05 2.656e+00 
+*LOADS
+*RC recv_buf_valid_reg:CK 6.786e-05
+*RC send_divcnt_reg\[18\]:CK 2.555e-05
+*RC recv_divcnt_reg\[7\]:CK 1.801e-05
+*RC recv_divcnt_reg\[23\]:CK 1.936e-05
+*RC recv_divcnt_reg\[14\]:CK 8.068e-06
+*RC send_divcnt_reg\[21\]:CK 8.271e-05
+*RC recv_divcnt_reg\[25\]:CK 5.043e-05
+*RC recv_divcnt_reg\[17\]:CK 4.076e-05
+*END
+
+*R_NET n740 2.510e-01
+*DRIVER U650:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.255e-01 9.627e-07 1.255e-01 
+*LOADS
+*RC self_gate_recv_buf_valid_reg_0:EN 2.198e-07
+*END
+
+*R_NET n741 3.095e-01
+*DRIVER U799:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.548e-01 9.957e-07 1.548e-01 
+*LOADS
+*RC U650:A2 2.830e-07
+*END
+
+*R_NET n742 2.641e-01
+*DRIVER U815:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.321e-01 6.750e-07 1.321e-01 
+*LOADS
+*RC U650:A1 1.668e-07
+*END
+
+*R_NET n743 3.422e-01
+*DRIVER U902:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U799:A4 2.924e-07
+*END
+
+*R_NET n744 3.315e-01
+*DRIVER U903:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U799:A3 1.618e-07
+*END
+
+*R_NET n745 3.940e-01
+*DRIVER U904:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U799:A2 1.073e-07
+*END
+
+*R_NET n746 2.779e-01
+*DRIVER U905:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U799:A1 2.896e-08
+*END
+
+*R_NET n747 3.422e-01
+*DRIVER U906:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U815:A4 2.924e-07
+*END
+
+*R_NET n748 3.315e-01
+*DRIVER U907:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U815:A3 1.618e-07
+*END
+
+*R_NET n749 3.940e-01
+*DRIVER U908:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U815:A2 1.073e-07
+*END
+
+*R_NET n750 2.779e-01
+*DRIVER U909:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U815:A1 2.896e-08
+*END
+
+*R_NET n751 2.453e-01
+*DRIVER U380:X
+*CELL SAEDRVT14_TIE0_PV1ECO_1
+*C2_R1_C1 1.227e-01 7.799e-07 1.227e-01 
+*LOADS
+*RC self_gate_recv_buf_valid_reg_0:SE 1.792e-07
+*END
+
+*R_NET n752 5.386e+00
+*DRIVER self_gate_send_divcnt_reg_3:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 2.693e+00 7.823e-05 2.693e+00 
+*LOADS
+*RC send_divcnt_reg\[29\]:CK 2.521e-05
+*RC send_divcnt_reg\[27\]:CK 1.018e-05
+*RC send_divcnt_reg\[31\]:CK 3.764e-05
+*RC send_divcnt_reg\[13\]:CK 6.486e-05
+*RC recv_divcnt_reg\[16\]:CK 9.289e-05
+*RC send_divcnt_reg\[30\]:CK 3.233e-05
+*RC send_divcnt_reg\[28\]:CK 1.646e-05
+*RC recv_divcnt_reg\[27\]:CK 7.371e-06
+*END
+
+*R_NET n753 2.510e-01
+*DRIVER U912:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.255e-01 9.627e-07 1.255e-01 
+*LOADS
+*RC self_gate_send_divcnt_reg_3:EN 2.198e-07
+*END
+
+*R_NET n754 3.095e-01
+*DRIVER U913:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.548e-01 9.957e-07 1.548e-01 
+*LOADS
+*RC U912:A2 2.830e-07
+*END
+
+*R_NET n755 2.641e-01
+*DRIVER U914:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.321e-01 6.750e-07 1.321e-01 
+*LOADS
+*RC U912:A1 1.668e-07
+*END
+
+*R_NET n756 3.422e-01
+*DRIVER U915:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U913:A4 2.924e-07
+*END
+
+*R_NET n757 3.315e-01
+*DRIVER U916:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U913:A3 1.618e-07
+*END
+
+*R_NET n758 3.940e-01
+*DRIVER U917:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U913:A2 1.073e-07
+*END
+
+*R_NET n759 2.779e-01
+*DRIVER U918:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U913:A1 2.896e-08
+*END
+
+*R_NET n760 3.422e-01
+*DRIVER U919:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U914:A4 2.924e-07
+*END
+
+*R_NET n761 3.315e-01
+*DRIVER U920:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U914:A3 1.618e-07
+*END
+
+*R_NET n762 3.940e-01
+*DRIVER U921:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U914:A2 1.073e-07
+*END
+
+*R_NET n763 2.779e-01
+*DRIVER U922:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U914:A1 2.896e-08
+*END
+
+*R_NET n764 2.257e-01
+*DRIVER U385:X
+*CELL SAEDRVT14_TIE0_PV1ECO_1
+*C2_R1_C1 1.129e-01 1.069e-07 1.129e-01 
+*LOADS
+*RC self_gate_send_divcnt_reg_3:SE 2.387e-08
+*END
+
+*R_NET n774 5.159e+00
+*DRIVER self_gate_send_divcnt_reg_2:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 2.579e+00 7.390e-05 2.579e+00 
+*LOADS
+*RC recv_divcnt_reg\[28\]:CK 1.012e-04
+*RC send_divcnt_reg\[7\]:CK 1.692e-05
+*RC send_divcnt_reg\[20\]:CK 2.259e-05
+*RC send_divcnt_reg\[11\]:CK 4.729e-06
+*RC send_divcnt_reg\[22\]:CK 1.898e-05
+*RC recv_divcnt_reg\[26\]:CK 3.503e-05
+*RC recv_divcnt_reg\[20\]:CK 3.740e-06
+*RC recv_divcnt_reg\[22\]:CK 1.521e-05
+*END
+
+*R_NET n775 2.510e-01
+*DRIVER U934:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.255e-01 9.627e-07 1.255e-01 
+*LOADS
+*RC self_gate_send_divcnt_reg_2:EN 2.198e-07
+*END
+
+*R_NET n776 3.095e-01
+*DRIVER U935:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.548e-01 9.957e-07 1.548e-01 
+*LOADS
+*RC U934:A2 2.830e-07
+*END
+
+*R_NET n777 2.641e-01
+*DRIVER U936:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.321e-01 6.750e-07 1.321e-01 
+*LOADS
+*RC U934:A1 1.668e-07
+*END
+
+*R_NET n778 3.422e-01
+*DRIVER U937:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U935:A4 2.924e-07
+*END
+
+*R_NET n779 3.315e-01
+*DRIVER U938:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U935:A3 1.618e-07
+*END
+
+*R_NET n780 3.940e-01
+*DRIVER U939:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U935:A2 1.073e-07
+*END
+
+*R_NET n781 2.779e-01
+*DRIVER U940:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U935:A1 2.896e-08
+*END
+
+*R_NET n782 3.422e-01
+*DRIVER U941:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U936:A4 2.924e-07
+*END
+
+*R_NET n783 3.315e-01
+*DRIVER U942:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U936:A3 1.618e-07
+*END
+
+*R_NET n784 3.940e-01
+*DRIVER U943:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U936:A2 1.073e-07
+*END
+
+*R_NET n785 2.779e-01
+*DRIVER U944:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U936:A1 2.896e-08
+*END
+
+*R_NET n786 2.318e-01
+*DRIVER U386:X
+*CELL SAEDRVT14_TIE0_PV1ECO_1
+*C2_R1_C1 1.159e-01 3.165e-07 1.159e-01 
+*LOADS
+*RC self_gate_send_divcnt_reg_2:SE 7.129e-08
+*END
+
+*R_NET n787 4.870e+00
+*DRIVER self_gate_send_divcnt_reg_1:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 2.435e+00 6.573e-05 2.435e+00 
+*LOADS
+*RC recv_divcnt_reg\[4\]:CK 4.473e-05
+*RC recv_divcnt_reg\[5\]:CK 3.818e-05
+*RC recv_divcnt_reg\[3\]:CK 2.904e-05
+*RC send_divcnt_reg\[5\]:CK 2.504e-05
+*RC send_divcnt_reg\[3\]:CK 5.605e-05
+*RC recv_divcnt_reg\[6\]:CK 3.078e-05
+*RC send_divcnt_reg\[4\]:CK 5.035e-05
+*RC send_divcnt_reg\[6\]:CK 4.027e-05
+*END
+
+*R_NET n788 2.510e-01
+*DRIVER U947:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.255e-01 9.627e-07 1.255e-01 
+*LOADS
+*RC self_gate_send_divcnt_reg_1:EN 2.198e-07
+*END
+
+*R_NET n789 3.095e-01
+*DRIVER U948:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.548e-01 9.957e-07 1.548e-01 
+*LOADS
+*RC U947:A2 2.830e-07
+*END
+
+*R_NET n790 2.641e-01
+*DRIVER U949:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.321e-01 6.750e-07 1.321e-01 
+*LOADS
+*RC U947:A1 1.668e-07
+*END
+
+*R_NET n791 3.422e-01
+*DRIVER U950:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U948:A4 2.924e-07
+*END
+
+*R_NET n792 3.315e-01
+*DRIVER U951:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U948:A3 1.618e-07
+*END
+
+*R_NET n793 3.940e-01
+*DRIVER U952:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U948:A2 1.073e-07
+*END
+
+*R_NET n794 2.779e-01
+*DRIVER U953:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U948:A1 2.896e-08
+*END
+
+*R_NET n795 3.422e-01
+*DRIVER U954:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U949:A4 2.924e-07
+*END
+
+*R_NET n796 3.315e-01
+*DRIVER U955:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U949:A3 1.618e-07
+*END
+
+*R_NET n797 3.940e-01
+*DRIVER U956:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U949:A2 1.073e-07
+*END
+
+*R_NET n798 2.779e-01
+*DRIVER U957:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U949:A1 2.896e-08
+*END
+
+*R_NET n799 2.276e-01
+*DRIVER U387:X
+*CELL SAEDRVT14_TIE0_PV1ECO_1
+*C2_R1_C1 1.138e-01 1.850e-07 1.138e-01 
+*LOADS
+*RC self_gate_send_divcnt_reg_1:SE 4.141e-08
+*END
+
+*R_NET n800 3.412e+00
+*DRIVER self_gate_send_divcnt_reg_0:Q
+*CELL SAEDRVT14_CKGTPLT_V5_1
+*C2_R1_C1 1.706e+00 3.375e-05 1.706e+00 
+*LOADS
+*RC send_divcnt_reg\[24\]:CK 1.802e-05
+*RC send_divcnt_reg\[25\]:CK 1.359e-05
+*RC send_divcnt_reg\[16\]:CK 1.188e-05
+*RC send_divcnt_reg\[23\]:CK 2.286e-05
+*RC recv_divcnt_reg\[13\]:CK 2.111e-05
+*RC recv_divcnt_reg\[19\]:CK 1.144e-05
+*RC recv_divcnt_reg\[21\]:CK 1.697e-05
+*RC send_divcnt_reg\[19\]:CK 9.690e-06
+*END
+
+*R_NET n801 2.510e-01
+*DRIVER U960:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.255e-01 9.627e-07 1.255e-01 
+*LOADS
+*RC self_gate_send_divcnt_reg_0:EN 2.198e-07
+*END
+
+*R_NET n802 3.095e-01
+*DRIVER U961:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.548e-01 9.957e-07 1.548e-01 
+*LOADS
+*RC U960:A2 2.830e-07
+*END
+
+*R_NET n803 2.641e-01
+*DRIVER U962:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 1.321e-01 6.750e-07 1.321e-01 
+*LOADS
+*RC U960:A1 1.668e-07
+*END
+
+*R_NET n804 3.422e-01
+*DRIVER U963:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U961:A4 2.924e-07
+*END
+
+*R_NET n805 3.315e-01
+*DRIVER U964:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U961:A3 1.618e-07
+*END
+
+*R_NET n806 3.940e-01
+*DRIVER U965:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U961:A2 1.073e-07
+*END
+
+*R_NET n807 2.779e-01
+*DRIVER U966:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U961:A1 2.896e-08
+*END
+
+*R_NET n808 3.422e-01
+*DRIVER U967:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.711e-01 9.127e-07 1.711e-01 
+*LOADS
+*RC U962:A4 2.924e-07
+*END
+
+*R_NET n809 3.315e-01
+*DRIVER U968:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.658e-01 5.068e-07 1.658e-01 
+*LOADS
+*RC U962:A3 1.618e-07
+*END
+
+*R_NET n810 3.940e-01
+*DRIVER U969:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.970e-01 2.770e-07 1.970e-01 
+*LOADS
+*RC U962:A2 1.073e-07
+*END
+
+*R_NET n811 2.779e-01
+*DRIVER U970:X
+*CELL SAEDRVT14_OR2_0P5
+*C2_R1_C1 1.390e-01 1.051e-07 1.390e-01 
+*LOADS
+*RC U962:A1 2.896e-08
+*END
+
+*R_NET n812 2.292e-01
+*DRIVER U390:X
+*CELL SAEDRVT14_TIE0_PV1ECO_1
+*C2_R1_C1 1.146e-01 2.243e-07 1.146e-01 
+*LOADS
+*RC self_gate_send_divcnt_reg_0:SE 5.032e-08
+*END
