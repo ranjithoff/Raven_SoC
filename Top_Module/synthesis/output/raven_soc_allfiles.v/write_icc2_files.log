@@ -1,0 +1,22 @@
+Writing verilog file '/home1/PD09/RanjithKC/Raven_SoC/top_module/synthesis/output/raven_soc_allfiles.v/raven_soc.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Information: No Scenarios exist, writing data for one virtual_scenario
+Information: Creating directory ../output/raven_soc_allfiles.v/raven_soc.MCMM
+Information: The default DEF output is in version 5.8. (DCT-320)
+Warning: Failed to find cell expansion data in current design.  (PSYN-1240)
+0
+1
+Information: Writing COMPONENTS section (DDEFW-014)
+1
+Information: Completed COMPONENTS section  (DDEFW-016)
+Information: Writing PINS section (DDEFW-014)
+Information: Completed PINS section  (DDEFW-016)
+Information: No groups were written. (RPGP-018)
+1
+Warning: Verilog writer has added 1 nets to module spimemio using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Changed wire name flash_io0_di to flash_io0_di_snps_wire in module raven_soc.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name flash_io1_di to flash_io1_di_snps_wire in module raven_soc.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name flash_io2_di to flash_io2_di_snps_wire in module raven_soc.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name flash_io3_di to flash_io3_di_snps_wire in module raven_soc.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Verilog writer has added 16 nets to module raven_soc using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
