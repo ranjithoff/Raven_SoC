@@ -1,0 +1,44 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+Design : picorv32_pcpi_div
+Version: T-2022.03-SP4
+Date   : Tue Dec  9 13:32:52 2025
+****************************************
+
+  Startpoint: quotient_msk_reg[3] (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: quotient_msk_reg[2] (rising edge-triggered flip-flop clocked by clock)
+  Mode: default
+  Corner: default
+  Scenario: picorv32_pcpi_div
+  Path Group: reg2reg
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clock (rise edge)                          0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  quotient_msk_reg[3]/CK (SAEDRVT14_FDP_V2LP_1)    0.00      0.04 r
+  quotient_msk_reg[3]/Q (SAEDRVT14_FDP_V2LP_1)     0.07      0.11 f
+  U515/X (SAEDRVT14_AN2_MM_0P5)                    0.03      0.14 f
+  quotient_msk_reg[2]/D (SAEDRVT14_FDP_V2LP_0P5)   0.00      0.14 f
+  data arrival time                                          0.14
+
+  clock clock (rise edge)                          0.00      0.00
+  clock network delay (propagated)                 0.09      0.09
+  quotient_msk_reg[2]/CK (SAEDRVT14_FDP_V2LP_0P5)
+                                                   0.00      0.09 r
+  library hold time                                0.00      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.14
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.05
+
+
+1

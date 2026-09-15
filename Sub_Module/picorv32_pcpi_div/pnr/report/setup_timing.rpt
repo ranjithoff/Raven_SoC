@@ -1,0 +1,88 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : picorv32_pcpi_div
+Version: T-2022.03-SP4
+Date   : Tue Dec  9 13:32:52 2025
+****************************************
+
+  Startpoint: resetn (input port clocked by clock)
+  Endpoint: self_gate_dividend_reg_3 (rising clock gating-check end-point clocked by clock)
+  Mode: default
+  Corner: default
+  Scenario: picorv32_pcpi_div
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clock (rise edge)                          0.00      0.00
+  clock network delay (propagated)                 0.09      0.09
+  input external delay                             0.75      0.84 f
+  resetn (in)                                      0.00      0.84 f
+  U489/X (SAEDRVT14_AN2_0P5)                       0.05      0.89 f
+  U636/X (SAEDRVT14_INV_0P5)                       0.08      0.97 r
+  gre_mt_inst_2703/X (SAEDRVT14_DEL_R2V2_1)        0.11      1.08 r
+  U1421/X (SAEDRVT14_INV_0P75)                     0.10      1.18 f
+  U602/X (SAEDRVT14_AN2_MM_2)                      0.10      1.28 f
+  U639/X (SAEDRVT14_INV_0P5)                       0.03      1.31 r
+  U608/X (SAEDRVT14_AO2BB2_0P5)                    0.03      1.35 f
+  U609/X (SAEDRVT14_INV_0P5)                       0.01      1.36 r
+  U694/X (SAEDRVT14_NR2_1)                         0.01      1.37 f
+  U695/X (SAEDRVT14_INV_0P5)                       0.02      1.39 r
+  U717/CO (SAEDRVT14_ADDF_V1_0P5)                  0.05      1.43 r
+  U735/CO (SAEDRVT14_ADDF_V1_0P5)                  0.05      1.49 r
+  U764/CO (SAEDRVT14_ADDF_V1_0P5)                  0.05      1.54 r
+  U777/CO (SAEDRVT14_ADDF_V1_0P5)                  0.05      1.59 r
+  U813/CO (SAEDRVT14_ADDF_V1_0P5)                  0.05      1.64 r
+  U923/CO (SAEDRVT14_ADDF_V1_0P5)                  0.05      1.68 r
+  U948/CO (SAEDRVT14_ADDF_V1_0P5)                  0.05      1.73 r
+  U958/CO (SAEDRVT14_ADDF_V1_0P5)                  0.05      1.78 r
+  U967/CO (SAEDRVT14_ADDF_V1_0P5)                  0.05      1.83 r
+  U976/CO (SAEDRVT14_ADDF_V1_0P5)                  0.05      1.88 r
+  U985/CO (SAEDRVT14_ADDF_V1_0P5)                  0.05      1.93 r
+  U995/CO (SAEDRVT14_ADDF_V1_0P5)                  0.05      1.98 r
+  U1006/CO (SAEDRVT14_ADDF_V1_0P5)                 0.06      2.04 r
+  U1015/CO (SAEDRVT14_ADDF_V1_0P5)                 0.05      2.09 r
+  U1024/CO (SAEDRVT14_ADDF_V1_0P5)                 0.05      2.14 r
+  U1033/CO (SAEDRVT14_ADDF_V1_0P5)                 0.05      2.19 r
+  U1042/CO (SAEDRVT14_ADDF_V1_0P5)                 0.08      2.27 r
+  U1051/CO (SAEDRVT14_ADDF_V1_0P5)                 0.06      2.33 r
+  U1061/CO (SAEDRVT14_ADDF_V1_0P5)                 0.04      2.37 r
+  U1071/CO (SAEDRVT14_ADDF_V1_0P5)                 0.04      2.42 r
+  U1080/CO (SAEDRVT14_ADDF_V1_0P5)                 0.04      2.46 r
+  U1089/CO (SAEDRVT14_ADDF_V1_0P5)                 0.04      2.51 r
+  U1098/CO (SAEDRVT14_ADDF_V1_0P5)                 0.05      2.56 r
+  U1107/CO (SAEDRVT14_ADDF_V1_0P5)                 0.05      2.61 r
+  U1116/CO (SAEDRVT14_ADDF_V1_0P5)                 0.05      2.66 r
+  U1127/CO (SAEDRVT14_ADDF_V1_0P5)                 0.05      2.71 r
+  U1136/CO (SAEDRVT14_ADDF_V1_0P5)                 0.05      2.76 r
+  U1145/CO (SAEDRVT14_ADDF_V1_0P5)                 0.05      2.81 r
+  U1155/CO (SAEDRVT14_ADDF_V1_0P5)                 0.06      2.87 r
+  U1164/CO (SAEDRVT14_ADDF_V1_0P5)                 0.07      2.94 r
+  U1160/X (SAEDRVT14_EO2_V1_0P75)                  0.03      2.97 r
+  U1161/X (SAEDRVT14_INV_0P5)                      0.01      2.99 f
+  U1163/X (SAEDRVT14_OAI21_0P5)                    0.03      3.02 r
+  ctmTdsLR_3_115/X (SAEDRVT14_OR2_0P5)             0.03      3.05 r
+  U666/X (SAEDRVT14_OR2_MM_0P5)                    0.02      3.07 r
+  self_gate_dividend_reg_3/EN (SAEDRVT14_CKGTPLT_V5_1)
+                                                   0.00      3.07 r
+  data arrival time                                          3.07
+
+  clock clock (rise edge)                          4.00      4.00
+  clock network delay (propagated)                 0.05      4.05
+  self_gate_dividend_reg_3/CK (SAEDRVT14_CKGTPLT_V5_1)
+                                                   0.00      4.05 r
+  library setup time                              -0.01      4.03
+  data required time                                         4.03
+  ------------------------------------------------------------------------
+  data required time                                         4.03
+  data arrival time                                         -3.07
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.96
+
+
+1
