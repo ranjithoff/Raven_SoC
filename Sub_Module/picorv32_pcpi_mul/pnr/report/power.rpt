@@ -1,0 +1,65 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : picorv32_pcpi_mul
+Version: T-2022.03-SP4
+Date   : Thu Nov 27 00:52:19 2025
+****************************************
+Information: Activity for scenario picorv32_pcpi_mul was cached, no propagation required. (POW-005)
+Mode: default
+Corner: default
+Scenario: picorv32_pcpi_mul
+Voltage: 0.60
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port A2 on cell U53 for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000057 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell U53 for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000057 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clk_gate_instr_mulhsu_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell clk_gate_instr_mulhsu_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clk_gate_mul_counter_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell self_gate_instr_mulh_reg_0 for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.009460 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port EN on cell clk_gate_mul_counter_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000057 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell clk_gate_mul_counter_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell mul_finish_reg for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell mul_counter_reg[5] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.017414 (POW-046)
+Warning: Fall toggles on pin instr_mulh_reg/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin instr_mulhu_reg/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin instr_mul_reg/QN are impossible given input states; converted to rise toggles. (POW-069)
+
+  Cell Internal Power    = 1.23e+06 pW ( 84.7%)
+  Net Switching Power    = 2.22e+05 pW ( 15.3%)
+Total Dynamic Power      = 1.46e+06 pW (100.0%)
+
+Cell Leakage Power       = 9.11e+05 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             1.21e+06               1.82e+05               1.17e+04               1.40e+06    ( 59.3%)        i
+register                  1.00e+04               3.84e+03               7.77e+04               9.15e+04    (  3.9%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             1.55e+04               3.63e+04               8.21e+05               8.73e+05    ( 36.9%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     1.23e+06 pW            2.22e+05 pW            9.11e+05 pW            2.37e+06 pW
+1
