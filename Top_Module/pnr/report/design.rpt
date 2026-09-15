@@ -1,0 +1,62 @@
+****************************************
+Report : design
+Design : raven_soc
+Version: T-2022.03-SP4
+Date   : Thu Dec 25 16:10:12 2025
+****************************************
+
+Total number of std cells in library : 1891
+Total number of dont_use lib cells   : 39
+Total number of dont_touch lib cells : 39
+Total number of buffers              : 150
+Total number of inverters            : 102
+Total number of flip-flops           : 350
+Total number of latches              : 90
+Total number of ICGs                 : 60
+
+Cell Instance Type  Count         Area
+--------------------------------------
+TOTAL LEAF CELLS    10659     9536.690
+Standard cells      10655     5704.556
+Hard macro cells        4     3832.134
+Soft macro cells        0        0.000
+Always on cells         0        0.000
+Physical only           0        0.000
+Fixed cells             4     3832.134
+Moveable cells      10655     5704.556
+Sequential           2675     2454.832
+Buffer/inverter      1479      788.233
+ICG cells             167      135.376
+
+Logic Hierarchies                    : 74
+Design Masters count                 : 172
+Total Flat nets count                : 11069
+Total FloatingNets count             : 232
+Total no of Ports                    : 282
+Number of Master Clocks in design    : 2
+Number of Generated Clocks in design : 0
+Number of Path Groups in design      : 14 (2 of them Non Default)
+Number of Scan Chains in design      : 0
+List of Modes                        : func, test
+List of Corners                      : ss_125c
+List of Scenarios                    : func.ss_125c, test.ss_125c
+
+Core Area                            : 16388.839
+Chip Area                            : 27126.574
+Total Site Row Area                  : 16388.839
+Number of Blockages                  : 0
+Total area of Blockages              : 0.000
+Number of Power Domains              : 2
+Number of Voltage Areas              : 2
+Number of Group Bounds               : 0
+Number of Exclusive MoveBounds       : 0
+Number of Hard or Soft MoveBounds    : 0
+Number of Multibit Registers         : 0
+Number of Multibit LS/ISO Cells      : 0
+Number of Top Level RP Groups        : 0
+Number of Tech Layers                : 63 (54 of them have unknown routing dir.)
+
+Total wire length                    : 199256.99 micron
+Total number of wires                : 142819
+Total number of contacts             : 101960
+1

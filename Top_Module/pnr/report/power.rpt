@@ -1,0 +1,81 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : raven_soc
+Version: T-2022.03-SP4
+Date   : Thu Dec 25 16:10:12 2025
+****************************************
+Information: Activity for scenario func.ss_125c was cached, no propagation required. (POW-005)
+Mode: func
+Corner: ss_125c
+Scenario: func.ss_125c
+Voltage: 0.72
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+cpu/genblk2.pcpi_div/VDD (power) probability 1.00 (default)
+cpu/genblk2.pcpi_div/VSS (ground) probability 1.00 (default)
+cpu/genblk1.pcpi_mul/VDD (power) probability 1.00 (default)
+cpu/genblk1.pcpi_mul/VSS (ground) probability 1.00 (default)
+simpleuart/VDD (power) probability 1.00 (default)
+simpleuart/VSS (ground) probability 1.00 (default)
+spimemio/VDD (power) probability 1.00 (default)
+spimemio/VSS (ground) probability 1.00 (default)
+VDDO (power) probability 1.00 (default)
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell self_gate_gpio_reg_2 for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.037880 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell cpu/clk_gate_next_insn_opcode_reg/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.028076 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port B2 on cell ctmTdsLR_1_4788 for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000191 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell ctmTdsLR_1_4788 for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000191 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell self_gate_adc1_clksrc_reg_0 for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.103111 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell cpu/clk_gate_mem_rdata_q_reg/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.041904 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell self_gate_gpio_pu_reg_2 for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.030155 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell cpu/clk_gate_mem_rdata_q_reg_0/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.041904 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell cpu/clk_gate_mem_rdata_q_reg_1/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.034962 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell self_gate_gpio_pd_reg_2 for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.031300 (POW-046)
+Warning: Fall toggles on pin cpu/count_cycle_reg[49]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin cpu/count_cycle_reg[48]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin cpu/count_cycle_reg[45]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin cpu/count_cycle_reg[19]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin cpu/count_cycle_reg[18]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin cpu/count_cycle_reg[17]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin cpu/count_cycle_reg[16]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin cpu/count_cycle_reg[15]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin cpu/count_cycle_reg[14]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin cpu/count_cycle_reg[13]/QN are impossible given input states; converted to rise toggles. (POW-069)
+
+  Cell Internal Power    = 1.69e+07 pW ( 40.2%)
+  Net Switching Power    = 2.51e+07 pW ( 59.8%)
+Total Dynamic Power      = 4.20e+07 pW (100.0%)
+
+Cell Leakage Power       = 3.20e+07 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             1.35e+07               1.68e+07               1.09e+06               3.14e+07    ( 42.4%)        i
+register                  5.21e+05               5.71e+05               1.51e+07               1.62e+07    ( 21.9%)         
+sequential                6.18e+04               1.27e+05               3.12e+05               5.00e+05    (  0.7%)         
+combinational             2.78e+06               7.69e+06               1.55e+07               2.60e+07    ( 35.1%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     1.69e+07 pW            2.51e+07 pW            3.20e+07 pW            7.41e+07 pW
+1
