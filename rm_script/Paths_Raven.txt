@@ -1,0 +1,65 @@
+
+
+TECH_FILE "/home/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf"   
+REFERENCE_LIBRARY             "/home/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm \
+				   /home/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm \
+				   /home/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm \
+				   /home/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"  
+
+
+#########Target Libraries for SoC#####################
+TARGET_LIBRARY_FILES  "/home/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p72v125c.db \
+			   /home/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_dlvl_ss0p72v125c_i0p6v.db \
+			   /home/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ulvl_ss0p72v125c_i0p6v.db \
+			   /home/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p72v125c.db \
+                           /home/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db \
+			   /home/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db"
+###########Target Libraries for spimemio################
+TARGET_LIBRARY_FILES  "/home/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p72v125c.db \
+			   /home/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_dlvl_ss0p72v125c_i0p6v.db \
+			   /home/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ulvl_ss0p72v125c_i0p6v.db \
+			   /home/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p72v125c.db "
+
+#############Target Libraries for simpleuart##############
+
+TARGET_LIBRARY_FILES  "/home/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db \
+			   /home/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db "
+
+#############################################UPF Constraints#########################################################			   
+			   
+###########################simpleuart############################			   
+power domain PD
+supply port VDD VSS
+supply net VDD VSS
+create_supply_net VSS 
+domain supply net PD -primary power VDD -primary ground VSS
+
+##################################spimemio#########################
+power domain PDm 
+supply port VDD VDDo VSS
+related supply -power VDDo -ground VSS
+domain supply -primary power VDD -primary_ground  VSS
+              
+##############################SoC########################              
+              
+power domain PD
+supply port VDD VDDh VSS
+supply_net VDD -ports {VDD simpleuart/VDD spimemio/VDDo}
+supply net VSS -ports {VSS simpleuart/VSS spimemio/VSS}
+supply net VDDh -ports {VDDh spimemio/VDD}
+
+
+#############################################SDC Constraints#########################################################			   
+			   
+clock period of 5ns for pll_clk
+create_clock period of 4ns for ext_clk
+input delay for ext_clk for all the inputs 0.5 
+output delay for ext_clk for the outputs 0.5 
+input delay for pll_clk for all the inputs 0.5 
+output delay for pll_clk for all the outputs 0.5 
+load for all outputs as pin load 0.2 
+max fanout 200 
+max transition 0.5 
+max capacitance 50 
+~                                       
+
