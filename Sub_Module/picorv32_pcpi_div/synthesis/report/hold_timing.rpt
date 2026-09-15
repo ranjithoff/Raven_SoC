@@ -1,0 +1,131 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : picorv32_pcpi_div
+Version: T-2022.03-SP4
+Date   : Mon Dec  8 11:01:32 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+Wire Load Model Mode: Inactive.
+
+  Startpoint: dividend_reg[14]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: self_gate_dividend_reg_1
+            (gating element for clock clock)
+  Path Group: clock
+  Path Type: min
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  dividend_reg[14]/CK (SAEDRVT14_FDP_V2_0P5)              0.00       0.00 r    0.60
+  dividend_reg[14]/Q (SAEDRVT14_FDP_V2_0P5)               0.02       0.02 r    0.60
+  U1444/X (SAEDRVT14_OR2_0P75)                            0.01 *     0.03 r    0.60
+  U1440/X (SAEDRVT14_OR4_1)                               0.01 *     0.04 r    0.60
+  self_gate_dividend_reg_1/EN (SAEDRVT14_CKGTPLT_V5_1)
+                                                          0.00 *     0.04 r    0.60
+  data arrival time                                                  0.04      
+
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  self_gate_dividend_reg_1/CK (SAEDRVT14_CKGTPLT_V5_1)
+                                                          0.00       0.00 r    
+  clock gating hold time                                 -0.02      -0.02      
+  data required time                                                -0.02      
+  ------------------------------------------------------------------------------------
+  data required time                                                -0.02      
+  data arrival time                                                 -0.04      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        0.06      
+
+
+  Startpoint: pcpi_insn[12]
+              (input port clocked by clock)
+  Endpoint: instr_rem_reg
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: in2reg
+  Path Type: min
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  input external delay                                    0.75       0.75 r    
+  pcpi_insn[12] (in)                                      0.00       0.75 r    
+  U587/X (SAEDRVT14_NR2_MM_1)                             0.01 *     0.76 f    0.60
+  instr_rem_reg/D (SAEDRVT14_FDP_V2_1)                    0.00 *     0.76 f    0.60
+  data arrival time                                                  0.76      
+
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  instr_rem_reg/CK (SAEDRVT14_FDP_V2_1)                   0.00       0.00 r    
+  library hold time                                       0.00       0.00      
+  data required time                                                 0.00      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.00      
+  data arrival time                                                 -0.76      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        0.76      
+
+
+  Startpoint: pcpi_wait_reg
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: pcpi_wait (output port clocked by clock)
+  Path Group: reg2out
+  Path Type: min
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  pcpi_wait_reg/CK (SAEDRVT14_FDP_V2_0P5)                 0.00       0.00 r    0.60
+  pcpi_wait_reg/Q (SAEDRVT14_FDP_V2_0P5)                  0.03       0.03 r    0.60
+  pcpi_wait (out)                                         0.00 *     0.03 r    
+  data arrival time                                                  0.03      
+
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  output external delay                                  -0.75      -0.75      
+  data required time                                                -0.75      
+  ------------------------------------------------------------------------------------
+  data required time                                                -0.75      
+  data arrival time                                                 -0.03      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        0.78      
+
+
+  Startpoint: quotient_msk_reg[31]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: quotient_msk_reg[30]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: min
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  quotient_msk_reg[31]/CK (SAEDRVT14_FDP_V2_0P5)          0.00       0.00 r    0.60
+  quotient_msk_reg[31]/Q (SAEDRVT14_FDP_V2_0P5)           0.02       0.02 r    0.60
+  U530/X (SAEDRVT14_AN2_MM_0P5)                           0.02 *     0.04 r    0.60
+  quotient_msk_reg[30]/D (SAEDRVT14_FDP_V2LP_0P5)         0.00 *     0.04 r    0.60
+  data arrival time                                                  0.04      
+
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  quotient_msk_reg[30]/CK (SAEDRVT14_FDP_V2LP_0P5)        0.00       0.00 r    
+  library hold time                                      -0.01      -0.01      
+  data required time                                                -0.01      
+  ------------------------------------------------------------------------------------
+  data required time                                                -0.01      
+  data arrival time                                                 -0.04      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        0.06      
+
+
+1

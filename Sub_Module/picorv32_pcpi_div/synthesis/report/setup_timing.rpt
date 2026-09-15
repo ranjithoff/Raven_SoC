@@ -1,0 +1,253 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : picorv32_pcpi_div
+Version: T-2022.03-SP4
+Date   : Mon Dec  8 11:01:32 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+Wire Load Model Mode: Inactive.
+
+  Startpoint: resetn (input port clocked by clock)
+  Endpoint: self_gate_dividend_reg_3
+            (gating element for clock clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  input external delay                                    0.75       0.75 r    
+  resetn (in)                                             0.00       0.75 r    
+  U489/X (SAEDRVT14_AN2_MM_0P5)                           0.06 *     0.81 r    0.60
+  U636/X (SAEDRVT14_INV_0P5)                              0.08 *     0.89 f    0.60
+  U1421/X (SAEDRVT14_INV_0P5)                             0.09 *     0.99 r    0.60
+  U602/X (SAEDRVT14_AN2_MM_1)                             0.10 *     1.08 r    0.60
+  U639/X (SAEDRVT14_INV_0P5)                              0.04 *     1.12 f    0.60
+  U608/X (SAEDRVT14_AO2BB2_0P5)                           0.03 *     1.15 r    0.60
+  U609/X (SAEDRVT14_INV_0P5)                              0.01 *     1.16 f    0.60
+  U694/X (SAEDRVT14_NR2_MM_1)                             0.01 *     1.17 r    0.60
+  U695/X (SAEDRVT14_INV_0P5)                              0.01 *     1.18 f    0.60
+  U717/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     1.22 f    0.60
+  U735/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     1.27 f    0.60
+  U764/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     1.31 f    0.60
+  U777/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     1.36 f    0.60
+  U813/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     1.40 f    0.60
+  U923/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.45 f    0.60
+  U948/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.50 f    0.60
+  U958/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.54 f    0.60
+  U967/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.59 f    0.60
+  U976/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.63 f    0.60
+  U985/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.68 f    0.60
+  U995/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.73 f    0.60
+  U1006/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.77 f    0.60
+  U1015/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.82 f    0.60
+  U1024/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.87 f    0.60
+  U1033/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.92 f    0.60
+  U1042/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.96 f    0.60
+  U1051/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.01 f    0.60
+  U1061/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.06 f    0.60
+  U1071/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.11 f    0.60
+  U1080/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.16 f    0.60
+  U1089/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.21 f    0.60
+  U1098/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.25 f    0.60
+  U1107/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.30 f    0.60
+  U1116/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.34 f    0.60
+  U1127/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.39 f    0.60
+  U1136/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.44 f    0.60
+  U1145/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.48 f    0.60
+  U1155/CO (SAEDRVT14_ADDF_V1_0P5)                        0.04 *     2.53 f    0.60
+  U1164/CO (SAEDRVT14_ADDF_V1_0P5)                        0.04 *     2.57 f    0.60
+  U1160/X (SAEDRVT14_EO2_V1_0P75)                         0.02 *     2.60 f    0.60
+  U1161/X (SAEDRVT14_INV_0P5)                             0.01 *     2.61 r    0.60
+  U1163/X (SAEDRVT14_OAI21_0P5)                           0.03 *     2.64 f    0.60
+  U721/X (SAEDRVT14_OR2_0P75)                             0.03 *     2.67 f    0.60
+  U686/X (SAEDRVT14_OR4_1)                                0.02 *     2.70 f    0.60
+  U666/X (SAEDRVT14_OR2_0P75)                             0.02 *     2.71 f    0.60
+  self_gate_dividend_reg_3/EN (SAEDRVT14_CKGTPLT_V5_1)
+                                                          0.00 *     2.71 f    0.60
+  data arrival time                                                  2.71      
+
+  clock clock (rise edge)                                 4.00       4.00      
+  clock network delay (ideal)                             0.00       4.00      
+  self_gate_dividend_reg_3/CK (SAEDRVT14_CKGTPLT_V5_1)
+                                                          0.00       4.00 r    
+  clock gating setup time                                -0.02       3.98      
+  data required time                                                 3.98      
+  ------------------------------------------------------------------------------------
+  data required time                                                 3.98      
+  data arrival time                                                 -2.71      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        1.26      
+
+
+  Startpoint: resetn (input port clocked by clock)
+  Endpoint: dividend_reg[30]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: in2reg
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  input external delay                                    0.75       0.75 r    
+  resetn (in)                                             0.00       0.75 r    
+  U489/X (SAEDRVT14_AN2_MM_0P5)                           0.06 *     0.81 r    0.60
+  U636/X (SAEDRVT14_INV_0P5)                              0.08 *     0.89 f    0.60
+  U1421/X (SAEDRVT14_INV_0P5)                             0.09 *     0.99 r    0.60
+  U602/X (SAEDRVT14_AN2_MM_1)                             0.10 *     1.08 r    0.60
+  U639/X (SAEDRVT14_INV_0P5)                              0.04 *     1.12 f    0.60
+  U608/X (SAEDRVT14_AO2BB2_0P5)                           0.03 *     1.15 r    0.60
+  U609/X (SAEDRVT14_INV_0P5)                              0.01 *     1.16 f    0.60
+  U694/X (SAEDRVT14_NR2_MM_1)                             0.01 *     1.17 r    0.60
+  U695/X (SAEDRVT14_INV_0P5)                              0.01 *     1.18 f    0.60
+  U717/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     1.22 f    0.60
+  U735/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     1.27 f    0.60
+  U764/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     1.31 f    0.60
+  U777/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     1.36 f    0.60
+  U813/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     1.40 f    0.60
+  U923/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.45 f    0.60
+  U948/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.50 f    0.60
+  U958/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.54 f    0.60
+  U967/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.59 f    0.60
+  U976/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.63 f    0.60
+  U985/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.68 f    0.60
+  U995/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.73 f    0.60
+  U1006/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.77 f    0.60
+  U1015/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.82 f    0.60
+  U1024/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.87 f    0.60
+  U1033/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.92 f    0.60
+  U1042/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.96 f    0.60
+  U1051/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.01 f    0.60
+  U1061/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.06 f    0.60
+  U1071/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.11 f    0.60
+  U1080/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.16 f    0.60
+  U1089/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.21 f    0.60
+  U1098/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.25 f    0.60
+  U1107/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.30 f    0.60
+  U1116/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.34 f    0.60
+  U1127/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.39 f    0.60
+  U1136/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.44 f    0.60
+  U1145/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     2.48 f    0.60
+  U1155/CO (SAEDRVT14_ADDF_V1_0P5)                        0.04 *     2.53 f    0.60
+  U1164/S (SAEDRVT14_ADDF_V1_0P5)                         0.08 *     2.60 r    0.60
+  U1165/X (SAEDRVT14_INV_0P5)                             0.01 *     2.61 f    0.60
+  U1167/X (SAEDRVT14_OAI21_0P5)                           0.03 *     2.64 r    0.60
+  dividend_reg[30]/D (SAEDRVT14_FDP_V2_0P5)               0.00 *     2.64 r    0.60
+  data arrival time                                                  2.64      
+
+  clock clock (rise edge)                                 4.00       4.00      
+  clock network delay (ideal)                             0.00       4.00      
+  dividend_reg[30]/CK (SAEDRVT14_FDP_V2_0P5)              0.00       4.00 r    
+  library setup time                                     -0.03       3.97      
+  data required time                                                 3.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 3.97      
+  data arrival time                                                 -2.64      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        1.33      
+
+
+  Startpoint: pcpi_ready_reg
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: pcpi_ready (output port clocked by clock)
+  Path Group: reg2out
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  pcpi_ready_reg/CK (SAEDRVT14_FDP_V2_0P5)                0.00       0.00 r    0.60
+  pcpi_ready_reg/Q (SAEDRVT14_FDP_V2_0P5)                 0.07       0.07 r    0.60
+  pcpi_ready (out)                                        0.00 *     0.07 r    
+  data arrival time                                                  0.07      
+
+  clock clock (rise edge)                                 4.00       4.00      
+  clock network delay (ideal)                             0.00       4.00      
+  output external delay                                  -0.75       3.25      
+  data required time                                                 3.25      
+  ------------------------------------------------------------------------------------
+  data required time                                                 3.25      
+  data arrival time                                                 -0.07      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        3.18      
+
+
+  Startpoint: pcpi_wait_q_reg
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: dividend_reg[30]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  pcpi_wait_q_reg/CK (SAEDRVT14_FDP_V2LP_0P5)             0.00       0.00 r    0.60
+  pcpi_wait_q_reg/Q (SAEDRVT14_FDP_V2LP_0P5)              0.04       0.04 f    0.60
+  U464/X (SAEDRVT14_AN2B_MM_1)                            0.02 *     0.07 r    0.60
+  U489/X (SAEDRVT14_AN2_MM_0P5)                           0.06 *     0.13 r    0.60
+  U636/X (SAEDRVT14_INV_0P5)                              0.08 *     0.22 f    0.60
+  U1421/X (SAEDRVT14_INV_0P5)                             0.09 *     0.31 r    0.60
+  U602/X (SAEDRVT14_AN2_MM_1)                             0.10 *     0.41 r    0.60
+  U639/X (SAEDRVT14_INV_0P5)                              0.04 *     0.44 f    0.60
+  U608/X (SAEDRVT14_AO2BB2_0P5)                           0.03 *     0.48 r    0.60
+  U609/X (SAEDRVT14_INV_0P5)                              0.01 *     0.49 f    0.60
+  U694/X (SAEDRVT14_NR2_MM_1)                             0.01 *     0.49 r    0.60
+  U695/X (SAEDRVT14_INV_0P5)                              0.01 *     0.50 f    0.60
+  U717/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     0.55 f    0.60
+  U735/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     0.59 f    0.60
+  U764/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     0.64 f    0.60
+  U777/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     0.68 f    0.60
+  U813/CO (SAEDRVT14_ADDF_V1_0P5)                         0.04 *     0.73 f    0.60
+  U923/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     0.77 f    0.60
+  U948/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     0.82 f    0.60
+  U958/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     0.86 f    0.60
+  U967/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     0.91 f    0.60
+  U976/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     0.96 f    0.60
+  U985/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.00 f    0.60
+  U995/CO (SAEDRVT14_ADDF_V1_0P5)                         0.05 *     1.05 f    0.60
+  U1006/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.10 f    0.60
+  U1015/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.14 f    0.60
+  U1024/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.19 f    0.60
+  U1033/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.24 f    0.60
+  U1042/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.29 f    0.60
+  U1051/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.33 f    0.60
+  U1061/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.39 f    0.60
+  U1071/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.44 f    0.60
+  U1080/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.48 f    0.60
+  U1089/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.53 f    0.60
+  U1098/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.57 f    0.60
+  U1107/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.62 f    0.60
+  U1116/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.67 f    0.60
+  U1127/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.71 f    0.60
+  U1136/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.76 f    0.60
+  U1145/CO (SAEDRVT14_ADDF_V1_0P5)                        0.05 *     1.81 f    0.60
+  U1155/CO (SAEDRVT14_ADDF_V1_0P5)                        0.04 *     1.85 f    0.60
+  U1164/S (SAEDRVT14_ADDF_V1_0P5)                         0.08 *     1.93 r    0.60
+  U1165/X (SAEDRVT14_INV_0P5)                             0.01 *     1.94 f    0.60
+  U1167/X (SAEDRVT14_OAI21_0P5)                           0.03 *     1.96 r    0.60
+  dividend_reg[30]/D (SAEDRVT14_FDP_V2_0P5)               0.00 *     1.96 r    0.60
+  data arrival time                                                  1.96      
+
+  clock clock (rise edge)                                 4.00       4.00      
+  clock network delay (ideal)                             0.00       4.00      
+  dividend_reg[30]/CK (SAEDRVT14_FDP_V2_0P5)              0.00       4.00 r    
+  library setup time                                     -0.03       3.97      
+  data required time                                                 3.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 3.97      
+  data arrival time                                                 -1.96      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        2.00      
+
+
+1

@@ -1,0 +1,37 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03-SP4
+Date:        Mon Dec  8 10:55:02 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     15
+    Unconnected ports (LINT-28)                                    15
+
+Nets                                                                5
+    Unloaded nets (LINT-2)                                          5
+--------------------------------------------------------------------------------
+
+Warning: In design 'picorv32_pcpi_div', net 'net62' driven by pin 'C954/Z' has no loads. (LINT-2)
+Warning: In design 'picorv32_pcpi_div', net 'net61' driven by pin 'C994/Z' has no loads. (LINT-2)
+Warning: In design 'picorv32_pcpi_div', net 'net60' driven by pin 'C950/Z' has no loads. (LINT-2)
+Warning: In design 'picorv32_pcpi_div', net 'net59' driven by pin 'C904/Z' has no loads. (LINT-2)
+Warning: In design 'picorv32_pcpi_div', net 'net58' driven by pin 'C900/Z' has no loads. (LINT-2)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'picorv32_pcpi_div', port 'pcpi_insn[7]' is not connected to any nets. (LINT-28)
+1
