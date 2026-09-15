@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : spimemio
+Version: T-2022.03-SP4
+Date   : Thu Nov 20 09:34:29 2025
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_ss0p72v125c (File: /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p72v125c.db)
+
+Number of ports:                          251
+Number of nets:                           917
+Number of cells:                          774
+Number of combinational cells:            572
+Number of sequential cells:               186
+Number of macros/black boxes:               0
+Number of buf/inv:                        139
+Number of references:                      46
+
+Combinational area:                158.641199
+Buf/Inv area:                       24.686399
+Noncombinational area:             171.073198
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   329.714397
+Total area:                 undefined
+1

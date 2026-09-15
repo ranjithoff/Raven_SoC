@@ -1,0 +1,75 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03-SP4
+Date:        Thu Nov 20 09:22:56 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     49
+    Unconnected ports (LINT-28)                                    15
+    Feedthrough (LINT-29)                                           4
+    Shorted outputs (LINT-31)                                      16
+    Constant outputs (LINT-52)                                     14
+
+Nets                                                                6
+    Unloaded nets (LINT-2)                                          6
+--------------------------------------------------------------------------------
+
+Warning: In design 'spimemio', net 'net160' driven by pin 'C1516/Z' has no loads. (LINT-2)
+Warning: In design 'spimemio', net 'xfer/net386' driven by pin 'xfer/C706/Z' has no loads. (LINT-2)
+Warning: In design 'spimemio', net 'xfer/net385' driven by pin 'xfer/C679/Z' has no loads. (LINT-2)
+Warning: In design 'spimemio', net 'xfer/net384' driven by pin 'xfer/C674/Z' has no loads. (LINT-2)
+Warning: In design 'spimemio', net 'xfer/net383' driven by pin 'xfer/C673/Z' has no loads. (LINT-2)
+Warning: In design 'spimemio', net 'xfer/net382' driven by pin 'xfer/C668/Z' has no loads. (LINT-2)
+Warning: In design 'spimemio', port 'cfgreg_di[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', port 'cfgreg_di[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio_xfer', port 'din_cont' is not connected to any nets. (LINT-28)
+Warning: In design 'spimemio', input port 'flash_io0_di' is connected directly to output port 'cfgreg_do[0]'. (LINT-29)
+Warning: In design 'spimemio', input port 'flash_io1_di' is connected directly to output port 'cfgreg_do[1]'. (LINT-29)
+Warning: In design 'spimemio', input port 'flash_io2_di' is connected directly to output port 'cfgreg_do[2]'. (LINT-29)
+Warning: In design 'spimemio', input port 'flash_io3_di' is connected directly to output port 'cfgreg_do[3]'. (LINT-29)
+Warning: In design 'spimemio', output port 'flash_csb' is connected directly to output port 'cfgreg_do[5]'. (LINT-31)
+Warning: In design 'spimemio', output port 'flash_clk' is connected directly to output port 'cfgreg_do[4]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[6]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[7]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[12]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[13]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[14]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[15]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[23]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[24]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[25]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[26]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[27]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[28]'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to output port 'cfgreg_do[29]'. (LINT-31)
+Warning: In design 'spimemio_xfer', output port 'flash_io2_oe' is connected directly to output port 'flash_io3_oe'. (LINT-31)
+Warning: In design 'spimemio', output port 'cfgreg_do[30]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[29]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[28]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[27]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[26]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[25]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[24]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[23]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[14]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[13]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[12]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'spimemio', output port 'cfgreg_do[6]' is connected directly to 'logic 0'. (LINT-52)
+1

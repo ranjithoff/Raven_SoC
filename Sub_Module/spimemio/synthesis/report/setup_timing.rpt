@@ -1,0 +1,181 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : spimemio
+Version: T-2022.03-SP4
+Date   : Thu Nov 20 09:34:29 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+Wire Load Model Mode: Inactive.
+
+  Startpoint: din_data_reg[3]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: xfer/self_gate_dummy_count_reg_0
+            (gating element for clock clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  din_data_reg[3]/CK (SAEDRVT14_FDP_V2LP_0P5)             0.00       0.00 r    0.72
+  din_data_reg[3]/Q (SAEDRVT14_FDP_V2LP_0P5)              2.63       2.63 f    0.72
+  xfer/din_data[3] (spimemio_xfer)                        0.00       2.63 f    
+  xfer/U125/X (SAEDRVT14_INV_PS_1)                        0.01 *     2.64 r    0.72
+  xfer/U137/X (SAEDRVT14_OAI22_0P5)                       0.02 *     2.66 f    0.72
+  xfer/U163/X (SAEDRVT14_OR4_1)                           0.02 *     2.68 f    0.72
+  xfer/U164/X (SAEDRVT14_OR2_0P5)                         0.02 *     2.70 f    0.72
+  xfer/self_gate_dummy_count_reg_0/EN (SAEDRVT14_CKGTPLT_V5_1)
+                                                          0.00 *     2.70 f    0.72
+  data arrival time                                                  2.70      
+
+  clock clock (rise edge)                                 4.00       4.00      
+  clock network delay (ideal)                             0.00       4.00      
+  xfer/self_gate_dummy_count_reg_0/CK (SAEDRVT14_CKGTPLT_V5_1)
+                                                          0.00       4.00 r    
+  clock gating setup time                                -0.02       3.98      
+  data required time                                                 3.98      
+  ------------------------------------------------------------------------------------
+  data required time                                                 3.98      
+  data arrival time                                                 -2.70      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        1.28      
+
+
+  Startpoint: addr[9] (input port clocked by clock)
+  Endpoint: ready (output port clocked by clock)
+  Path Group: in2out
+  Path Type: max
+
+  Point                                    Incr       Path      Voltage
+  ---------------------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00      
+  clock network delay (ideal)              0.00       0.00      
+  input external delay                     0.75       0.75 r    
+  addr[9] (in)                             0.00       0.75 r    
+  U1079/X (SAEDRVT14_OAI22_0P5)            0.01 *     0.76 f    0.72
+  U1080/X (SAEDRVT14_AO221_0P5)            0.02 *     0.78 f    0.72
+  U1081/X (SAEDRVT14_OR4_1)                0.02 *     0.81 f    0.72
+  U1082/X (SAEDRVT14_OR4_1)                0.02 *     0.83 f    0.72
+  U1083/X (SAEDRVT14_NR2_MM_0P5)           0.01 *     0.84 r    0.72
+  U1087/X (SAEDRVT14_AN4_0P5)              0.03 *     0.87 r    0.72
+  ready (out)                              0.00 *     0.87 r    
+  data arrival time                                   0.87      
+
+  clock clock (rise edge)                  4.00       4.00      
+  clock network delay (ideal)              0.00       4.00      
+  output external delay                   -0.75       3.25      
+  data required time                                  3.25      
+  ---------------------------------------------------------------------
+  data required time                                  3.25      
+  data arrival time                                  -0.87      
+  ---------------------------------------------------------------------
+  slack (MET)                                         2.38      
+
+
+  Startpoint: addr[5] (input port clocked by clock)
+  Endpoint: din_ddr_reg
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: in2reg
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  input external delay                                    0.75       0.75 f    
+  addr[5] (in)                                            0.00       0.75 f    
+  U1020/X (SAEDRVT14_INV_S_0P5)                           0.01 *     0.76 r    0.72
+  U1254/X (SAEDRVT14_OAI22_0P5)                           0.01 *     0.78 f    0.72
+  U1255/X (SAEDRVT14_AO221_0P5)                           0.02 *     0.80 f    0.72
+  U1256/X (SAEDRVT14_AOI21_0P75)                          0.01 *     0.80 r    0.72
+  U1257/X (SAEDRVT14_OAI21_0P5)                           0.01 *     0.82 f    0.72
+  U1260/X (SAEDRVT14_OR4_1)                               0.02 *     0.84 f    0.72
+  U1261/X (SAEDRVT14_AOI21_0P75)                          0.01 *     0.85 r    0.72
+  U1262/X (SAEDRVT14_OAI21_0P5)                           0.01 *     0.86 f    0.72
+  U1269/X (SAEDRVT14_OR4_1)                               0.02 *     0.88 f    0.72
+  U1276/X (SAEDRVT14_OR4_1)                               0.02 *     0.90 f    0.72
+  U1284/X (SAEDRVT14_OA31_1)                              0.02 *     0.92 f    0.72
+  U1285/X (SAEDRVT14_ND2_CDC_1)                           0.01 *     0.93 r    0.72
+  U1288/X (SAEDRVT14_ND2_CDC_1)                           0.02 *     0.95 f    0.72
+  U1303/X (SAEDRVT14_OAI21_0P5)                           0.02 *     0.96 r    0.72
+  U1306/X (SAEDRVT14_ND2_CDC_1)                           0.01 *     0.98 f    0.72
+  U1307/X (SAEDRVT14_OAI22_0P5)                           0.01 *     0.99 r    0.72
+  din_ddr_reg/D (SAEDRVT14_FDP_V2LP_0P5)                  0.00 *     0.99 r    0.72
+  data arrival time                                                  0.99      
+
+  clock clock (rise edge)                                 4.00       4.00      
+  clock network delay (ideal)                             0.00       4.00      
+  din_ddr_reg/CK (SAEDRVT14_FDP_V2LP_0P5)                 0.00       4.00 r    
+  library setup time                                     -0.02       3.98      
+  data required time                                                 3.98      
+  ------------------------------------------------------------------------------------
+  data required time                                                 3.98      
+  data arrival time                                                 -0.99      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        2.98      
+
+
+  Startpoint: config_oe_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: cfgreg_do[10]
+            (output port clocked by clock)
+  Path Group: reg2out
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  config_oe_reg[2]/CK (SAEDRVT14_FDP_V2LP_0P5)            0.00       0.00 r    0.72
+  config_oe_reg[2]/Q (SAEDRVT14_FDP_V2LP_0P5)             2.93       2.93 f    0.72
+  U1318/X (SAEDRVT14_MUXI2_U_0P5)                         0.01 *     2.94 r    0.72
+  U1319/X (SAEDRVT14_INV_S_0P5)                           0.01 *     2.94 f    0.72
+  cfgreg_do[10] (out)                                     0.00 *     2.94 f    
+  data arrival time                                                  2.94      
+
+  clock clock (rise edge)                                 4.00       4.00      
+  clock network delay (ideal)                             0.00       4.00      
+  output external delay                                  -0.75       3.25      
+  data required time                                                 3.25      
+  ------------------------------------------------------------------------------------
+  data required time                                                 3.25      
+  data arrival time                                                 -2.94      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        0.31      
+
+
+  Startpoint: buffer_reg[5]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: rdata_reg[5]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  buffer_reg[5]/CK (SAEDRVT14_FDP_V2LP_0P5)               0.00       0.00 r    0.72
+  buffer_reg[5]/Q (SAEDRVT14_FDP_V2LP_0P5)                3.17       3.17 f    0.72
+  rdata_reg[5]/D (SAEDRVT14_FDP_V2_0P5)                   0.00 *     3.17 f    0.72
+  data arrival time                                                  3.17      
+
+  clock clock (rise edge)                                 4.00       4.00      
+  clock network delay (ideal)                             0.00       4.00      
+  rdata_reg[5]/CK (SAEDRVT14_FDP_V2_0P5)                  0.00       4.00 r    
+  library setup time                                      0.00       4.00      
+  data required time                                                 4.00      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.00      
+  data arrival time                                                 -3.17      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        0.83      
+
+
+1
