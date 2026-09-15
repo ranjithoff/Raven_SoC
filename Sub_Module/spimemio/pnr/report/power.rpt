@@ -1,0 +1,72 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : spimemio
+Version: T-2022.03-SP4
+Date   : Thu Nov 27 19:44:19 2025
+****************************************
+Information: Activity for scenario spimemio was cached, no propagation required. (POW-005)
+Mode: default
+Corner: default
+Scenario: spimemio
+Voltage: 0.72
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell xfer/clk_gate_xfer_rd_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clk_gate_buffer_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell xfer/clk_gate_xfer_rd_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell xfer/clk_gate_dummy_count_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell xfer/clk_gate_dummy_count_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clk_gate_buffer_reg_1/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell xfer/clk_gate_obuffer_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell xfer/clk_gate_obuffer_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell xfer/clk_gate_ibuffer_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell xfer/clk_gate_ibuffer_reg/latch for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Fall toggles on pin state_reg[3]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin din_tag_reg[2]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin din_rd_reg/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin din_tag_reg[0]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin xfer/last_fetch_reg/Q are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin xfer/xfer_tag_q_reg[2]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin din_tag_reg[1]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin xfer/xfer_tag_q_reg[1]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin xfer/xfer_tag_q_reg[0]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin xfer_io3_90_reg/QN are impossible given input states; converted to rise toggles. (POW-069)
+
+  Cell Internal Power    = 8.26e+06 pW ( 61.1%)
+  Net Switching Power    = 5.25e+06 pW ( 38.9%)
+Total Dynamic Power      = 1.35e+07 pW (100.0%)
+
+Cell Leakage Power       = 2.37e+06 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             7.73e+06               3.76e+06               1.16e+05               1.16e+07    ( 73.1%)        i
+register                  2.42e+05               1.91e+05               1.07e+06               1.51e+06    (  9.5%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             2.88e+05               1.29e+06               1.18e+06               2.77e+06    ( 17.4%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     8.26e+06 pW            5.25e+06 pW            2.37e+06 pW            1.59e+07 pW
+1

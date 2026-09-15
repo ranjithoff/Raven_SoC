@@ -1,0 +1,43 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : spimemio
+Version: T-2022.03-SP4
+Date   : Thu Nov 27 19:44:19 2025
+****************************************
+
+  Startpoint: xfer_io3_90_reg (falling edge-triggered flip-flop clocked by clock)
+  Endpoint: flash_io3_do (output port clocked by clock)
+  Mode: default
+  Corner: default
+  Scenario: spimemio
+  Path Group: reg2out
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clock (fall edge)                          2.00      2.00
+  clock network delay (propagated)                 0.04      2.04
+
+  xfer_io3_90_reg/CK (SAEDRVT14_FDN_V2_1)          0.00      2.04 f
+  xfer_io3_90_reg/Q (SAEDRVT14_FDN_V2_1)           0.03      2.07 f
+  U1322/X (SAEDRVT14_OA221_U_0P5)                  0.02      2.09 f
+  U1323/X (SAEDRVT14_AO21_U_0P5)                   0.04      2.13 f
+  flash_io3_do (out)                               0.00      2.13 f
+  data arrival time                                          2.13
+
+  clock clock (rise edge)                          4.00      4.00
+  clock network delay (propagated)                 0.04      4.04
+  output external delay                           -0.75      3.29
+  data required time                                         3.29
+  ------------------------------------------------------------------------
+  data required time                                         3.29
+  data arrival time                                         -2.13
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.16
+
+
+1
