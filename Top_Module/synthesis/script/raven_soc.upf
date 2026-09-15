@@ -1,0 +1,25 @@
+load_upf ../../../sub_module/picorv32_pcpi_div/synthesis/script/picorv32_pcpi_div.upf  -scope cpu/genblk2.pcpi_div
+load_upf ../../../sub_module/picorv32_pcpi_mul/synthesis/script/picorv32_pcpi_mul.upf  -scope cpu/genblk1.pcpi_mul
+load_upf ../../../sub_module/simpleuart/synthesis/script/simpleuart.upf  -scope simpleuart
+load_upf ../../../sub_module/spimemio/synthesis/script/spimemio.upf  -scope spimemio
+
+create_supply_net VDDO  
+create_supply_net VDD   
+create_supply_net VSS   
+
+create_supply_set ss_high -function {power VDDO} -function {ground VSS}
+create_supply_set ss_low -function {power VDD} -function {ground VSS}
+
+create_power_domain low  -supply {primary ss_low}
+create_power_domain high -elements {xfer} -supply {primary ss_high}
+
+create_supply_port VDD -domain low  -direction in
+create_supply_port VDDO -domain high -direction in
+create_supply_port VSS -domain high -direction in
+ 
+connect_supply_net VDD -ports {VDD cpu/genblk2.pcpi_div/VDD cpu/genblk1.pcpi_mul/VDD}
+connect_supply_net VDDO -ports {VDDO spimemio/VDD simpleuart/VDD}
+connect_supply_net VSS -ports  {VSS cpu/genblk2.pcpi_div/VSS cpu/genblk1.pcpi_mul/VSS simpleuart/VSS spimemio/VSS}
+
+set_level_shifter right_ls_out -domain high -applies_to outputs -rule low_to_high -location parent
+set_level_shifter right_ls_in -domain high -applies_to inputs -rule high_to_low -location self

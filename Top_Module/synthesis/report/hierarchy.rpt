@@ -1,0 +1,1093 @@
+ 
+****************************************
+Report : hierarchy
+Design : raven_soc
+Version: T-2022.03-SP4
+Date   : Mon Dec 22 15:56:23 2025
+****************************************
+
+Attributes:
+    r - licensed design
+
+raven_soc          r
+    SAEDLVT14_MUX2_1                                                                    saed14lvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_AN2B_MM_1                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_AN2_MM_0P5                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_AN3_0P5                                                                   saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_AN3_2                                                                     saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_AN4_1                                                                     saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_AO2BB2_0P5                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_AO21B_0P5                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_AO21_U_0P5                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_AO22_0P5                                                                  saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_AOI21_0P75                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_AOI22_0P75                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_AOLVLUBUF_IY2V1_1                                                         saed14rvt_ulvl_ss0p72v125c_i0p6v
+                                                 0.60->0.72
+    SAEDRVT14_BUF_ECO_1                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_BUF_S_2                                                                   saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_BUF_U_0P5                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_CKGTPLT_V5_1                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_EN2_1                                                                     saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_EO2_V1_0P75                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_FDP_V2LP_0P5                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_FDP_V2LP_1                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_FDP_V2_0P5                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_FDP_V2_1                                                                  saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_INV_0P5                                                                   saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_LVLDBUF_IY2V1_1                                                           saed14rvt_dlvl_ss0p72v125c_i0p6v
+                                                 0.72->0.60
+    SAEDRVT14_MUX2_U_0P5                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_MUXI2_U_0P5                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_ND2_CDC_1                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_ND3B_0P75                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_ND3_0P5                                                                   saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_ND4_0P5                                                                   saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_NR2_2                                                                     saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_NR2_4                                                                     saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_NR2_MM_1                                                                  saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_NR3B_0P75                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_NR3_1                                                                     saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_NR4_0P75                                                                  saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_OA2BB2_V1_0P5                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_OA21_1                                                                    saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_OA22_U_0P5                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_OA211_1                                                                   saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_OAI21_0P5                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_OAI22_0P5                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_OAI22_0P75                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_OR2_0P75                                                                  saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_OR3_0P5                                                                   saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_OR4_1                                                                     saed14rvt_ss0p6v125c
+                                                 0.60
+    SAEDRVT14_TIE0_PV1ECO_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+    SNPS_CLOCK_GATE_HIGH_raven_soc_0             0.60
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+    SNPS_CLOCK_GATE_HIGH_raven_soc_1             0.72
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p72v125c
+                                                 0.72
+    SNPS_CLOCK_GATE_HIGH_raven_soc_2             0.72
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p72v125c
+                                                 0.72
+    SNPS_CLOCK_GATE_HIGH_raven_soc_3             0.60
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+    SNPS_CLOCK_GATE_HIGH_raven_soc_4             0.60
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+    SNPS_CLOCK_GATE_HIGH_raven_soc_5             0.60
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+    SNPS_CLOCK_GATE_HIGH_raven_soc_6             0.60
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+    SNPS_CLOCK_GATE_HIGH_raven_soc_7             0.60
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+    SNPS_CLOCK_GATE_HIGH_raven_soc_8             0.60
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+    SNPS_CLOCK_GATE_HIGH_raven_soc_9             0.60
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+    SNPS_CLOCK_GATE_HIGH_raven_soc_10            0.60
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+    picorv32_1_1_1_1_1_0_00100000_00000000_00001000                                               r
+                                                 0.60
+        SAEDLVT14_AO21B_0P5                                                             saed14lvt_ss0p6v125c
+                                                 0.60
+        SAEDLVT14_FDP_V2LP_1                                                            saed14lvt_ss0p6v125c
+                                                 0.60
+        SAEDLVT14_INV_0P75                                                              saed14lvt_ss0p6v125c
+                                                 0.60
+        SAEDLVT14_ND2B_0P75                                                             saed14lvt_ss0p6v125c
+                                                 0.60
+        SAEDLVT14_ND2B_U_0P5                                                            saed14lvt_ss0p6v125c
+                                                 0.60
+        SAEDLVT14_NR2_1P5                                                               saed14lvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_ADDF_V1_0P5                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_ADDF_V1_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AN2B_MM_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AN2_2                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AN2_MM_0P5                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AN2_MM_1                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AN3_0P5                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AN3_0P75                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AN4_1                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AO2BB2_0P5                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AO21B_0P5                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AO21_U_0P5                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AO22_0P5                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AO32_U_0P5                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AO211_U_0P5                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AO222_1                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AOI21_0P75                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AOI22_0P75                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AOI31_0P75                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_AOI211_0P5                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_BUF_1P5                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_BUF_ECO_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_BUF_S_2                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_BUF_U_0P5                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_EN2_1                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_EO2_V1_0P75                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_EO3_1                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_FDP_V2LP_0P5                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_FDP_V2LP_1                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_FDP_V2_0P5                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_FDP_V2_1                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_INV_0P5                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_INV_0P75                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_INV_2                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_INV_PS_1                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_INV_S_1P5                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_LDPQ_U_0P5                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_LDPQ_V1_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_MUX2_U_0P5                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_MUXI2_U_0P5                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_ND2B_U_0P5                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_ND2_0P5                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_ND2_1                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_ND2_1P5                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_ND2_CDC_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_ND3B_0P75                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_ND3B_2                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_ND3_0P5                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_ND4_0P5                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_NR2B_2                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_NR2_1P5                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_NR2_2                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_NR2_4                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_NR2_MM_1                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_NR2_MM_3                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_NR3B_0P75                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_NR3_1                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_NR4_0P75                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OA2BB2_V1_0P5                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OA21B_1                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OA21_1                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OA22_U_0P5                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OA31_1                                                                saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OA211_1                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OA221_U_0P5                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OAI21_0P5                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OAI22_0P5                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OAI22_0P75                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OAI22_1                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OAI31_0P5                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OAI31_2                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OAI211_0P5                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OAI211_2                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OAI222_1                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OR2_0P75                                                              saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OR2_1                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OR2_MM_1P5                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OR3_0P5                                                               saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_OR4_1                                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+        SAEDRVT14_TIE0_PV1ECO_1                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_0
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_1
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_2
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_3
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_4
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_5
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_6
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_7
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_8
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_9
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_10
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_11
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_12
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_13
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_14
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_15
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_16
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_17
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_18
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_19
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_20
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_21
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_22
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_23
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_24
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_25
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_26
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_27
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_28
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_29
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_30
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_31
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_32
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_33
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_34
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_35
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_36
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_37
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_38
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_39
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_40
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_41
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_42
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_43
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_44
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_45
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_46
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_47
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_48
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_49
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_50
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_51
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_52
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_53
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_54
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_55
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_56
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_57
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_58
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_59
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_60
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        SNPS_CLOCK_GATE_HIGH_picorv32_1_1_1_1_1_0_00100000_00000000_00001000_61
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+        picorv32_pcpi_div                                                                         r
+                                                 0.60
+            SAEDRVT14_ADDH_0P5                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AN2B_MM_1                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AN2_MM_0P5                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AN4_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AO2BB2_0P5                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AO21B_0P5                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AO21_U_0P5                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AO22_0P5                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AO221_1                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AOI21_0P75                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AOI22_0P75                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_BUF_ECO_1                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_BUF_U_0P5                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_EN2_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_EO3_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_FDP_V2LP_0P5                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_FDP_V2LP_1                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_FDP_V2_0P5                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_FDP_V2_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_INV_0P5                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_INV_0P75                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_MUXI2_U_0P5                                                       saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_ND2B_U_0P5                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_ND2_0P5                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_ND2_CDC_1                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_ND3B_0P75                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_ND3_0P5                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_ND4_0P5                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_NR2_MM_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_NR3B_0P75                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_NR3_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_NR4_0P75                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OA2BB2_V1_0P5                                                     saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OA21B_1                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OA22_U_0P5                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OA211_1                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OAI21_0P5                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OAI21_3                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OAI22_0P5                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OR2_0P75                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OR3_0P5                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OR4_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p6v125c
+                                                 0.60
+            SNPS_CLOCK_GATE_HIGH_picorv32_pcpi_div_0
+                                                 0.60
+                SAEDRVT14_CKGTPLT_V5_1                                                  saed14rvt_ss0p6v125c
+                                                 0.60
+                SAEDRVT14_TIE0_PV1ECO_1                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+            SNPS_CLOCK_GATE_HIGH_picorv32_pcpi_div_1
+                                                 0.60
+                SAEDRVT14_CKGTPLT_V5_1                                                  saed14rvt_ss0p6v125c
+                                                 0.60
+                SAEDRVT14_TIE0_PV1ECO_1                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+        picorv32_pcpi_mul                                                                         r
+                                                 0.60
+            SAEDRVT14_AN2_MM_0P5                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AN4_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AO32_U_0P5                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_AOI21_0P75                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_FDP_V2LP_0P5                                                      saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_FDP_V2_0P5                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_INV_0P5                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_ND2B_U_0P5                                                        saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_ND2_CDC_1                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_NR2_MM_1                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_NR3_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OA31_1                                                            saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OAI22_0P5                                                         saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OR2_0P75                                                          saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OR3_0P5                                                           saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_OR4_1                                                             saed14rvt_ss0p6v125c
+                                                 0.60
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p6v125c
+                                                 0.60
+            SNPS_CLOCK_GATE_HIGH_picorv32_pcpi_mul_0
+                                                 0.60
+                SAEDRVT14_CKGTPLT_V5_1                                                  saed14rvt_ss0p6v125c
+                                                 0.60
+                SAEDRVT14_TIE0_PV1ECO_1                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+            SNPS_CLOCK_GATE_HIGH_picorv32_pcpi_mul_3
+                                                 0.60
+                SAEDRVT14_CKGTPLT_V5_1                                                  saed14rvt_ss0p6v125c
+                                                 0.60
+                SAEDRVT14_TIE0_PV1ECO_1                                                 saed14rvt_ss0p6v125c
+                                                 0.60
+    simpleuart                                                                                    r
+                                                 0.72
+        SAEDLVT14_INV_1P5                                                               saed14lvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AN2B_MM_1                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AN2_MM_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AN3_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AN4_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AO21B_0P5                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AO21_U_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AO22_0P5                                                              saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AO31_1                                                                saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AOI21_0P75                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_BUF_1P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_BUF_U_0P5                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_EN2_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_EO2_V1_0P75                                                           saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_FDP_V2LP_0P5                                                          saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_FDP_V2LP_1                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_FDP_V2LP_2                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_FDP_V2_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_INV_S_0P5                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_LVLUBUF_IY2V1_1                                                       saed14rvt_ulvl_ss0p72v125c_i0p6v
+                                                 0.60->0.72
+        SAEDRVT14_MUX2_U_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_ND2B_U_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_ND2_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_ND2_CDC_1                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_ND3B_0P75                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_ND3_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_ND4_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_NR2_MM_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_NR3B_U_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_NR3_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_NR4_0P75                                                              saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OA2BB2_V1_0P5                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OA21B_1                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OA21_1                                                                saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OA22_U_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OA31_1                                                                saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OA211_1                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OAI21_0P5                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OAI22_0P5                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OAI31_0P5                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OAI211_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OR2_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OR3_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OR3_0P75                                                              saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OR4_1                                                                 saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_TIE0_PV1ECO_1                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_simpleuart_0        0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_simpleuart_1        0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_simpleuart_2        0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_simpleuart_3        0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_simpleuart_4        0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_simpleuart_5        0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_simpleuart_6        0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_simpleuart_7        0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+    spimemio                                                                                      r
+                                                 0.72
+        SAEDLVT14_FDP_V2LP_0P5                                                          saed14lvt_ss0p72v125c
+                                                 0.72
+        SAEDLVT14_FDP_V2LP_1                                                            saed14lvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AN2B_MM_1                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AN2_MM_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AN3_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AN4_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AO21B_0P5                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AO21_U_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AO22_0P5                                                              saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AO31_1                                                                saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_AOI21_0P75                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_CKGTPLT_V5_1                                                          saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_EN2_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_EO2_V1_0P75                                                           saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_FDN_V2_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_FDP_V2LP_0P5                                                          saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_FDP_V2LP_1                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_FDP_V2_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_INV_0P75                                                              saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_INV_S_0P5                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_LVLUBUF_IY2V1_1                                                       saed14rvt_ulvl_ss0p72v125c_i0p6v
+                                                 0.60->0.72
+        SAEDRVT14_MUX2_U_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_MUXI2_U_0P5                                                           saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_ND2B_U_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_ND2_CDC_1                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_ND3B_0P75                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_ND3_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_ND4_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_NR2_MM_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_NR3B_U_0P5                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_NR3_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_NR4_0P75                                                              saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OA2BB2_V1_0P5                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OA21B_1                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OA21_1                                                                saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OA31_1                                                                saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OAI21_0P5                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OAI22_0P5                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OAI31_0P5                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OR2_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OR3_0P5                                                               saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_OR4_1                                                                 saed14rvt_ss0p72v125c
+                                                 0.72
+        SAEDRVT14_TIE0_PV1ECO_1                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_spimemio_0          0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_spimemio_1          0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_spimemio_2          0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_spimemio_3          0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_spimemio_4          0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_spimemio_5          0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_spimemio_6          0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_spimemio_7          0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_spimemio_8          0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        SNPS_CLOCK_GATE_HIGH_spimemio_9          0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+        spimemio_xfer                                                                             r
+                                                 0.72
+            SAEDLVT14_FDP_V2LP_1                                                        saed14lvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_AN2B_MM_1                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_AN2_MM_0P5                                                        saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_AN3_0P5                                                           saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_AO21B_0P5                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_AO21_U_0P5                                                        saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_AO22_0P5                                                          saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_AO31_1                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_AOI21_0P75                                                        saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_AOI22_0P5                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_AOI31_0P5                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_CKGTPLT_V5_1                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_EN2_0P5                                                           saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_FDP_V2LP_0P5                                                      saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_FDP_V2LP_1                                                        saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_INV_S_0P5                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_MUX2_U_0P5                                                        saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_MUXI2_U_0P5                                                       saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_ND2B_U_0P5                                                        saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_ND2_CDC_1                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_ND3B_0P75                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_ND3_0P5                                                           saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_NR2_MM_0P5                                                        saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_NR3B_U_0P5                                                        saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_NR3_0P5                                                           saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_NR4_0P75                                                          saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_OA2BB2_V1_0P5                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_OA21B_1                                                           saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_OA21_1                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_OA31_1                                                            saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_OAI21_0P5                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_OAI22_0P5                                                         saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_OAI211_0P5                                                        saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_OR2_0P5                                                           saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_OR3_0P5                                                           saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_OR4_1                                                             saed14rvt_ss0p72v125c
+                                                 0.72
+            SAEDRVT14_TIE0_PV1ECO_1                                                     saed14rvt_ss0p72v125c
+                                                 0.72
+            SNPS_CLOCK_GATE_HIGH_spimemio_xfer_0 0.72
+                SAEDRVT14_CKGTPLT_V5_1                                                  saed14rvt_ss0p72v125c
+                                                 0.72
+                SAEDRVT14_TIE0_PV1ECO_1                                                 saed14rvt_ss0p72v125c
+                                                 0.72
+            SNPS_CLOCK_GATE_HIGH_spimemio_xfer_1 0.72
+                SAEDRVT14_CKGTPLT_V5_1                                                  saed14rvt_ss0p72v125c
+                                                 0.72
+                SAEDRVT14_TIE0_PV1ECO_1                                                 saed14rvt_ss0p72v125c
+                                                 0.72
+            SNPS_CLOCK_GATE_HIGH_spimemio_xfer_2 0.72
+                SAEDRVT14_CKGTPLT_V5_1                                                  saed14rvt_ss0p72v125c
+                                                 0.72
+                SAEDRVT14_TIE0_PV1ECO_1                                                 saed14rvt_ss0p72v125c
+                                                 0.72
+            SNPS_CLOCK_GATE_HIGH_spimemio_xfer_3 0.72
+                SAEDRVT14_CKGTPLT_V5_1                                                  saed14rvt_ss0p72v125c
+                                                 0.72
+                SAEDRVT14_TIE0_PV1ECO_1                                                 saed14rvt_ss0p72v125c
+                                                 0.72
+            SNPS_CLOCK_GATE_HIGH_spimemio_xfer_4 0.72
+                SAEDRVT14_CKGTPLT_V5_1                                                  saed14rvt_ss0p72v125c
+                                                 0.72
+                SAEDRVT14_TIE0_PV1ECO_1                                                 saed14rvt_ss0p72v125c
+                                                 0.72
+1
