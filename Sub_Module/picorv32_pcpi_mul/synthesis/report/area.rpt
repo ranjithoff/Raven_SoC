@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : picorv32_pcpi_mul
+Version: T-2022.03-SP4
+Date   : Thu Nov 20 08:48:03 2025
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_ss0p6v125c (File: /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db)
+
+Number of ports:                          142
+Number of nets:                           102
+Number of cells:                           76
+Number of combinational cells:             55
+Number of sequential cells:                19
+Number of macros/black boxes:               0
+Number of buf/inv:                          8
+Number of references:                      20
+
+Combinational area:                 14.696400
+Buf/Inv area:                        1.420800
+Noncombinational area:              17.316000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                    32.012400
+Total area:                 undefined
+1

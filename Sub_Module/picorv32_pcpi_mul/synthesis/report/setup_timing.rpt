@@ -1,0 +1,147 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : picorv32_pcpi_mul
+Version: T-2022.03-SP4
+Date   : Thu Nov 20 08:48:03 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+Wire Load Model Mode: Inactive.
+
+  Startpoint: pcpi_insn[1]
+              (input port clocked by clock)
+  Endpoint: self_gate_instr_mulh_reg_0
+            (gating element for clock clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  input external delay                                    0.75       0.75 r    
+  pcpi_insn[1] (in)                                       0.00       0.75 r    
+  U63/X (SAEDRVT14_AN4_1)                                 0.03 *     0.78 r    0.60
+  U64/X (SAEDRVT14_AN4_1)                                 0.03 *     0.82 r    0.60
+  U65/X (SAEDRVT14_ND2_CDC_1)                             0.01 *     0.83 f    0.60
+  U66/X (SAEDRVT14_NR2_MM_1)                              0.01 *     0.84 r    0.60
+  U67/X (SAEDRVT14_ND2_CDC_1)                             0.02 *     0.86 f    0.60
+  U68/X (SAEDRVT14_NR2_MM_1)                              0.02 *     0.88 r    0.60
+  U96/X (SAEDRVT14_OR2_0P75)                              0.02 *     0.90 r    0.60
+  U95/X (SAEDRVT14_OR4_1)                                 0.02 *     0.92 r    0.60
+  self_gate_instr_mulh_reg_0/EN (SAEDRVT14_CKGTPLT_V5_1)
+                                                          0.00 *     0.92 r    0.60
+  data arrival time                                                  0.92      
+
+  clock clock (rise edge)                                 4.00       4.00      
+  clock network delay (ideal)                             0.00       4.00      
+  self_gate_instr_mulh_reg_0/CK (SAEDRVT14_CKGTPLT_V5_1)
+                                                          0.00       4.00 r    
+  clock gating setup time                                -0.02       3.98      
+  data required time                                                 3.98      
+  ------------------------------------------------------------------------------------
+  data required time                                                 3.98      
+  data arrival time                                                 -0.92      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        3.06      
+
+
+  Startpoint: pcpi_insn[1]
+              (input port clocked by clock)
+  Endpoint: instr_mulhsu_reg
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: in2reg
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  input external delay                                    0.75       0.75 r    
+  pcpi_insn[1] (in)                                       0.00       0.75 r    
+  U63/X (SAEDRVT14_AN4_1)                                 0.03 *     0.78 r    0.60
+  U64/X (SAEDRVT14_AN4_1)                                 0.03 *     0.82 r    0.60
+  U65/X (SAEDRVT14_ND2_CDC_1)                             0.01 *     0.83 f    0.60
+  U66/X (SAEDRVT14_NR2_MM_1)                              0.01 *     0.84 r    0.60
+  U67/X (SAEDRVT14_ND2_CDC_1)                             0.02 *     0.86 f    0.60
+  U68/X (SAEDRVT14_NR2_MM_1)                              0.02 *     0.88 r    0.60
+  instr_mulhsu_reg/D (SAEDRVT14_FDP_V2LP_0P5)             0.00 *     0.88 r    0.60
+  data arrival time                                                  0.88      
+
+  clock clock (rise edge)                                 4.00       4.00      
+  clock network delay (ideal)                             0.00       4.00      
+  instr_mulhsu_reg/CK (SAEDRVT14_FDP_V2LP_0P5)            0.00       4.00 r    
+  library setup time                                     -0.03       3.97      
+  data required time                                                 3.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 3.97      
+  data arrival time                                                 -0.88      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        3.09      
+
+
+  Startpoint: pcpi_wait_reg
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: pcpi_wait (output port clocked by clock)
+  Path Group: reg2out
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  pcpi_wait_reg/CK (SAEDRVT14_FDP_V2LP_0P5)               0.00       0.00 r    0.60
+  pcpi_wait_reg/Q (SAEDRVT14_FDP_V2LP_0P5)                0.04       0.04 f    0.60
+  pcpi_wait (out)                                         0.00 *     0.04 f    
+  data arrival time                                                  0.04      
+
+  clock clock (rise edge)                                 4.00       4.00      
+  clock network delay (ideal)                             0.00       4.00      
+  output external delay                                  -0.75       3.25      
+  data required time                                                 3.25      
+  ------------------------------------------------------------------------------------
+  data required time                                                 3.25      
+  data arrival time                                                 -0.04      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        3.21      
+
+
+  Startpoint: mul_counter_reg[0]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: mul_counter_reg[6]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  mul_counter_reg[0]/CK (SAEDRVT14_FDP_V2_0P5)            0.00       0.00 r    0.60
+  mul_counter_reg[0]/Q (SAEDRVT14_FDP_V2_0P5)             0.05       0.05 f    0.60
+  U39/X (SAEDRVT14_OR3_0P5)                               0.05 *     0.10 f    0.60
+  U40/X (SAEDRVT14_NR2_MM_1)                              0.02 *     0.11 r    0.60
+  U41/X (SAEDRVT14_INV_0P5)                               0.02 *     0.13 f    0.60
+  U43/X (SAEDRVT14_OR2_0P75)                              0.03 *     0.16 f    0.60
+  U54/X (SAEDRVT14_NR2_MM_1)                              0.02 *     0.18 r    0.60
+  U75/X (SAEDRVT14_AO32_U_0P5)                            0.04 *     0.21 r    0.60
+  mul_counter_reg[6]/D (SAEDRVT14_FDP_V2LP_0P5)           0.00 *     0.21 r    0.60
+  data arrival time                                                  0.21      
+
+  clock clock (rise edge)                                 4.00       4.00      
+  clock network delay (ideal)                             0.00       4.00      
+  mul_counter_reg[6]/CK (SAEDRVT14_FDP_V2LP_0P5)          0.00       4.00 r    
+  library setup time                                     -0.03       3.97      
+  data required time                                                 3.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 3.97      
+  data arrival time                                                 -0.21      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        3.76      
+
+
+1
